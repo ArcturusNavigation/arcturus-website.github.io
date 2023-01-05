@@ -641,9 +641,16 @@ section {
 }
 .team .member .pic {
   overflow: hidden;
-  width: 140px;
-  height: 160px;
+  /* width: 140px;
+  height: 160px; */
+  min-width: 140px;
+  min-height: 160px;
   border-radius: 4px;
+}
+.img-fluid {
+  min-width: 140px;
+  min-height: 160px;
+  object-fit: cover;
 }
 .team .member .pic img {
   transition: ease-in-out 0.3s;
