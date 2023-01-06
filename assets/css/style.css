@@ -605,7 +605,7 @@ section {
 }
 #supporters .supporter-logo {
   transform: scale(.8);
-  padding: 0px 30px;
+  padding: 10px 30px;
   display: flex;
   justify-content: center;
   align-items: center;
