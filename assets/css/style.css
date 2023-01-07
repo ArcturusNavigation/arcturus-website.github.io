@@ -1092,11 +1092,17 @@ section {
   justify-content: center;
 
 }
-
-.blog .title{
+.title {
+  text-align: center;
+  color: #465265;
+  margin-bottom: 5%;
+}
+.blog {
   text-align: left;
   color: #465265;
   margin-bottom: 10%;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 .blog .entry {
   padding: 30px;
