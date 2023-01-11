@@ -64,7 +64,24 @@ h6 {
 }
 
 /*--------------------------------------------------------------
-# Header
+# Notification Bar
+--------------------------------------------------------------*/
+#notif-bar {
+  background: #05274e;
+  height: fit-content; 
+  padding: 5px 5px;
+}
+
+#notif-bar p {
+  margin: 0px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  color: #c6c6c6;
+}
+
+/*--------------------------------------------------------------
+# Header (Navigation)
 --------------------------------------------------------------*/
 #header {
   background: rgb(8, 5, 78);
@@ -515,7 +532,7 @@ section {
   padding: 18px 0;
   background: #f8f9fa;
   min-height: 40px;
-  margin-top: 80px;
+  /* margin-top: 80px; */
 }
 .breadcrumbs h2 {
   font-size: 32px;
@@ -540,9 +557,9 @@ section {
   content: "/";
 }
 @media (max-width: 992px) {
-  .breadcrumbs {
+  /* .breadcrumbs {
     margin-top: 58px;
-  }
+  } */
   .breadcrumbs .d-flex {
     display: block !important;
   }
@@ -655,7 +672,7 @@ section {
 
 /*--------------------------------------------------------------
 # Our Team
-# Old text colors: dee2e6, 7e858c
+# Old text colors: dee2e6, 7e858c ; 092037, 6c7f93
 --------------------------------------------------------------*/
 .team .member {
   position: relative;
@@ -687,7 +704,7 @@ section {
 }
 .team .member .member-info {
   padding-left: 20px;
-  color: #6c7f93;
+  color: #303658;
 }
 .team .member h4 {
   font-weight: 700;
