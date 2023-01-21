@@ -485,6 +485,12 @@ section {
   overflow: hidden;
 }
 
+@media (max-width: 992px) {
+  section {
+    padding: 30px 10px;
+  }
+}
+
 .section-bg,
 .services .icon-box {
   background-color: #f8f9fa;
@@ -581,6 +587,14 @@ section {
   color: #303658;
 }
 
+@media (max-width: 992px) {
+   /* .about .content div {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+  } */
+}
 .about .content h2 {
   font-weight: 700;
   font-size: 48px;
