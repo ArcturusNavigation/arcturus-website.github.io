@@ -1152,10 +1152,22 @@ section {
 /*--------------------------------------------------------------
 # Blog
 --------------------------------------------------------------*/
-.blog {
-  padding: 40px 0 20px 0;
-}
 
+
+.blog {
+  text-align: left;
+  color: #465265;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+@media (min-width: 768px) {
+  .blog {
+    padding-left: 10%;
+    padding-right: 10%;
+
+  }
+
+}
 .blog .container {
   display: flex;
   justify-content: center;
@@ -1165,19 +1177,15 @@ section {
   color: #465265;
   margin-bottom: 5%;
 }
-.blog {
-  text-align: left;
-  color: #465265;
-  margin-bottom: 10%;
-  padding-left: 10%;
-  padding-right: 10%;
-}
 .blog .entry {
   padding: 30px;
   margin-bottom: 60px;
   box-shadow: 10px 4px 16px rgba(0, 0, 0, 0.1);
   width: fit-content;
   align-items: center;
+}
+.blog .entries article:last-child {
+  margin-bottom: 20px;
 }
 .blog .entry .entry-img {
   max-height: 440px;
