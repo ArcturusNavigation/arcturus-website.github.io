@@ -684,6 +684,12 @@ section {
   margin-top: 5%;
 }
 
+#donor-pic {
+  min-width: "820px";
+  min-height: "620px";
+  object-fit: cover;
+}
+
 /*--------------------------------------------------------------
 # Our Team
 # Old text colors: dee2e6, 7e858c ; 092037, 6c7f93
@@ -1266,6 +1272,34 @@ section {
   font-size: large;
 }
 
+.document {
+  width: 70%;
+  height: 460px;
+}
+
+@media (min-width: 768px) {
+  .document {
+    height: 620px;
+  }
+}
+
+@media (min-width: 992px) {
+  .document {
+    height: 840px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .document {
+    height: 1000px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .document {
+    height: 1060px;
+  }
+}
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
