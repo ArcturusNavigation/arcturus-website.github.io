@@ -1177,6 +1177,14 @@ section {
   color: #465265;
   margin-bottom: 5%;
 }
+
+.blog .subsection-header {
+  color: #667285;
+  text-align: left;
+  justify-content: left;
+  padding: 20px;
+}
+
 .blog .entry {
   padding: 30px;
   margin-bottom: 60px;
