@@ -587,6 +587,10 @@ section {
   color: #303658;
 }
 
+.about p, .about li {
+  font-size: 18px;
+}
+
 @media (max-width: 992px) {
    /* .about .content div {
     margin-top: 0;
