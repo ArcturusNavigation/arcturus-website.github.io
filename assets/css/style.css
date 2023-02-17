@@ -11,17 +11,19 @@
 --------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
-  color: #c6c6c6;
+  color: #969696;
 }
 
 a {
   text-decoration: none;
-  color: #c6c6c6;
+  /* color: #c6c6c6; */
+  color: #969696;
 }
 
 a:hover {
-  color: #637dc5;
+  color: #1942b3;
   text-decoration: none;
+  /* text-decoration: underline; */
 }
 
 h1,
@@ -80,6 +82,9 @@ h6 {
   color: #c6c6c6;
 }
 
+#notif-bar p a {
+  color: #c6c6c6
+}
 /*--------------------------------------------------------------
 # Header (Navigation)
 --------------------------------------------------------------*/
@@ -1179,7 +1184,7 @@ section {
 .title {
   text-align: center;
   color: #465265;
-  margin-bottom: 5%;
+  margin-bottom: 2%;
 }
 
 .blog .subsection-header {
