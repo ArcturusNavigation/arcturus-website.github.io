@@ -1201,6 +1201,34 @@ section {
   width: 100%;
   align-items: center;
 }
+.blog .entry .img-fluid {
+  max-height: 60vw;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+@media (min-width: 576px) {
+  .blog .entry .img-fluid {
+    max-height: 30vw;
+
+  }
+}
+@media (min-width: 1200px) {
+  .blog .entry .img-fluid {
+    max-height: 20vw;
+
+  }
+}
+.blog .entry .inline-img-2-normal {
+  width: 49%;
+}
+.blog .entry .inline-img-2-weird-height {
+  max-height: 100%;
+  width: auto;
+  
+}
+.blog .entry .inline-img-3 {
+  width: 32%;
+}
 .blog .entries article:last-child {
   margin-bottom: 20px;
 }
