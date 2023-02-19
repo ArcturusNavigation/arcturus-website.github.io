@@ -1165,7 +1165,7 @@ section {
 
 .blog {
   text-align: left;
-  color: #465265;
+  color: #1f1c37;
   padding-top: 40px;
   padding-bottom: 20px;
 }
@@ -1198,7 +1198,7 @@ section {
   padding: 30px;
   margin-bottom: 60px;
   box-shadow: 10px 4px 16px rgba(0, 0, 0, 0.1);
-  width: fit-content;
+  width: 100%;
   align-items: center;
 }
 .blog .entries article:last-child {
@@ -1286,6 +1286,7 @@ section {
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
 
 /*--------------------------------------------------------------
 # Past Webpages
