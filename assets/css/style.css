@@ -1308,6 +1308,9 @@ section {
   margin-bottom: 20px;
 }
 
+.blog .entry .entry-content li {
+  padding-bottom: 15px;
+}
 
 /*--------------------------------------------------------------
 # Past Webpages

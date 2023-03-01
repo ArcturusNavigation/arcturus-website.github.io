@@ -136,7 +136,7 @@
       <div class="row">
         <div class="col subsection-header">
           <h4 data-bs-toggle="collapse" href="#logistics" role="button" aria-expanded="false" aria-controls="collapseExample">
-            Logistics <i class="bi bi-chevron-down"></i>
+            Project-Wide Updates <i class="bi bi-chevron-down"></i>
           </h4>
         </div>
       </div>
@@ -145,6 +145,83 @@
         <div class="container" data-aos="fade-up">
           <div class="row">
             <div class="col-lg entries">
+              <!-- START BLOG ENTRY HERE -->
+              <article class="entry">
+
+                <div class="entry-img">
+                  <!-- <img src="../Pictures/Blogs/navigation_11.png" alt="" class="img-fluid"> -->
+                </div>
+
+                <h2 class="entry-title">
+                  <a>Z-Center Test Insights</a>
+                </h2>
+
+                <div class="entry-meta">
+                  <ul>
+                    <li class="d-flex align-items-center">
+                      <i class="bi bi-clock"></i> 
+                      <a><time datetime="2023-1-20">January 20, 2023</time></a>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="entry-content">
+                  <p>We had our first in-the-water test of the year in the Z-center pool! (It’s currently too cold to test in the Charles River anymore.)</p>
+                  <!-- <video></video> -->
+                  <h5>What went well</h5>
+                  <ol>
+                    <li>Having a car made transport easy even in bad weather</li>
+                    <li>Ardupilot and RC control functioned flawlessly</li>
+                    <li>Collected a lot of useful data for testing</li>
+                    <li>MIT community members loved it: “I never get to see research happening here!”</li>
+                    <li>Lots of members came to help out</li>
+                  </ol>
+                  <h5>What went badly</h5>
+                  <ol>
+                    <li>The packing list was started too late and we forgot a lot of things, we’re lucky multiple trips had to be made anyway</li>
+                    <li>Senior members were too busy with individual tasks to direct new members who ended up standing around with little to do much of the time</li>
+                    <li>The purpose of the test and information on the vehicles wasn’t clear to a lot of new members</li>
+                    <li>Hardware-software integration was not ready which meant having to take the boat out of the pool a lot to fix things, wasting testing time</li>
+                    <li>No GPS fix at all in the pool, as opposed to just a poor connection in Sea Grant</li>
+                  </ol>
+                  <h5>Key Takeaways</h5>
+                  <ol>
+                    <li><b>Tasks during the tests should be assigned ahead of time so new members know what to do and senior members can focus on technical work</b></li>
+                    <li>We should do a dry run-through of testing operations (using the test tank) sometime in the week before the test</li>
+                    <li>We should hold an open meeting where we discuss all of the logistics and technical details regarding the upcoming test</li>
+                    <li>Hardware-software integration always takes a lot longer than expected regardless of how well each is working individually and should be considered a week-long process.</li>
+                    <li><b>Our next test should be in the next 1-3 weeks and should still use Athena. Testing for Ship Happens should be led by navigation members going to competition and should occur weekly starting in mid to late February.</b></li>
+                    <li>The Jetson Nano gets REALLY hot. We need a better cooling system. It’s probably better to just buy given our timeline.</li>
+                    <li>For cooler tests, maybe with ship happens or if we’re ready for full autonomy with project Athena, we should advertise to the general MIT community</li>
+                  </ol>
+                  <h5>Actionables</h5>
+                  <ul>
+                    <li>
+                      Poll members for the next testing date and dry run-through and once decided:
+                    </li>
+                    <ul>
+                      <li>Reserve pool</li>
+                      <li>Let Dr. Drew Bennett, our faculty advisor, know when we’ll be doing dry-run since we’ll probably take up a lot of lab</li>
+                      <li>Reserve car</li>
+                      <li>Start test page and packing list immediately</li>
+                    </ul>
+                    <li>Add missing buoys to the order list</li>
+                    <li>Email Stereolabs to figure out how to run ZED SDK on a Jetson Nano running ubuntu 20 instead of ubuntu 18</li>
+                    <li>Build an improvised dock for floating task objects in the pool</li>
+                    <li>
+                      Athena improvements
+                    </li>
+                    <ul>
+                      <li>Waterproof LiDAR box properly (just anything but gaffer tape holding a ziplock bag)</li>
+                      <li>Fix janky LiDAR ethernet cable connection, instead use the actual cable connectors</li>
+                      <li>Document best position for thrusters and cut 80/20 to length so we don’t have to guess every time we mount it</li>
+                    </ul>
+                    <li>Get a permanent SSD for the computer box</li>
+                  </ul>
+                </div>
+                
+              </article> 
+              <!-- END BLOG ENTRY -->
               <!-- START BLOG ENTRY HERE -->
               <article class="entry">
 
@@ -235,6 +312,109 @@
         <div class="container" data-aos="fade-up">
           <div class="row">
             <div class="col-lg entries">
+              <!-- START BLOG ENTRY HERE -->
+              <article class="entry">
+
+                <div class="entry-img">
+                  <!-- <img src="../Pictures/Blogs/navigation_11.png" alt="" class="img-fluid"> -->
+                </div>
+
+                <h2 class="entry-title">
+                  <a>IAP Project Reviews: Mechanics</a>
+                </h2>
+
+                <div class="entry-meta">
+                  <ul>
+                    <li class="d-flex align-items-center">
+                      <i class="bi bi-clock"></i> 
+                      <a><time datetime="2023-1-31">January 8-31, 2022</time></a>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="entry-content">
+                  <br>
+                  <h4>Team Updates</h4>
+                  <p>We have onboarded 11 new recruits onto the team. In order to make sure those with less experience have guidance, we’ve split up our existing members onto separate project teams and assigned 3 to 4 new members to help. This project format will ensure that there is enough work to go around and that each team has an expected deliverable to work on for January. By the end of the month, we had a design review to go over all their progress and give feedback on their design decisions. Let’s see what these project teams did!</p>
+                  <br>
+
+                  <h4>Azipods: Jessica Lam, Toya Takahashi, Tamilore Fashae, Kat Jimenez</h4>
+                  <p>One problem we wanted to tackle this season was the lack of maneuverability of our competition boat, Ship Happens. In the previous season, our boat struggled to make small maneuvers to prevent it from drifting into obstacles since the thrusters were locked in place. Ship Happens was able to rotate by spinning one thruster in one direction and the other in the opposite direction. While this simple strategy worked for large rotations to point the robot in a general direction, it was difficult to make precise movements since it took around 2.5 seconds to rotate 90 degrees.</p>
+                  <p>Another smaller issue with our previous thrusters was that they needed to be screwed on and off the 8020s they were attached to every time our robot was deployed. This made the process of deploying Ship Happens inefficient, and prompted us to develop a more modular design for placing the thrusters and efficiently deploying our robot.</p>
+                  <p>To increase our maneuverability and modularity, we designed a thruster pod in OnShape to rotate our thrusters in place. In this new design, a servo is connected on one side of a 1.7” diameter, 20” length PVC pipe, and a thruster is connected on the other, allowing the servo to rotate the entire subsystem. This subsystem is mounted inside a larger 2.4” diameter PVC pipe with Delrin bushings so the thrusters can easily rotate and be lifted into the hull during transport.</p>
+                  <p>Currently, we are in the process of assembling the design we have in CAD. Most of the pieces of the assembly were 3D printed using the Ultimaker we have in our lab and we’ve been testing fits and tolerance and approaching the end of assembling the azimuth thruster pods.</p>
+                  <p>What ended up being more time-consuming than expected was the process of drilling out the hulls. Since the thruster pods penetrate the hulls, we needed to drill out a large 2.5” diameter though each hull of our catamaran using a large forstner bit. Initially we attempted to do still the hold outside with a hands drill. The forstner bit worked well to cut the fiberglass and foam, but it was difficult to cut straight down so we switched to the drill press.</p>
+                  <div class="row justify-content-center align-items-center pb-3">
+                    <div class="col-12 align-items-center justify-content-center d-flex">
+                      <video src="../Pictures/Blogs/ship-happens-1-8-23-ME-vid1.mp4" controls alt="" class="img-fluid">
+                    </div>
+                  </div>
+                  <div class="row justify-content-center align-items-center pb-3">
+                    <div class="col-12 col-sm-6 align-items-center justify-content-center d-flex">
+                      <img src="../Pictures/Blogs/ship-happens-1-8-23-ME-pic1.jpg" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-12 col-sm-6 align-items-center justify-content-center d-flex">
+                      <img src="../Pictures/Blogs/ship-happens-1-8-23-ME-pic2.jpg" alt="" class="img-fluid">
+                    </div>
+                  </div>
+                  
+                  <p>Once the holes were cut, we did a layup process on the newly exposed foam. For this, we added a few layers of fiberglass and epoxy to reinforce the foam and water proof everything. The first layer of fiberglass saturated in epoxy did not attach well to the foam so we used push pins to hold it in place.</p>
+                  <div class="row justify-content-center align-items-center pb-3">
+                    <div class="col-12 col-sm-6 align-items-center justify-content-center d-flex">
+                      <img src="../Pictures/Blogs/ship-happens-1-8-23-ME-pic3.jpg" alt="" class="img-fluid">
+                    </div>
+                  </div>
+
+                  <p> We are very excited to integrate our thruster pod into <em>Ship Happens</em> and test out the new design as soon as the last aspects of assembling are completed!</p>
+                  <br>
+
+                  <h4>Ball Launcher: Jared, Julianne, Haris, Ruth, Bella, Josh</h4>
+                  <p>One of the roboboat challenges, called Feed the Fish, is like a game of skeeball played from the boat. Our vehicle must be able to launch rubber balls (~2” diameter) at a skeeball-like target. To accomplish this task, we decided to make a ball launcher that could aim without rotating the entire boat.</p>
+                  <p>Our launcher consists of a circular platform that stores the balls. This platform has holes that are sized to the rubber balls. As the platform rotated on a servo, the balls fall through another hole and land in the shooter. The shooter is mounted to a large gear, which we can rotate with a servo. This allows us to precisely control the aim of the shooter, as the whole shooter can rotate on its own.</p>
+                  <p>Finally, the ball lands in the shooter which consists of a high-speed motor that spins flywheels. When spun at the right speed, the wheels can launch the ball to the target.</p>
+                  <p>Most of the first iteration of the launcher is finished, and we learned a lot about the design through the fabrication of the shooter. First, we learned that the current method for connecting the shooter to the turret is not the most stable. These two mechanisms are currently connected by acrylic laser cut tabs that attach to the shooter’s side panels and hang from the gear. However, when we assembled this we discovered that the brackets did not provide a lot of stability for the shooter. We plan to stabilize this connection by using an L-bracket or axle to minimize movement between the shooter and turret.</p>
+                  
+                  <div class="row justify-content-center align-items-center pb-3">
+                    <div class="col-12 col-sm-6 align-items-center justify-content-center d-flex">
+                      <img src="../Pictures/Blogs/ship-happens-1-8-23-ME-pic4.jpg" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-12 col-sm-6 align-items-center justify-content-center d-flex">
+                      <img src="../Pictures/Blogs/ship-happens-1-8-23-ME-pic5.jpg" alt="" class="img-fluid">
+                    </div>
+                  </div>
+                  
+                  <br>
+
+                  <h4>Remaking Boat Deck: Ansel, Erin, Makar</h4>
+                  <p>The goal of this sub-project is to redo the deck of our autonomous surface vehicle, <em>Ship Happens</em>. The deck of the boat provides a flat and strong working surface for other sub teams to attach their modules to, and provides a barrier between the water splashing up between the hulls to the mechanical and electrical components that sit on the deck.</p>
+                  <div class="row justify-content-center align-items-center pb-3">
+                    <div class="col-12 col-sm-6 align-items-center justify-content-center d-flex">
+                      <img src="../Pictures/Blogs/ship-happens-1-8-23-ME-pic6.jpg" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-12 col-sm-6 align-items-center justify-content-center d-flex">
+                      <img src="../Pictures/Blogs/ship-happens-1-8-23-ME-pic7.JPG" alt="" class="img-fluid">
+                    </div>
+                  </div>
+                  <p>Because the boat is estimated to be very close to our max weight for the RoboBoat competition in March, we wanted to decrease the weight of the deck while we planned out what parts we needed to buy. We decided to replace our aluminum 8020 beams with carbon fiber beams, which we found in our lab, MIT Sea Grant. We also decided that since we were able to cut a lot of weight by using carbon fiber instead of aluminum, we wanted to add an additional beam along the length of the boat that will provide support below the wood planks that sit on top. This is important since the wood slightly warped last year, and we wanted to ensure that this deck would survive both the RoboBoat competition in March and the Njord Challenge which we plan to compete in in the Fall. We used strips of aluminum that were vertically oriented to support the wood, and bent the ends so that we could connect them to the carbon fiber tubes that run horizontally along the boat.</p>
+                  <div class="row justify-content-center align-items-center pb-3">
+                    <div class="col-12 col-sm-6 align-items-center justify-content-center d-flex">
+                      <img src="../Pictures/Blogs/ship-happens-1-8-23-ME-pic8.jpg" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-12 col-sm-6 align-items-center justify-content-center d-flex">
+                      <img src="../Pictures/Blogs/ship-happens-1-8-23-ME-pic9.jpg" alt="" class="img-fluid">
+                    </div>
+                  </div>
+                  <p>Currently, we are working on preparing the marine plywood for the top of the deck. This wood will need to be cut to size, holes that fit the new azipods will need to be measured and drilled, and screw holes will need to be drilled to attach to our support beams underneath. We also need to attach our support beams, and then finally assemble the deck and test it with weights.</p>
+                  <div class="row justify-content-center align-items-center pb-3">
+                    <div class="col-12 align-items-center justify-content-center d-flex">
+                      <video src="../Pictures/Blogs/ship-happens-1-8-23-ME-vid1.mp4" controls alt="" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+
+              </article> 
+              <!-- END BLOG ENTRY -->
+
               <!-- START BLOG ENTRY HERE -->
               <article class="entry">
 
@@ -458,6 +638,99 @@
                 </div>
 
                 <h2 class="entry-title">
+                  <a>IAP Project Reviews: Electronics</a>
+                </h2>
+
+                <div class="entry-meta">
+                  <ul>
+                    <li class="d-flex align-items-center">
+                      <i class="bi bi-clock"></i> 
+                      <a><time datetime="2022-1-31">January 8-31, 2023</time></a>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="entry-content">
+                  
+                  <br>
+                  <h4>Team Updates</h4>
+                  <p>We have onboarded 11 new recruits onto the team. In order to make sure those with less experience have guidance, we’ve split up our existing members onto separate project teams and assigned 3 to 4 new members to help. This project format will ensure that there is enough work to go around and that each team has an expected deliverable to work on for January. By the end of the month, we had a design review to go over all their progress and give feedback on their design decisions. Let’s see what these project teams did!</p>
+                  
+                  <br>
+                  <h4>Electronics Box: Ansel Garcia-Langley, Ivy Liu, Erin Menezes, Maaya Prasad, Shruti Garg, Makar Kuznietsov, Dylan Gaillard, Sera Hamilton</h4>
+                  <p>Last semester, our electronics team redesigned our circuit to include many new components such as optoisolators and overcurrent protection that will prevent important and expensive components from being damaged. Because we have a lot of new parts to include in our electronics box, the team also spent time last semester creating a CAD layout of the new electronics box, making sure that everything fit in one watertight box.</p>
+                  <p>This IAP, we started ordering the components that we needed, and fitting them into the box. During this process we realized that the base of the box, which has holes for easy part adjustments, did not have large enough holes for our parts. This meant that we had to CAD and laser cut a new base with large enough holes and slots so that all parts could be adjusted slightly to fit into the base. Because of the large amount of components that will be in the box, we also created a second layer in the shape of an L that fits around our computer and is mounted above the first layer with nylon spacers. We plan to replace the entire second level of the box with a large PCB so that we can avoid having messy wires and breadboards that may shift and unplug on the water.</p>
+                  
+                  <div class="row justify-content-center align-items-center pb-3">
+                    <div class="col-12 col-sm-6 align-items-center justify-content-center d-flex">
+                      <img src="../Pictures/Blogs/ship-happens-1-8-23-EE-pic1.jpg" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-12 col-sm-6 align-items-center justify-content-center d-flex">
+                      <img src="../Pictures/Blogs/ship-happens-1-8-23-EE-pic2.jpg" alt="" class="img-fluid">
+                    </div>
+                  </div>
+
+                  <p>Another member of our team focused on making sure all the motors and motor drivers worked by creating Arduino code that ran all the motors at the same time using an Arduino Mega and an Adafruit Motor Shield V2. This code also confirmed that the Arduino Mega and motor shield could power all three types of motors at the same time. We discovered that when running the servos on digital I/O pins, they only want to respond to angles between 10 and 174, and do not move when given commands beyond that range.</p>
+                  <p>We have also started thinking about the types of connectors we need to route the external wires for the sensor mast and motors to the inside of the box. Because the box needs to be waterproof, good quality connectors and air tight holes are very important. We also want to limit the number of holes on the side of the box to avoid mistakes that need to be taped over, so planning is necessary. Another design choice that we decided to make this year is to make the box removable from the boat. This means that the box connectors will not be passthroughs, and will all be plug in connectors. This will enable us to unplug everything on the exterior of the box, so that we can pick up the box and move it away from the boat to debug the inside, rather than having to work on the boat.</p>
+                  <p>There is still plenty to be done for the electronics box. Now that we know the parts for the second level work (motor driver, Arduino Mega, optoisolators, etc.), we can start designing the second level PCB board that will attach to all of these parts. We also need to organize the location of the connectors, order the connectors, wire the inside and outside of the box, and install all the connectors.</p>
+                  
+                  <br>
+                  <h4>Thermal Management: Amy Shi, Karen Guo, Mateo Pisinger</h4>
+                  <p>The goal of the Thermal Management team is to effectively cool the electronic components that are installed on our boat, <em>Ship Happens</em>. Last year we had issues where the electronics box would overheat due to lack of ventilation and the heat from the sun reaching the electronics. Our solution to the latter was to mount a reflective plate on the clear top of the box, however the need for an active cooling system remained.</p>
+                  <p><em>Why Air Cooling?</em></p>
+                  <p>We thought of a few ways to cool the electronics (liquid cooling, heat pipes, and air cooling), and decided to go with the air-cooled system for a few different reasons.</p>
+                  <ol>
+                    <li>
+                      <p>Simplicity.</p>
+                      <p>Liquid-cooled systems are large loops of some fluid (not necessarily water) that is used to pull heat away from electronics and dump that heat into the environment, effectively cooling a system. Although liquid-cooling provides the best cooling performance, it requires specialized components and mounting equipment that would increase the cost, difficulty of manufacturing, and possible points of failure of the entire system. A failure in a liquid-cooled system results in leaks that are difficult to clean up, and can result in permanent damage to the components.</p>
+                      <p>Heat pipes are sealed metallic tubes (usually copper) that are filled with a fluid that quickly transfers heat from the warm end of the tube to the cold end. Although they are technically a form of liquid-cooling, they do not need pumps to move the fluid around due to their design, so they are considered their own cooling technique. These would also require specialized mounting equipment for all components that needed to be cooled, as every component that needs to be cooled must come in direct contact with the heat pipes. Although, if built correctly, a heat pipe cooling system can have no moving parts.</p>
+                      <p>An air cooled system blows cool air over the components in order to pull heat away and cool them down. Most of the heat-generating components already had heatsinks attached to them that are specifically designed to work with moving air, which meant that we did not have to manufacture a lot of the important cooling hardware as that was already attached. Some important components, like the electronic speed controllers, did not come with heatsinks out of the box so we had to machine heatsinks for those. Besides the heatsinks, the only other component that is needed for an air cooled system is a fan (or two!) to bring cool air to the electronics and/or to pull hot air away from them. In this case, we would only need to design mounting hardware for two components: the fans and the heatsinks. This is the least effective cooling method, but if it’s good enough (with some room to cushion any particularly hot days out on the water) then it is one of the most reliable cooling methods.</p>
+                      <p>You can mix and match these forms of cooling, for example computers use heat pipes to move heat to a heatsink that has fans attached. But the interfaces between these systems add a lot of complexity to a design. And simpler designs are easier to fix in the case a part breaks.</p>
+                    </li>
+                    <li>
+                      <p>Time.</p>
+                      <p>A more complicated system takes a long time to design and build. And we are on a serious time constraint for the cooling system as it needs to be completed by February. With a simpler design we could meet the deadline without overworking ourselves and burning out while still providing the necessary cooling to the electronics box.</p>
+                    </li>
+                    <li>
+                      <p>Risk</p>
+                      <p>In thinking about risk we have to ask ourselves one question: what would happen if our components failed at the most important moment in a competition? Ideally, you would have multiple systems that all work towards cooling the components independently. That way, if one fails your electronics are still cool and functioning. However, if you had to pick a single system then you want to pick the one that is least likely to fail, and if it does fail the least likely to cause significant amounts of damage.</p>
+                      <p>If a water cooled system fails (for example a joint between pipes was not properly sealed), components do not get cooled and the possibility exists of a leak forming that causes permanent damage to the electronics.</p>
+                      <p>If a heat pipe fails (for example a crack forms and the fluid within them evaporates), the components do not get cooled. Due to geometry, the remaining portions of the pipes and their hardware are not very effective at pulling away heat from the electronics.
+                        If an air system fails (for example a fan burns out), the components do not get forced air through them, but the heatsinks are still capable of pulling heat away from the electronics. So your cooling is reduced, but some cooling still happens.</p>
+                    </li>
+                  </ol>
+                  <p><em>First Prototypes</em></p>
+                  <p>With our approach selected, we started working on a system that would fit with the rest of the boat. As of this moment, we have built and tested our first prototype of the fan mounts that we plan on using to supply and exhaust the air in the electronics box. We have also machined the heatsinks that will be attached to the electronics that need them.</p>
+                  <div class="row justify-content-center align-items-center pb-3">
+                    <div class="col-12 col-sm-6 align-items-center justify-content-center d-flex">
+                      <img src="../Pictures/Blogs/ship-happens-1-8-23-EE-pic3.jpg" alt="" class="img-fluid">
+                    </div>
+                  </div>
+                  <p>Because we are using a fan we have to cut a hole into the electronics box, which means we must do everything we can to prevent water from reaching the electronics. This is the job of the fan assembly, which is composed of two different sections: the mount and the casing. The mount is made up of two acrylic mounting plates, a silicone gasket, and a 12V fan. These are attached together onto the wall of the electronics box with a set of 12 screws and some locknuts that won’t come undone with the natural vibrations of the boat. The gasket is sandwiched between the outer wall of the electronics box and the outer mounting plate, and then compressed down to create a waterproof ring surrounding the hole. This way if there are any water droplets on the outer surface of the electronics box they will not reach the hole.</p>
+                  <p>The casing is a 3D printed cylinder and cover that is there to prevent any liquid water from reaching the fan and opening in the electronics box. It will be glued onto the outer surface of the electronics box, and it has a special lid where we attach some 2” PVC piping which lets us control where the air moved by the fan comes from. This piping will have 90° bends along the way in order to catch any water droplets that might have somehow fallen into the pipe. This way we cut the risk of getting water into the electronics box while still having the flow of air to keep everything cool.</p>
+                  <div class="row justify-content-center align-items-center pb-3">
+                    <div class="col-12 col-sm-6 align-items-center justify-content-center d-flex">
+                      <img src="../Pictures/Blogs/ship-happens-1-8-23-EE-pic4.jpg" alt="" class="img-fluid">
+                    </div>
+                  </div>
+                  <p><em>First Test</em></p>
+                  <p>Our first test was completed recently and we used it to get an idea on the performance of the fan assembly if we changed the size of the inlet hole on the lid of the casing. As we increased the size of the inlet, the volumetric flow rate of the air (the amount of air we moved) increased as well. With an inlet 33mm in diameter we got a flow rate of 7000 [cm^3/s]; while with an inlet 60mm in diameter we got a flow rate of 18000 [cm^3/s]. Higher flow rate of air tends to mean better cooling for electronics with heat sinks, which means that we will want to go with an inlet size that is as large as possible.</p>
+                  <p>The limiting factor to the size of the inlet is actually the distance between the electronics box and the battery box. The PVC and respective fittings we decided to use for the tubes are of a standardized size, which means we cannot change their dimensions. These fittings can get fairly large, and the space we have on the deck of the boat is limited so we had to go with the largest fittings that we could while still making sure everything fit on the boat. Luckily, the flow rate we got for a 60mm diameter inlet was fairly close to the flow rate of a fan that is not constrained in any way, which was what ultimately led to our decision for the size of the inlet as it did fit within the given space.</p>
+                  <p><em>Next Steps</em></p>
+                  <p>For now the next steps are some small corrections to the main parts of the fan assembly, along with a single major design that needs to be made in order to attach the lid to the fan casing. We had some issues with getting the mounting plates aligned with one another, and some of the gaskets we cast were not of a uniform thickness. These are things that need to be addressed in order to have a complete system, and from there we can move on to testing and integrating the thermal management system into the rest of the boat.</p>
+                </div>
+
+              </article> 
+              <!-- END BLOG ENTRY -->
+
+              <!-- START BLOG ENTRY HERE -->
+              <article class="entry">
+
+                <div class="entry-img">
+                  <!-- <img src="../Pictures/Blogs/navigation_11.png" alt="" class="img-fluid"> -->
+                </div>
+
+                <h2 class="entry-title">
                   <a>Electronics: Electronics Box Layout</a>
                 </h2>
 
@@ -588,6 +861,98 @@
         <div class="container" data-aos="fade-up">
           <div class="row">
             <div class="col-lg entries">
+              <!-- START BLOG ENTRY HERE -->
+              <article class="entry">
+
+                <div class="entry-img">
+                  <!-- <img src="../Pictures/Blogs/navigation_11.png" alt="" class="img-fluid"> -->
+                </div>
+
+                <h2 class="entry-title">
+                  <a>IAP Project Reviews: Navigation</a>
+                </h2>
+
+                <div class="entry-meta">
+                  <ul>
+                    <li class="d-flex align-items-center">
+                      <i class="bi bi-clock"></i> 
+                      <a><time datetime="2023-1-31">January 31, 2022</time></a>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="entry-content">
+                  <br>
+                  <h4>Team Updates</h4>
+                  <p>We did a new recruiting push for IAP and onboarded 9 new members! It’ll take a little while to onboard them, but between Herbie and our new navigations co-lead Jacob, we think we’ll have the bandwidth to both code and teach. We will be working hybrid for IAP so that we can accommodate people who haven’t yet arrived on campus.</p>
+                  <p>We will be continuing to work using our test boat Athena, while Ship Happens is under construction. Our Gazebo simulation will enable those working remotely to keep working without access to the hardware.</p>
+                  <br>
+                  
+                  <h4>ROS Display: Youry Moise, Herbie Turner</h4>
+                  <p>We’re working to develop a dashboard that displays real-time sensor data collected from ROS.</p>
+                  <p>ROS stands for Robot Operating System; is a software middleware suite that allows us to receive information from a robot’s sensors and send it instructions based on that information. It has several “nodes” that are either publishers (the ones that send data), subscribers (the ones taking it in), or both. The data is transmitted in the form of discrete “topics”. Topics can include the depth registered, temperature, position, velocity, and other pieces of information.</p>
+                  <p>Data can be streamed in real-time from ROS topics or stored and made accessible via a “rosbag," which periodically collects all the sensor data. This data may be published over 100 times per second for one topic. With dozens of topics all publishing at this rate for several minutes uninterrupted, rosbags typically become extremely large, amounting to 15 gigabytes of storage after just 5 minutes of operation.</p>
+                  <p>Although it is possible to access the data from the command line it is not always convenient. Some of the commands aren’t very intuitive and visual data can only be displayed as numerical arrays. As a solution, ROS offers a package called RVIZ which can display standard ROS topics including 2D and 3D data. However, RVIZ lacks the capability to easily display some of our custom messages as well as the ability to easily control actuators on the vehicle.</p>
+                  <p>To achieve this with our own dashboard, we are using Qt, software that expedites GUI development by providing libraries for widgets such as buttons, labels, tabs, and forms. PySide2 is what allows us to use the coding language, Python, to interact with those widgets.</p>
+                  <p>The plan is to have 5 main tabs. The first will be an overview tab that gives a summary of the most important topics, including the 3D Map, 2D Map, Vehicle State, and Front Camera View. It will also contain a queue of tasks that the robot is planning to execute. The rest of the tabs will be “Sensors," “Perception," “Mapping," and “Pilot," and will display the appropriate information.</p>
+                  <br>
+                  
+                  <h4>Boat Positioning: Wendy Sun</h4>
+                  <p>For an autonomous vehicle, object positions are relative to the boat’s current position. Therefore, we need to constantly have an accurate idea of where the boat currently is located, in order to put every other object in the correct world view.</p>
+                  <p>There are four sources of positioning data: 1) ZED camera odometry; 2) Ardupilot; 3) Velodyne LiDAR odometry; 4) Reach M2 RTK receiver.</p>
+                  <p>I started off with writing a positioning node that takes in only the ZED camera data. The positioning node assumes that the boat starts at point (0,0) on a Cartesian plane, and that x-axis points towards the boat’s starboard while the y-axis points towards the front.</p>
+                  <p>After we successfully tested the ZED positioning node on data from last year’s competition as well as this year’s testing, I then moved on to writing a combined node that takes in both the ZED camera data and the Pixhawk data. Currently, I wrote two versions of the combined node: 1) simply taking the average of the ZED and Pixhawk data; 2) using robot_localization that can process multiple inputs from sensors.</p>
+                  <p>The next step is to test the two combined nodes, decide which one works better, and then use the chosen approach to combine all four sensor inputs.</p>
+                  <br>
+                  
+                  <h4>MOOS-IvP and ROS Integration: Toya Takahashi</h4>
+                  <p>We are currently using ROS1 for our autonomy code, but we wanted to experiment with MOOS-IvP since many marine research labs at MIT use it, the software is more specific for marine vehicles, and it has the potential to increase our parallel processing power. Similar to ROS, MOOS-IvP is a bundle of open-source C++ modules, but specifically for autonomous marine vehicles. MOOS acts as a middleware that connects many applications together including MOOSDB (the database), IvP Helm (determines the behavior of the marine vehicles), and others. New applications can be made with C++ using the MOOS-IvP libraries, be deployed together in a single mission using MOOS, and share their data via MOOSDB. To get started on MOOS-IvP, we completed lab assignments for MIT’s graduate class 2.680 Unmanned Marine Vehicle Autonomy, Sensing and Communications. In the picture below, we have a sample mission from one of the lab assignments running on an application called pMarineViewer.</p>
+                  
+                  <div class="row justify-content-center align-items-center pb-3">
+                    <div class="col-12 col-sm-6 align-items-center justify-content-center d-flex">
+                      <img src="../Pictures/Blogs/ship-happens-1-8-23-nav-pic1.png" alt="" class="img-fluid">
+                    </div>
+                  </div>
+                  
+                  <p>Furthermore, Professor Michael DeFilippo, a research engineer at MIT Sea Grant, has been working on a ROS node and MOOS application that connects the two software. His software serves as a bridge between MOOS-IvP and ROS, allowing ROS to publish MOOS variables into MOOSDB and vice versa. We have been and will continue to work with Professor DeFilippo to experiment with how we can integrate both ROS and MOOS-IvP to increase our parallel processing power and combine the strengths of the two software.</p>
+                  <br>
+                  
+                  <h4>Perception: Evelyn Zhu, Bruke Wossenseged</h4>
+                  <p>There are several different tasks that our Autonomous Surface Vehicle (ASV) must be able to complete as part of the RoboBoat competition. Example tasks include navigating around obstacles like buoys and poles, and locating a target to shoot water at. One necessary component of our ASV is the ability to detect the different objects that will be in the various tasks. This is the Perception system of the ASV, and it is one of the projects within the Navigations subteam. We worked on two sub-projects as part of this system: 1) creating a labeling workflow and 2) developing an object detection model.</p>
+                  <p>Generally speaking, before we are able to train a model we first have to gather some data. In our case, we were looking for image data that was specific to the types of objects in the RoboBoat competition (e.g. buoys, poles, and a dock) and that included labeled bounding boxes of the objects. While we were able to find some existing datasets on the Internet, we discovered that the data contained mislabeled images, and consequently, our initial object detection model was not very accurate. As such, we wanted to generate labeled data on our own, which is where the labeling workflow comes in.</p>
+                  <p>Our team had access to some videos from online and from our own boat tests that captured the objects we would see in the competition. Using those videos, what we would need to do is generate bounding boxes for each frame, and we decided to use MATLAB for this labeling process. There are other labeling softwares out there, like Label Studio which has a nice UI and is free for anyone to use. However, while MATLAB is proprietary, thankfully MIT’s license covers most of the toolboxes that MATLAB offers. Moreover, MATLAB has some very nice built-in software, like the Video Labeler app, which we used to help us automate the labeling process.</p>
+                  <p>The Video Labeler app provides a straightforward way to generate rectangular bounding boxes in video data, especially with the built-in algorithms like Point Tracker and Temporal Interpolation. With the Point Tracker algorithm, all I would have to do is hand-label the object in the initial frame, and the software would be able to track the object in the following frames. Temporal Interpolation was a neat algorithm as well. By hand-labeling just a few key frames, we are able track the bounding boxes over time of an object that comes in and out of frame. Using these tools in MATLAB, we were able to generate a training dataset with new labeled data.</p>
+                  <p>So far, we have been using the YOLOv5m model architecture for training. To compromise accuracy and time to train, we moved forward with this model as compared to larger versions of YOLOv5. This model contains 21.4 million parameters and has an mAP (accuracy) score of 45. To train this model, data needs to be arranged in a certain format with separate text files for each image indicating the class and locations and size of the bounding boxes. As noted, the first training of this model resulted in poor accuracy due to issues with data labels, but we hope that with our updated data this can be vastly improved. We will also further examine implementing the larger versions of this model.</p>
+                  <p>For guidance on using data and training the model, see the README of this <a href="https://github.com/ArcturusNavigation/ObjectDetection">github repo</a>.</p>
+                  <p>The next steps include training our model on this dataset and seeing how well it performs. We also have some video data that hasn’t been used yet from which we can generate more labeled data, and this shouldn’t be too difficult a task since the labeling workflow is already set up. We expect to complete these within the next week.</p>
+                  <br>
+                  
+                  <h4>Water Gun Target Detection: Aarush Gupta, Alexander Zhang</h4>
+                  <p>The main goal of the water gun task is to shoot a water gun through a target, which fills up a bucket. The target is a blue disc with two perpendicular white lines running across diameters of the disc. Where the two white lines intersect is a hole where the target attaches to a pipe that connects to a bucket. Water needs to be shot into this hole in order to fill the bucket up with water.</p>
+                  <p>The ZED-2 camera which our vehicle is equipped with provides both RGB and depth data. RGB data can be used to detect the target: we apply a threshold for the blue component of each pixel value (in HSV specifically, which is a better format for distinguishing colors) — then, all pixels which meet a certain blue “threshold” can be considered to be part of the target. Before doing this, we also use the depth data as a mask: all pixel values which are detected to be beyond a certain threshold distance away are ignored in order to minimize unintended noise due to distant objects. After the pixels that correspond to the target are detected, we take the median of their locations to approximate the center of the target.</p>
+                  <p>Our original idea was using an image segmentation algorithm in order to determine the pixels corresponding to the target. While this was functional to some extent, we ultimately decided to use a more simple approach in order to increase robustness and speed, as complex algorithms might not be able to run well in real-time.</p>
+                  <p>After the computer vision side of this task is finished, we will integrate this with the actual water gun by sending target information through ROS — the mechanical water gun will rotate accordingly and fire at the target.</p>
+                  <p><em>Image segmentation algorithm results:</em></p>
+                  
+                  <div class="row justify-content-center align-items-center pb-3">
+                    <div class="col-12 col-sm-6 align-items-center justify-content-center d-flex">
+                      <img src="../Pictures/Blogs/ship-happens-1-8-23-nav-pic2.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-12 col-sm-6 align-items-center justify-content-center d-flex">
+                      <img src="../Pictures/Blogs/ship-happens-1-8-23-nav-pic3.png" alt="" class="img-fluid">
+                    </div>
+                  </div>
+                  <br>
+
+                  <h4>Creating Simulations in Gazebo: Jenny Zhao</h4>
+                  <p>For the RoboBoat 2023 competition, there are 8 total tasks our autonomous boat must accomplish. From simple navigations between buoys to more complicated tasks such as shooting a ball through a target, these 8 tasks make up a specific course that our boat will have to complete.</p>
+                  <p>Before we have our boat designed, built and assembled though, I’ll be working on creating a testing simulation in an application called Gazebo. RoboBoat has given detailed specifications regarding each task. For example, we know each buoy’s color, size and shape and any other obstacle or task details. Using this we can create a very good simulation in Gazebo.</p>
+                  <p>In order to create the simulations in Gazebo, we’ll have to first create accurate meshes in Blendr to represent each obstacle or task object. Taking these object meshes, we’ll be able to put them into task worlds and recreate each task. After creating all tasks, we will combine them into a large world with all the tasks in the same order as presented in the actual competition.</p>
+                  <p>By creating these task simulations first, we will be able to create a boat object and test out our navigation systems for errors earlier, even before the boat has even been completely assembled and built. That way, when the boat is completed, and we start testing in real waters, we will hopefully have less errors and problems to deal with.</p>
+                </div>
+
+              </article> 
+              <!-- END BLOG ENTRY -->
               <!-- START BLOG ENTRY HERE -->
               <article class="entry">
 
