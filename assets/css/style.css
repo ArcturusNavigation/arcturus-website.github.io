@@ -14,16 +14,20 @@ body {
   color: #969696;
 }
 
-a {
+.breadcrumbs a, nav a {
+  color: #969696;
+  text-decoration: none;
+}
+p a {
   text-decoration: none;
   /* color: #c6c6c6; */
-  color: #969696;
+  color: #6363CC;
 }
 
-a:hover {
-  color: #1942b3;
+p a:hover {
+  color: #1942e3;
   text-decoration: none;
-  /* text-decoration: underline; */
+  text-decoration: underline;
 }
 
 h1,
