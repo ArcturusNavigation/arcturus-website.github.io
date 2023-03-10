@@ -335,12 +335,17 @@ h6 {
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
-  height: 100vh;
-  background-color: rgba(63, 73, 83, 0.8);
+  height: fit-content;
+  /* background-color: rgba(63, 73, 83, 0.8); */
   overflow: hidden;
   position: relative;
+  padding: 0 0;
 }
-#hero .carousel,
+#flour-vid {
+  width: 100%;
+  height: auto;
+}
+/* #hero .carousel,
 #hero .carousel-inner,
 #hero .carousel-item,
 #hero .carousel-item::before {
@@ -460,8 +465,8 @@ h6 {
 }
 #hero .btn-get-started:hover {
   background: #df3740;
-}
-@media (max-width: 992px) {
+} */
+/* @media (max-width: 992px) {
   #hero {
     height: 100vh;
   }
@@ -484,7 +489,7 @@ h6 {
   #hero {
     height: 120vh;
   }
-}
+} */
 
 /*--------------------------------------------------------------
 # Sections General
