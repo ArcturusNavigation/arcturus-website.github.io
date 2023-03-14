@@ -1493,3 +1493,79 @@ section {
 #footer .credits a:hover {
   color: white;
 }
+
+
+
+/* .parallax {
+	height: 100vh;
+	overflow-x: hidden;
+	overflow-y: auto;
+	perspective: 1px;
+	perspective-origin: 0 0;
+}
+
+.background {
+	height: 100vh;
+	background-image: url('background.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	transform-origin: center center;
+	transform: translateZ(-1px) scale(2);
+}
+
+.foreground {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	color: #fff;
+	text-align: center;
+	z-index: 1;
+}
+
+.content {
+	padding: 50px;
+}
+
+h1, h2 {
+	margin-top: 0;
+}
+
+h1 {
+	font-size: 3rem;
+}
+
+h2 {
+	font-size: 2rem;
+}
+
+p {
+	font-size: 1.2rem;
+	line-height: 1.5;
+} */
+
+.top-part {
+  height: 100px;
+  width: 100%;
+  background-color: red;
+}
+.parallax-img { 
+  /* background-image: url("../../Pictures/group-pic.jpg"); */
+  height: 100px;  
+  width: 100%;
+  background-attachment: fixed;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: auto 30%; 
+}
+
+.bottom-part {
+  height: 100px;
+  width: 100%;
+  background-color: blue;
+}
+  
+.blog-icon {
+  width: 300px;
+  height: auto;
+}
