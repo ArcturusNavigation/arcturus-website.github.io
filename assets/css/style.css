@@ -1576,3 +1576,30 @@ p {
   /* height: calc(100vw/1.8561); */
   overflow: hidden;
 }
+
+.card {
+  height: 100%;
+}
+/* .card p, .card h5 {
+  color: #1f1c37;
+  text-decoration: none;
+
+} */
+.card-overlink {
+  color: unset;
+  text-decoration: unset;
+}
+
+.card-overlink :hover p {
+  color: #1f1c37;
+}
+.card-overlink :hover h5 {
+  text-decoration: underline;
+}
+/* .card-img {
+  height: 50%
+}
+.card-body {
+  min-height: 50%
+} */
+
