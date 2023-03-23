@@ -1550,13 +1550,14 @@ p {
   background-color: red;
 }
 .parallax-img { 
-  /* background-image: url("../../Pictures/group-pic.jpg"); */
+  background-image: url("../../Pictures/team-pic-2023.jpg");
   height: 100px;  
-  width: 100%;
+  width: 100vw;
+  height: calc(100vw/1.8561);
   background-attachment: fixed;
-  background-position: bottom;
+  background-position: 0 170.4px;
   background-repeat: no-repeat;
-  background-size: auto 30%; 
+  background-size: contain; 
 }
 
 .bottom-part {
@@ -1568,4 +1569,10 @@ p {
 .blog-icon {
   width: 300px;
   height: auto;
+}
+
+.header-img-contain {
+  width: 100%;
+  /* height: calc(100vw/1.8561); */
+  overflow: hidden;
 }
