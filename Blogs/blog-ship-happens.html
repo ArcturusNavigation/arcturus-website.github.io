@@ -162,6 +162,31 @@
                 </div>
 
                 <h2 class="entry-title">
+                  <a>May Update: Mechanics</a>
+                </h2>
+
+                <div class="entry-meta">
+                <ul class="d-block">
+                  <li class="d-block align-items-center">
+                    <a><i class="bi bi-clock" style="color: #c1c8d0"></i>May 1, 2023</a>
+                  </li>
+                </ul>
+              </div>
+
+                <div class="entry-content">
+                  <p>The MechE team, despite being shorthanded, got the boat mechanically complete! We finished mounting the new deck on the Njord Vessel, making it wider to add more stability as we look to navigate the waves of Norway. Additionally, we worked with the Autonomy team to make adjustments to the sensor mast to accommodate the new, slightly larger LiDAR. Finally, we prototyped and tested a few methods of crane lifting the bolt with eyebolts, and arrived at the concept that we plan to use for deploying and retrieving the vessel during the Njord challenge. We’re really excited to pass the boat to the Autonomy team to get the boat tested and competition ready before we have to begin the shipping process for Norway in a few weeks.</p>
+                </div>
+
+              </article> 
+              <!-- END BLOG ENTRY -->
+              <!-- START BLOG ENTRY HERE -->
+              <article class="entry">
+
+                <div class="entry-img">
+                  <!-- <img src="../Pictures/Blogs/navigation_11.png" alt="" class="img-fluid"> -->
+                </div>
+
+                <h2 class="entry-title">
                   <a>Modifications since Roboboat: Mechanics</a>
                 </h2>
 
@@ -597,6 +622,31 @@
                 </div>
 
                 <h2 class="entry-title">
+                  <a>May Update: Electronics</a>
+                </h2>
+
+                <div class="entry-meta">
+                <ul class="d-block">
+                  <li class="d-block align-items-center">
+                    <a><i class="bi bi-clock" style="color: #c1c8d0"></i>May 1, 2023</a>
+                  </li>
+                </ul>
+              </div>
+
+                <div class="entry-content">
+                  <p>The electronics team has been working on implementing our circuit redesign for the Njord boat. Members on our team implemented an LED tower that provides visual cues for onlookers to know what is happening on the boat. The LED tower features three lights: the green light indicates that the boat is in Guided (autonomous) mode, the yellow light indicates that the boat is in Manual (remote control) mode, and the red light indicates that the thrusters have been E-stopped. To send voltage to the LED tower in all three cases, two protoboards were designed and soldered, one to control the yellow and green lights, and one for the red light. Other members worked on designing and protoboarding a circuit that allows us to have an E-stop on the remote controller for the thrusters. The circuit interprets a PWM signal from the RC receiver in the electronics box and transforms it into a DC signal that regulates a relay. This circuit is at the core of our safety system as it ensures that the high current contactors that control power going to our thrusters default to an open circuit when we decide to estop remotely or when communication with the emergency transmitter is lost.</p>
+                </div>
+
+              </article> 
+              <!-- END BLOG ENTRY -->
+              <!-- START BLOG ENTRY HERE -->
+              <article class="entry">
+
+                <div class="entry-img">
+                  <!-- <img src="../Pictures/Blogs/navigation_11.png" alt="" class="img-fluid"> -->
+                </div>
+
+                <h2 class="entry-title">
                   <a>Modifications since Roboboat: Electronics</a>
                 </h2>
 
@@ -916,7 +966,7 @@
       <div class="row">
         <div class="col subsection-header">
           <h4 data-bs-toggle="collapse" href="#navigation" role="button" aria-expanded="false" aria-controls="collapseExample">
-            Navigation <i class="bi bi-chevron-down"></i>
+            Navigation/Autonomy <i class="bi bi-chevron-down"></i>
           </h4>
         </div>
       </div>
@@ -932,7 +982,32 @@
                 </div>
 
                 <h2 class="entry-title">
-                  <a>Modifications since Roboboat: Navigations</a>
+                  <a>May Update: Autonomy</a>
+                </h2>
+
+                <div class="entry-meta">
+                <ul class="d-block">
+                  <li class="d-block align-items-center">
+                    <a><i class="bi bi-clock" style="color: #c1c8d0"></i>May 1, 2023</a>
+                  </li>
+                </ul>
+              </div>
+
+                <div class="entry-content">
+                  <p>Autonomy has been working on developing multiple autonomy systems for the Njord Vessel. One is a new control system: we decided that we should develop an entirely new controller, bypassing velocity commands through Ardupilot and rather directly sending pwm signals, to allow our boat to have more flexibility. For example, this would facilitate incorporating our azimuth thruster system in the future, and have a controller that is more specific to our vessels. Secondly, we have been working on vision and mapping for navigating around buoys and detecting objects to avoid collision. Some of our members have been working on training a dataset for detecting buoys and cardinal markers, while others have been working closely with the LiDAR to overlay the ZED images on the LiDAR pointclouds. Once the buoy detection is refined, we plan on improving our buoy navigation code for visual servoing.</p>
+                </div>
+
+              </article> 
+              <!-- END BLOG ENTRY -->
+              <!-- START BLOG ENTRY HERE -->
+              <article class="entry">
+
+                <div class="entry-img">
+                  <!-- <img src="../Pictures/Blogs/navigation_11.png" alt="" class="img-fluid"> -->
+                </div>
+
+                <h2 class="entry-title">
+                  <a>Modifications since Roboboat: Autonomy</a>
                 </h2>
 
                 <div class="entry-meta">
@@ -957,7 +1032,7 @@
                 </div>
 
                 <h2 class="entry-title">
-                  <a>Modifications up to Roboboat: Navigations</a>
+                  <a>Modifications up to Roboboat: Autonomy</a>
                 </h2>
 
                 <div class="entry-meta">
