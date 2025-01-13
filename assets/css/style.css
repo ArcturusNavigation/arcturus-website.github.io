@@ -377,8 +377,28 @@ h6 {
   width: 100%;
   height: auto;
 }
+.carousel .carousel-inner img {
+  max-width: 100%;      /* Ensure the image does not overflow its container width */
+  max-height: 70vh;     /* Limit the image height to fit within the viewport */
+  object-fit: contain;  /* Ensures the entire image fits within the container */
+  width: 100%;          /* Stretches the image horizontally within the container */
+  height: auto;         /* Maintains the aspect ratio */
+  background-color: transparent; /* Ensures there are no background bars (transparent) */
+}
 
-/* #hero .carousel,
+@media (min-width: 576px) {
+  .carousel .carousel-inner img {
+    max-height: 60vh;  /* Adjust max height for medium screens */
+  }
+}
+
+@media (min-width: 1200px) {
+  .carousel .carousel-inner img {
+    max-height: 50vh;  /* Adjust max height for large screens */
+  }
+}
+
+#hero .carousel,
 #hero .carousel-inner,
 #hero .carousel-item,
 #hero .carousel-item::before {
@@ -444,28 +464,25 @@ h6 {
   left: 0;
   transform: translate3d(0, 0, 0);
 }
+
 #hero .carousel-control-next-icon,
 #hero .carousel-control-prev-icon {
-  background: none;
-  font-size: 30px;
-  line-height: 0;
-  width: auto;
-  height: auto;
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 50px;
-  transition: 0.3s;
-  color: rgba(255, 255, 255, 0.5);
-  width: 54px;
-  height: 54px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background: none;  /* Remove default background */
+  color: white;  /* White arrows */
+  font-size: 30px;  /* Arrow size */
 }
+
+#hero .carousel-control-next:hover,
+#hero .carousel-control-prev:hover {
+  background: rgba(0, 0, 0, 0.6);  /* Darker semi-transparent background on hover */
+}
+
 #hero .carousel-control-next-icon:hover,
 #hero .carousel-control-prev-icon:hover {
-  background: rgba(255, 255, 255, 0.3);
-  color: rgba(255, 255, 255, 0.8);
+  color: #fff;  /* Keep arrow color white on hover */
 }
+
+
 #hero .carousel-indicators li {
   cursor: pointer;
   background: #fff;
@@ -522,7 +539,7 @@ h6 {
   #hero {
     height: 120vh;
   }
-} */
+}
 
 /*--------------------------------------------------------------
 # Sections General
@@ -1244,21 +1261,27 @@ section {
   align-items: center;
 }
 .blog .entry .img-fluid {
+  max-width: 100%;
   max-height: 60vw;
+  height: auto;
+  object-fit: contain; /* Or "contain" if you want the entire image visible */
   padding-top: 10px;
   padding-bottom: 10px;
 }
+
 @media (min-width: 576px) {
   .blog .entry .img-fluid {
-    max-height: 30vw;
+    max-height: none; /* Remove or adjust if needed */
   }
 }
-/* @media (min-width: 1200px) {
-  .blog .entry .img-fluid {
-    max-height: 20vw;
 
+/* Optional: Uncomment and modify for larger screens */
+@media (min-width: 1200px) {
+  .blog .entry .img-fluid {
+    max-height: none; /* Allow natural scaling */
   }
-} */
+}
+
 
 .blog .entry .inline-img-3 {
   width: 32%;
