@@ -146,6 +146,11 @@ h6 {
 }
 #header .logo img {
   max-height: 55px;
+  width: auto; /* Let the width adjust automatically */
+  height: auto; /* Maintain aspect ratio */
+  max-width: 100%; /* Ensure the image does not exceed its container */
+  max-height: 60px; /* Adjust to fit navbar height (customize as needed) */
+  display: block; /* Prevent inline spacing issues */
 }
 
 /*--------------------------------------------------------------
@@ -220,7 +225,8 @@ h6 {
     in srgb,
     var(--header-color),
     transparent 10%
-  ); /* #fff; */ /* ADDITION */
+  ); 
+  /* #fff; */ /* ADDITION */
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
   transition: 0.3s;
 }
