@@ -1661,3 +1661,8 @@ p {
 .card-body {
   min-height: 50%
 } */
+
+
+.embed-responsive {
+  margin-top: 20px; /* Add spacing above the video */
+}
