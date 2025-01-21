@@ -116,20 +116,26 @@ h6 {
 # Header (Navigation)
 --------------------------------------------------------------*/
 #header {
-  background: var(--header-color); /* ADDITION */
+  background: color-mix(in srgb, var(--header-color), transparent 0%);
   transition: all 0.5s;
   z-index: 997;
   padding: 5px 0;
 }
-/* #header.header-scrolled {
-  background: color-mix(
-    in srgb,
-    var(--header-color),
-    transparent 50%
-  ); 
+#header.index {
+  background: transparent; /* Fully transparent background */
+  transition: all 0.5s;
+  padding: 5px 0; /* Adjust padding to make it more visually appealing */
+  position: absolute; /* Ensure the navbar is overlaid */
+  margin-top: 30px;
+  left: 0;
+  width: 100%; /* Span the entire width */
+  z-index: 100;
+}
+#header.header-scrolled {
+  background: var(--header-color);
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   padding: 12px 0;
-} */
+}
 #header.header-inner-pages {
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
@@ -221,7 +227,9 @@ h6 {
   z-index: 99;
   opacity: 0;
   visibility: hidden;
-  background: var(--header-color); /* Use a solid color defined in your variables */
+  background: var(
+    --header-color
+  ); /* Use a solid color defined in your variables */
   /* background: #fff; */ /* Alternatively, use a specific color like white */
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
   transition: 0.3s;
@@ -381,23 +389,23 @@ h6 {
   height: auto;
 }
 .carousel .carousel-inner img {
-  max-width: 100%;      /* Ensure the image does not overflow its container width */
-  max-height: 70vh;     /* Limit the image height to fit within the viewport */
-  object-fit: contain;  /* Ensures the entire image fits within the container */
-  width: 100%;          /* Stretches the image horizontally within the container */
-  height: auto;         /* Maintains the aspect ratio */
+  max-width: 100%; /* Ensure the image does not overflow its container width */
+  max-height: 70vh; /* Limit the image height to fit within the viewport */
+  object-fit: contain; /* Ensures the entire image fits within the container */
+  width: 100%; /* Stretches the image horizontally within the container */
+  height: auto; /* Maintains the aspect ratio */
   background-color: transparent; /* Ensures there are no background bars (transparent) */
 }
 
 @media (min-width: 576px) {
   .carousel .carousel-inner img {
-    max-height: 60vh;  /* Adjust max height for medium screens */
+    max-height: 60vh; /* Adjust max height for medium screens */
   }
 }
 
 @media (min-width: 1200px) {
   .carousel .carousel-inner img {
-    max-height: 50vh;  /* Adjust max height for large screens */
+    max-height: 50vh; /* Adjust max height for large screens */
   }
 }
 
@@ -470,21 +478,25 @@ h6 {
 
 #hero .carousel-control-next-icon,
 #hero .carousel-control-prev-icon {
-  background: none;  /* Remove default background */
-  color: white;  /* White arrows */
-  font-size: 30px;  /* Arrow size */
+  background: none; /* Remove default background */
+  color: white; /* White arrows */
+  font-size: 30px; /* Arrow size */
 }
 
 #hero .carousel-control-next:hover,
 #hero .carousel-control-prev:hover {
-  background: rgba(0, 0, 0, 0.6);  /* Darker semi-transparent background on hover */
+  background: rgba(
+    0,
+    0,
+    0,
+    0.6
+  ); /* Darker semi-transparent background on hover */
 }
 
 #hero .carousel-control-next-icon:hover,
 #hero .carousel-control-prev-icon:hover {
-  color: #fff;  /* Keep arrow color white on hover */
+  color: #fff; /* Keep arrow color white on hover */
 }
-
 
 #hero .carousel-indicators li {
   cursor: pointer;
@@ -518,7 +530,8 @@ h6 {
 }
 #hero .btn-get-started:hover {
   background: #df3740;
-} */
+}
+*/
 /* @media (max-width: 992px) {
   #hero {
     height: 100vh;
@@ -1285,7 +1298,6 @@ section {
   }
 }
 
-
 .blog .entry .inline-img-3 {
   width: 32%;
 }
@@ -1658,7 +1670,6 @@ p {
 .card-body {
   min-height: 50%
 } */
-
 
 .embed-responsive {
   margin-top: 20px; /* Add spacing above the video */
