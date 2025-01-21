@@ -198,11 +198,15 @@
 
 document.addEventListener("scroll", function () {
   const header = document.querySelector("#header");
-  if (window.scrollY > 50) {
-    header.classList.remove("index");
-    header.classList.add("header-scrolled");
-  } else {
-    header.classList.remove("header-scrolled");
-    header.classList.add("index");
+
+  // Check if the header has the "index" class (specific to the homepage)
+  if (header.classList.contains("home")) {
+    if (window.scrollY > 50) {
+      header.classList.add("header-scrolled");
+      header.classList.remove("index");
+    } else {
+      header.classList.add("index");
+      header.classList.remove("header-scrolled");
+    }
   }
 });
