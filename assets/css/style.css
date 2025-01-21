@@ -126,7 +126,7 @@ h6 {
   transition: all 0.5s;
   padding: 5px 0; /* Adjust padding to make it more visually appealing */
   position: absolute; /* Ensure the navbar is overlaid */
-  margin-top: 30px;
+  margin-top: 35px;
   left: 0;
   width: 100%; /* Span the entire width */
   z-index: 100;
