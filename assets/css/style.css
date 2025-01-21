@@ -84,7 +84,7 @@ h6 {
   line-height: 0;
 }
 .back-to-top:hover {
-  background: #e1444d;
+  background: var(--header-color);
   color: #fff;
 }
 .back-to-top.active {
@@ -585,7 +585,7 @@ section {
   width: 120px;
   height: 1px;
   display: inline-block;
-  background: #e6636a;
+  background: var(--header-color);
   margin: 4px 10px;
 }
 .section-title p {
