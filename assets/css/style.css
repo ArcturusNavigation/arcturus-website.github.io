@@ -72,7 +72,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #d9232d;
+  background: var(--header-color);
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -121,15 +121,15 @@ h6 {
   z-index: 997;
   padding: 5px 0;
 }
-#header.header-scrolled {
+/* #header.header-scrolled {
   background: color-mix(
     in srgb,
     var(--header-color),
     transparent 50%
-  ); /* ADDITION */
+  ); 
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   padding: 12px 0;
-}
+} */
 #header.header-inner-pages {
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
@@ -221,15 +221,12 @@ h6 {
   z-index: 99;
   opacity: 0;
   visibility: hidden;
-  background: color-mix(
-    in srgb,
-    var(--header-color),
-    transparent 10%
-  ); 
-  /* #fff; */ /* ADDITION */
+  background: var(--header-color); /* Use a solid color defined in your variables */
+  /* background: #fff; */ /* Alternatively, use a specific color like white */
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
   transition: 0.3s;
 }
+
 .navbar .dropdown ul li {
   min-width: 200px;
 }
