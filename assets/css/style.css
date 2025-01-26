@@ -916,7 +916,7 @@ section {
   color: var(--nav-hover-color);
 }
 .features .nav-link.active {
-  color:var(--nav-hover-color);
+  color: var(--nav-hover-color);
   border-color: var(--nav-hover-color);
 }
 .features .tab-pane.active {
@@ -942,7 +942,7 @@ section {
   }
   .features .nav-link.active {
     color: #fff;
-    background:var(--nav-hover-color);
+    background: var(--nav-hover-color);
   }
 }
 
@@ -969,7 +969,7 @@ section {
 }
 .pricing h4 {
   font-size: 36px;
-  color:var(--nav-hover-color);
+  color: var(--nav-hover-color);
   font-weight: 600;
   font-family: "Poppins", sans-serif;
   margin-bottom: 20px;
