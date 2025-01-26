@@ -124,26 +124,19 @@
       </div> -->
       <div class="entry-content">
         <p>
-          One of the first tasks our team worked on was buoy
-          detection. Most of the navigation courses in Roboboat
-          require us to identify buoys and then figure out how to
-          navigate them. Using a ZED camera, we developed the
-          following algorithmic steps to properly identify buoys
-          on the course:
+          Localization is crucial for determining the pose (position + heading) of the robot accurately. 
         </p>
-        <p>Performs erosion with a segmentation kernel</p>
+        <img src="../../Pictures/Blogs/gps.jpg" style="display: block; margin-left: auto; margin-right: auto;width: 50%; margin-bottom: 30px;">
         <p>
-          Performs dilation with the same segementation kernel
+          Precise robot pose estimation is essential for navigation. We achieve this by combining GPS data from the ZED-F9P 
+          dual-antenna Real-Time Kinematic (RTK) system, which provides centimeter-level accuracy through error correction 
+          with a stationary onshore base station, and IMU data using an Extended Kalman Filter (EKF). This fusion ensures 
+          robust and reliable pose estimation for consistent task execution.
         </p>
-        <p>Converts the image to HSV</p>
-        <p>
-          Gets the mask for each color range we are looking
-          at(red, green, yellow)
-        </p>
-        <p>
-          Generates a bounding box for each disjoint blob in the
-          color range mask
-        </p>
+        <ul>
+          <li>RTK system is very accurate (1cm accuracy) but readings are very low frequency.</li>
+          <li>We fuse with IMU data to get more accurate/frequent measurements.</li>
+        </ul>
       </div>
   </main><!-- End #main -->
  

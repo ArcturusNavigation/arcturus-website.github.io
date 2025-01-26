@@ -124,26 +124,20 @@
       </div> -->
       <div class="entry-content">
         <p>
-          One of the first tasks our team worked on was buoy
-          detection. Most of the navigation courses in Roboboat
-          require us to identify buoys and then figure out how to
-          navigate them. Using a ZED camera, we developed the
-          following algorithmic steps to properly identify buoys
-          on the course:
+          Boat is given a waypoint to go to. We use path planning to determine how to get to the waypoint from the boat’s current position without hitting any obstacles
         </p>
-        <p>Performs erosion with a segmentation kernel</p>
-        <p>
-          Performs dilation with the same segementation kernel
-        </p>
-        <p>Converts the image to HSV</p>
-        <p>
-          Gets the mask for each color range we are looking
-          at(red, green, yellow)
-        </p>
-        <p>
-          Generates a bounding box for each disjoint blob in the
-          color range mask
-        </p>
+        <p>Initial Implementation: </p>
+        <ul>
+          <li>
+            A*, obstacle map
+          </li>
+          <li>
+            A* finds an optimal path to the desired position, and is efficient because it uses a heuristic to bias the direction it searches in the direction of the desired position.
+          </li>
+          <li>
+            At each step x, it looks at the next closest point with the lowest g(x) + h(x), where g(x) is the cost so far (cost to get from starting position to x) and h(x) is the heuristic function. h(x) is an underestimate of the distance from x to the goal position. 
+          </li>
+        </ul>
       </div>
   </main><!-- End #main -->
  

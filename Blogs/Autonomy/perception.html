@@ -131,19 +131,16 @@
           following algorithmic steps to properly identify buoys
           on the course:
         </p>
-        <p>Performs erosion with a segmentation kernel</p>
-        <p>
-          Performs dilation with the same segementation kernel
-        </p>
-        <p>Converts the image to HSV</p>
-        <p>
-          Gets the mask for each color range we are looking
-          at(red, green, yellow)
-        </p>
-        <p>
-          Generates a bounding box for each disjoint blob in the
-          color range mask
-        </p>
+        <ul>
+          <li>
+            Camera: helps us determine the “what” in the boat’s surroundings. This means identifying objects using YOLOv8 if we have data, or utilizing color segmentation and other heuristics if not.
+          </li>
+          <li>Lidar: helps us determine the whereabouts of the boat by clustering the point clouds into separate objects and track objects across time.
+          </li>
+          <li>Fusion: associate the point cloud clusters with objects identified by the camera data </li>
+          <li>Applications: Create obstacle map, which is an occupancy grid of which locations contain obstacles (such as buoys, docks, vessels) and with what probability</li>
+        </ul>
+        <img src="../../Pictures/Blogs/buoydetection.png" style="display: block; margin-left: auto; margin-right: auto;width: 50%; margin-bottom: 30px;">
       </div>
   </main><!-- End #main -->
  
