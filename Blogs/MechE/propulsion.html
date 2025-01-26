@@ -123,27 +123,27 @@
         </ul>
       </div> -->
       <div class="entry-content">
-        <p>
-          One of the first tasks our team worked on was buoy
-          detection. Most of the navigation courses in Roboboat
-          require us to identify buoys and then figure out how to
-          navigate them. Using a ZED camera, we developed the
-          following algorithmic steps to properly identify buoys
-          on the course:
+        <p style="text-indent: 50px;">Our previous vehicle only had two thrusters in the rear, which meant we didn’t have strafing or station 
+          keeping abilities. Thus, for Fish ‘N Ships, it was very important to us to use an x-drive configuration (two thrusters in the front 
+          and two thrusters in the back of the hulls). This allowed our new vehicle to strafe and station-keep with ease. However, we didn’t know 
+          the best angle to mount the thrusters, and we wanted to keep it adjustable so that we can test out the best configuration. Therefore, 
+          we designed an attachment on the bottom of the hulls that had holes in 22.5 degree increments, to allow us to easily attach the thrusters 
+          in different positions. 
+       </p>
+       <img src="../../Pictures/Blogs/propulsion.png" style="display: block; margin-left: auto; margin-right: auto;width: fit-content;">
+       <p style="text-indent: 50px;">Another design consideration we had in mind was to add some sort of protection to the thrusters. In the past, 
+        we could not set the vehicle down without propping it on a platform since the thrusters protruded from the hulls. This made it difficult to 
+        transport and test the boat. Therefore, our team decided to add some thruster cages to allow us to set the boat on the ground.
+       </p>
+       <p style="text-indent: 50px;">In our initial design, we mounted two U-bolts for each thruster, but we quickly realized that the U-bolts 
+        were quite heavy, contributing to 10% of the overall vehicle weight. Therefore, we considered different materials and geometry to reduce 
+        the weight. For material, we decided to SLA 3D print using Formlabs Tough 2K resin. As for geometry, two different designs were considered. 
+        The first design weighed a total of 2.4 lbs, and the second design has a total weight of 4.15 lbs. We ended up choosing the first design in 
+        consideration of weight restraints. However, we wanted to make sure that the first design can still withstand a reasonable amount of force, 
+        so we verified with FEA performed on OnShape and physical tests. The results showed that each cage could support over 150lbs, which is more 
+        than sufficient for our design, and now, the cages only contribute to 4% of the total weight.
         </p>
-        <p>Performs erosion with a segmentation kernel</p>
-        <p>
-          Performs dilation with the same segementation kernel
-        </p>
-        <p>Converts the image to HSV</p>
-        <p>
-          Gets the mask for each color range we are looking
-          at(red, green, yellow)
-        </p>
-        <p>
-          Generates a bounding box for each disjoint blob in the
-          color range mask
-        </p>
+        <img src="../../Pictures/Blogs/thrustercages.png" style="display: block; margin-left: auto; margin-right: auto;width: fit-content;">
       </div>
   </main><!-- End #main -->
  

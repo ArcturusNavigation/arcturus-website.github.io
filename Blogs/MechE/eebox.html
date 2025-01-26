@@ -124,26 +124,46 @@
       </div> -->
       <div class="entry-content">
         <p>
-          One of the first tasks our team worked on was buoy
-          detection. Most of the navigation courses in Roboboat
-          require us to identify buoys and then figure out how to
-          navigate them. Using a ZED camera, we developed the
-          following algorithmic steps to properly identify buoys
-          on the course:
+          The purpose of a custom electronics box is to provide a lightweight, accessible, easily modifiable, cool (temperature-wise), splash-proof housing for Fish ‘N Ships’ electrical components. 
         </p>
-        <p>Performs erosion with a segmentation kernel</p>
-        <p>
-          Performs dilation with the same segementation kernel
+        <p><i>Design 1:</i></p>
+        <p style="text-indent: 50px;">The initial design of the EE box focused on accessibility, modularity, and thermals. It consisted of an ⅛” 
+          aluminum base, ⅛” acrylic walls, removable faceplates, a large “land” lid, and smaller “water” lids. This version of the box condensed the boat’s 
+          sensors and electronics into a single sub-assembly--i.e., its “brains”--that could be removed and tested independent of the hulls. The electronics 
+          were designed to mount to slightly elevated acrylic pegboards (elevated for subterranean wire management). Thermals were managed passively by aluminum
+           “sleeves” that wrapped completely around the hulls and made direct contact with the box’s aluminum base. Overall footprint was roughly 32”x16”x6.5”
+            (not counting the height of the sensor mast). 
         </p>
-        <p>Converts the image to HSV</p>
-        <p>
-          Gets the mask for each color range we are looking
-          at(red, green, yellow)
+        <img src="../../Pictures/Blogs/eebox1.png" style="display: block; margin-left: auto; margin-right: auto;width: fit-content;">
+        <p style="text-indent: 50px;">The second iteration of the box was driven by a single design requirement the first design failed to meet: weight.
+           The original design weighed ~13 lbs, roughly 12% of the team’s weight budget at the time. This egress prompted a spirited discussion of the
+            necessity of a custom EE box--off the shelf options are cheaper, require less manpower (from the team at least), are rated to depths well 
+            beyond the design requirements of the box, and commonly used by RoboBoat teams. Modifying such boxes--while inelegant--is neither costly 
+            nor difficult, though it does make the box’s original pressure rating irrelevant. The question thus became: can we manufacture a box that 
+            offers a better weight to volume ratio than the leading alternative? And would it be worth the cost? We decided there was a high probability 
+            we could--and that the cost was more than justified by the learning experience.
         </p>
-        <p>
-          Generates a bounding box for each disjoint blob in the
-          color range mask
+        <p><i>Design 2:</i></p>
+        <p style="text-indent: 50px;">Design two features the elevated peg boards and removable faceplates of the first design, only this time they’re 
+          compressed into a footprint roughly a third the size (12”x16”x8”). To account for this compressed footprint the pegboards were elevated ~4” off 
+          the base (enough room to rotate the average human hand comfortably)--opening up a second layer for mounting components. The focus on weight reduction 
+          meant the old aluminum base with its heat finned cooling system was a non starter.. Fabric--engineered by a fashion industry focused on breathability, 
+          water resistance, and weight--was the obvious replacement. The new box was constructed almost entirely out of an ⅛” plywood frame, and the lid draped 
+          in PolyUrethane Laminate--a lightweight, durable, water resistant cloth commonly used for DIY diapers. Finally, fans, protected by 3D printed shrouds, 
+          were added for increased airflow. 
         </p>
+        <img src="../../Pictures/Blogs/eebox2.png" style="display: block; margin-left: auto; margin-right: auto;width: fit-content;">
+        <p><i>Current Design:</i></p>
+        <p style="text-indent: 50px;">The current design retains many of the core innovations of the previous two--including the elevated peg boards, 
+          fabric lid, and removable faceplates. The primary driver of this iteration was usability feedback from the EE team: a self locating pin was added 
+          to make aligning the lid easier when latching the box shut and to prevent water from pooling during rainy tests; the number of mounting screws per 
+          faceplate was doubled to prevent water from entering the box when rogue waves swept over the deck; 1/32” aluminum L brackets were fastened to the edges 
+          of the acrylic pegboards to prevent the previous bowing/flexing/swaying behavior that made mounting components to the pegboards difficult; compliant hooks 
+          were added to keep the latches in the “upright” position while lowering the lid; and the Jetson was mounted on L-bracket stand-offs to allow for rapid 
+          insertion and removal from the box. Once the wooden seams of the base were caulked with a polyether adhesive the box proved watertight to 16cm (at which 
+          point water entered via the fan out take), well above design spec.
+        </p>
+        <img src="../../Pictures/Blogs/eebox3.png" style="display: block; margin-left: auto; margin-right: auto;width: fit-content;">
       </div>
   </main><!-- End #main -->
  
