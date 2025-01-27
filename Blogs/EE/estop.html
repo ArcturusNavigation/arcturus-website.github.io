@@ -123,27 +123,13 @@
         </ul>
       </div> -->
       <div class="entry-content">
-        <p>
-          One of the first tasks our team worked on was buoy
-          detection. Most of the navigation courses in Roboboat
-          require us to identify buoys and then figure out how to
-          navigate them. Using a ZED camera, we developed the
-          following algorithmic steps to properly identify buoys
-          on the course:
+        <p style="text-indent: 50px;">
+          In previous competitions, the vehicle experienced communication problems when using WiFi. For its long range and noise immunity, we switched to LoRa to communicate both E-Stop and manual drive signals. This is the bare minimum needed to be able to shut off the boat in and emergency and recover it without a person entering the water, which is why we placed this functionality in a system separate from the other communications. 
         </p>
-        <p>Performs erosion with a segmentation kernel</p>
-        <p>
-          Performs dilation with the same segementation kernel
+        <p style="text-indent: 50px;">
+          To test the range of the board, we walked the transmitter and receiver in opposite directions on a long, straight road. Initially, we accomplished a range of 0.75 km. This was much shorter than expected, so we switched from using a chip antenna to an external whip antenna. This brought us to a range of 1.25 km, but would likely be higher if we were to test it in a longer line of sight path.
         </p>
-        <p>Converts the image to HSV</p>
-        <p>
-          Gets the mask for each color range we are looking
-          at(red, green, yellow)
-        </p>
-        <p>
-          Generates a bounding box for each disjoint blob in the
-          color range mask
-        </p>
+        <img src="../../Pictures/Blogs/estopreal.jpg" style="display: block; margin-left: auto; margin-right: auto;width: 50%; margin-bottom: 30px;">
       </div>
   </main><!-- End #main -->
  

@@ -123,20 +123,23 @@
         </ul>
       </div> -->
       <div class="entry-content">
-        <p>
-          Localization is crucial for determining the pose (position + heading) of the robot accurately. 
+        <p style="text-indent: 50px;">
+          Precise robot pose estimation and environmental mapping are critical for effective navigation. During the competition and outdoor tests, 
+          robot localization is achieved using global GPS data from the ZED-F9P dual-antenna Real-Time Kinematic (RTK) system. This system delivers 
+          centimeter-level accuracy through error correction via a stationary onshore base station. Although the RTK system is highly accurate, its 
+          readings are published at a lower frequency, causing occasional pose jumps. To mitigate this, we fuse the GPS odometry with IMU data from 
+          the Pixhawk 6X using an Extended Kalman Filter (EKF). This fusion smooths the robot's odometry and ensures reliable and robust pose estimation, 
+          supporting consistent task execution.
+        </p>
+        <p style="text-indent: 50px;">
+          Indoor tests pose challenges due to the absence of GPS signals. Instead of relying on GPS for robot localization, we utilize two widely-used 
+          localization and mapping packages: <a href="https://github.com/cartographer-project">Cartographer</a> and 
+          <a href="https://github.com/ros-navigation/navigation2/tree/main/nav2_amcl">Nav2’s Adaptive Monte Carlo Localization (AMCL)</a>. 
+          Cartographer is a real-time Simultaneous Localization and Mapping (SLAM) system that we use to create a 2D map of the environment using the 
+          LiDAR's laser scans. Once the environment is mapped, we switch to AMCL and leverage the ZED2i’s built-in Visual Inertial Odometry (VIO) to 
+          localize the vessel relative to the pre-existing map.
         </p>
         <img src="../../Pictures/Blogs/gps.jpg" style="display: block; margin-left: auto; margin-right: auto;width: 50%; margin-bottom: 30px;">
-        <p>
-          Precise robot pose estimation is essential for navigation. We achieve this by combining GPS data from the ZED-F9P 
-          dual-antenna Real-Time Kinematic (RTK) system, which provides centimeter-level accuracy through error correction 
-          with a stationary onshore base station, and IMU data using an Extended Kalman Filter (EKF). This fusion ensures 
-          robust and reliable pose estimation for consistent task execution.
-        </p>
-        <ul>
-          <li>RTK system is very accurate (1cm accuracy) but readings are very low frequency.</li>
-          <li>We fuse with IMU data to get more accurate/frequent measurements.</li>
-        </ul>
       </div>
   </main><!-- End #main -->
  

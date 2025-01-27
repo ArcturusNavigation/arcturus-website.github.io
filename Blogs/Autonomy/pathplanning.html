@@ -123,21 +123,24 @@
         </ul>
       </div> -->
       <div class="entry-content">
-        <p>
-          Boat is given a waypoint to go to. We use path planning to determine how to get to the waypoint from the boat’s current position without hitting any obstacles
+        <p style="text-indent: 50px;">
+          In order to complete the tasks, the boat must be able to safely 
+          and efficiently navigate to any GPS waypoint. We use path planning to compute 
+          how the boat can travel to a designated waypoint without hitting any obstacles.
         </p>
-        <p>Initial Implementation: </p>
-        <ul>
-          <li>
-            A*, obstacle map
-          </li>
-          <li>
-            A* finds an optimal path to the desired position, and is efficient because it uses a heuristic to bias the direction it searches in the direction of the desired position.
-          </li>
-          <li>
-            At each step x, it looks at the next closest point with the lowest g(x) + h(x), where g(x) is the cost so far (cost to get from starting position to x) and h(x) is the heuristic function. h(x) is an underestimate of the distance from x to the goal position. 
-          </li>
-        </ul>
+        <p style="text-indent: 50px;">
+          We use the A* algorithm and an occupancy grid of obstacles to efficiently find a safe 
+          and optimal path from the boat’s current position to the designated waypoint. At each 
+          step, the algorithm evaluates the next closest point with the lowest total cost, 
+          calculated as g(x)+h(x). Here, g(x) represents the cost incurred from the starting 
+          position to the current point x, while h(x) is the heuristic function, which provides 
+          an underestimated cost from x to the goal. This balance between actual and estimated 
+          costs ensures A* remains both effective and computationally efficient in guiding the boat to its destination.
+        </p>
+        <p style="text-indent: 50px;">
+          We chose to use the A* algorithm for its speed and optimality. The A* algorithm leverages the heuristic function to bias the search toward the goal, which improves efficiency by reducing the search space significantly, especially in an obstacle sparse environment. Additionally, the resulting path is still optimal, even though we have a reduced search space, because our heuristic is an underestimate of the true cost of reaching the goal.
+        </p>
+        <video src="../../Pictures/Blogs/path_map.mp4" autoplay muted loop playsinline alt="" class="" style="display: block; margin-left: auto; margin-right: auto;width: 50%; margin-bottom: 30px; margin-top: 30px;"></video>
       </div>
   </main><!-- End #main -->
  
