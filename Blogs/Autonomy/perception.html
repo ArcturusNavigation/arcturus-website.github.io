@@ -99,7 +99,7 @@
         <div class="d-flex justify-content-between align-items-center">
           <h2>Autonomy</h2>
           <ol>
-            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../blog-fish-n-ships.html">Technical Work</a></li>
             <li><a href="../blog-autonomy.html">Autonomy</a></li>
             <li><a href="">Perception</a></li>
           </ol>
@@ -141,6 +141,7 @@
           heuristic-based methods to classify objects effectively.
         </p>
         <img src="../../Pictures/Blogs/buoydetection.png" style="display: block; margin-left: auto; margin-right: auto;width: 70%; margin-bottom: 30px; max-width: 70%; max-height:70%;">
+        <p style="text-align: center;">Fig 1. Our perception system detecting red and green buoys.</p>
         <p style="text-indent: 50px;">
           LiDAR data is used to identify where objects in the boat’s surroundings are. The positions of the buoys are extracted from LiDAR data using 
           Euclidean clustering, and their locations are projected onto the camera feed using a calibrated extrinsic transformation and the camera's 
@@ -149,12 +150,14 @@
           find paths through the buoys without collisions. 
         </p>
         <img src="../../Pictures/Blogs/perception2.png" style="display: block; margin-left: auto; margin-right: auto;width: 70%; margin-bottom: 30px; max-width: 70%; max-height:70%;">
+        <p style="text-align: center;">Fig 2. 3D point cloud generated occupancy grid.</p>
         <p style="text-indent: 50px;">
           Finally, we fuse LiDAR and camera data in order to get a unified understanding of where and what each object is. Using the projected LiDAR 
           point clouds on the camera feed, we match the point clouds and camera objects by pairing those that maximize the total Intersection over 
           Union (IoU) between their bounding boxes.
         </p>
         <img src="../../Pictures/Blogs/perception3.png" style="display: block; margin-left: auto; margin-right: auto;width: 70%; margin-bottom: 30px; max-width: 70%; max-height:70%;">
+        <p style="text-align: center;">Fig 3. Simulation picturing obstacles from LiDAR-camera fused data.</p>
       </div>
   </main><!-- End #main -->
  
