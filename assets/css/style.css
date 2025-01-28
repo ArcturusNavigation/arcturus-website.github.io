@@ -144,7 +144,7 @@ h6 {
 #header.index {
   background: transparent; /* Fully transparent background */
   transition: all 0.5s;
-  padding: 5px 0; /* Adjust padding to make it more visually appealing */
+  padding: 25px 0; /* Adjust padding to make it more visually appealing */
   position: absolute; /* Ensure the navbar is overlaid */
   margin-top: 35px;
   left: 0;
@@ -178,6 +178,19 @@ h6 {
   max-height: 60px; /* Adjust to fit navbar height (customize as needed) */
   display: block; /* Prevent inline spacing issues */
 }
+
+@media (max-width: 768px) {
+  #header .logo img {
+    max-height: 30px; /* Smaller height for mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  #header .logo img {
+    max-height: 30px; /* Even smaller height for very small screens */
+  }
+}
+
 
 /*--------------------------------------------------------------
 # Navigation Menu
