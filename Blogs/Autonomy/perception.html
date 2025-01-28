@@ -140,7 +140,7 @@
           colors and types. However, in cases where training data is unavailable, we fall back on techniques like color segmentation and other 
           heuristic-based methods to classify objects effectively.
         </p>
-        <img src="../../Pictures/Blogs/buoydetection.png" style="display: block; margin-left: auto; margin-right: auto;width: 50%; margin-bottom: 30px;">
+        <img src="../../Pictures/Blogs/buoydetection.png" style="display: block; margin-left: auto; margin-right: auto;width: 70%; margin-bottom: 30px; max-width: 70%; max-height:70%;">
         <p style="text-indent: 50px;">
           LiDAR data is used to identify where objects in the boat’s surroundings are. The positions of the buoys are extracted from LiDAR data using 
           Euclidean clustering, and their locations are projected onto the camera feed using a calibrated extrinsic transformation and the camera's 
@@ -148,13 +148,13 @@
           and other vessels, along with the probability of their presence. The obstacle map is then used by the path planner to efficiently and safely 
           find paths through the buoys without collisions. 
         </p>
-        <img src="../../Pictures/Blogs/perception2.png" style="display: block; margin-left: auto; margin-right: auto;width: 50%; margin-bottom: 30px;">
+        <img src="../../Pictures/Blogs/perception2.png" style="display: block; margin-left: auto; margin-right: auto;width: 70%; margin-bottom: 30px; max-width: 70%; max-height:70%;">
         <p style="text-indent: 50px;">
           Finally, we fuse LiDAR and camera data in order to get a unified understanding of where and what each object is. Using the projected LiDAR 
           point clouds on the camera feed, we match the point clouds and camera objects by pairing those that maximize the total Intersection over 
           Union (IoU) between their bounding boxes.
         </p>
-        <img src="../../Pictures/Blogs/perception3.png" style="display: block; margin-left: auto; margin-right: auto;width: 50%; margin-bottom: 30px;">
+        <img src="../../Pictures/Blogs/perception3.png" style="display: block; margin-left: auto; margin-right: auto;width: 70%; margin-bottom: 30px; max-width: 70%; max-height:70%;">
       </div>
   </main><!-- End #main -->
  
