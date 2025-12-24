@@ -28,40 +28,39 @@ const Home = () => {
 
       {/* What is Arcturus Section */}
       <section className="py-12">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-8">
-            <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary mb-8">
-              What is Arcturus?
-            </h2>
-            <div className="flex flex-col lg:flex-row items-center justify-around gap-8">
-              <div className="lg:w-1/2">
-                <div className="video-container">
-                  <iframe
-                    width="560"
-                    height="315"
-                    src="https://www.youtube.com/embed/m9dcG-rZwSk?si=CLfSJ6qwxsFVXq5-"
-                    title="YouTube video player"
-                    frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerPolicy="strict-origin-when-cross-origin"
-                    allowFullScreen
-                  ></iframe>
-                </div>
+        <div className="mx-auto max-w-8xl px-4">
+          <div className="flex flex-col lg:flex-row lg:justify-center lg:items-center gap-8">
+            {/* media column */}
+            <div className="w-full lg:w-5/12">
+              <div className="video-container">
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/m9dcG-rZwSk?si=CLfSJ6qwxsFVXq5-"
+                  title="YouTube video player"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  allowFullScreen
+                ></iframe>
               </div>
-              <div className="lg:w-5/12 text-center lg:text-left">
-                <p className="text-lg mb-6">
-                  Arcturus is the Massachusetts Institute of Technology's
-                  autonomous robotics team! Founded in 2021 by a group of
-                  passionate individuals, our team specializes in creating
-                  autonomous surface vehicles (ASVs).
-                </p>
-                <Link
-                  to="/about"
-                  className="inline-block bg-gray-600 hover:bg-gray-700 text-white px-6 py-3 rounded text-lg transition-colors"
-                >
-                  About Us
-                </Link>
-              </div>
+            </div>
+
+            {/* text column */}
+            <div className="w-full lg:w-5/12 text-center">
+              <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary mb-6">
+                What is Arcturus?
+              </h2>
+              <p className="text-lg mb-6">
+                Arcturus is the Massachusetts Institute of Technology&apos;s autonomous robotics team! Founded in 2021 by a group of
+                passionate individuals, our team specializes in creating autonomous surface vehicles (ASVs).
+              </p>
+              <Link
+                to="/about"
+                className="inline-block bg-gray-600 hover:bg-gray-700 text-white px-6 py-3 rounded text-lg transition-colors"
+              >
+                About Us
+              </Link>
             </div>
           </div>
         </div>
@@ -69,25 +68,28 @@ const Home = () => {
 
       {/* Meet Fish 'N Ships Section */}
       <section className="py-12 bg-background-light">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-8">
-            <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary mb-8">
-              Meet Fish 'N Ships
-            </h2>
-            <div className="flex flex-col lg:flex-row items-center justify-center gap-8">
-              <div className="lg:w-5/12 text-center lg:text-left order-2 lg:order-1">
-                <p className="text-lg mb-6">
-                  Fish 'N Ships is our new competition vessel. It features a catamaran design with four thrusters
-                  in an x-drive configuration to allow for precision and control.
-                </p>
-                <Link
-                  to="/blog/fish-n-ships"
-                  className="inline-block bg-gray-600 hover:bg-gray-700 text-white px-6 py-3 rounded text-lg transition-colors"
-                >
-                  Learn More
-                </Link>
-              </div>
-              <div className="lg:w-5/12 order-1 lg:order-2">
+        <div className="mx-auto max-w-8xl px-4">
+          <div className="flex flex-col lg:flex-row lg:justify-center lg:items-center gap-8">
+            {/* text column */}
+            <div className="w-full lg:w-5/12 text-center order-2 lg:order-1">
+              <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary mb-6">
+                Meet Fish 'N Ships
+              </h2>
+              <p className="text-lg mb-6">
+                Fish 'N Ships is our new competition vessel. It features a catamaran design with four thrusters
+                in an x-drive configuration to allow for precision and control.
+              </p>
+              <Link
+                to="/blog/fish-n-ships"
+                className="inline-block bg-gray-600 hover:bg-gray-700 text-white px-6 py-3 rounded text-lg transition-colors"
+              >
+                Learn More
+              </Link>
+            </div>
+
+            {/* media column */}
+            <div className="w-full lg:w-5/12 order-1 lg:order-2 flex justify-center">
+              <div className="w-full">
                 <Carousel images={fishNShipsImages} autoPlayInterval={4000} />
               </div>
             </div>
@@ -97,7 +99,7 @@ const Home = () => {
 
       {/* Our Design Process Section */}
       <section className="py-12">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto max-w-8xl px-4">
           <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary text-center mb-12">
             Our Design Process
           </h2>
@@ -157,7 +159,7 @@ const Home = () => {
                 <div className="px-6 pb-6">
                   <h4 className="text-xl font-heading font-bold text-primary mb-3">Mechanical</h4>
                   <p className="text-text">
-                    The mechanical team design, prototype, and build all of the physical aspects of the vessel.
+                    The mechanical team designs, prototypes, and builds all of the physical aspects of the vessel.
                     This includes tasks such as manufacturing the hulls, creating robotic mechanisms (ex. ball launcher),
                     and machining customized parts.
                   </p>

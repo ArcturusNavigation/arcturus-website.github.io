@@ -12,11 +12,6 @@ const Sponsors = () => {
       logo: '/Pictures/Sponsors/mit-meche-logo.jpg',
       url: 'https://meche.mit.edu/'
     },
-    // {
-    //   name: 'MIT EECS',
-    //   logo: '/Pictures/Sponsors/eecslogo.png',
-    //   url: 'https://www.eecs.mit.edu/'
-    // },
     {
       name: 'Saronic',
       logo: '/Pictures/Sponsors/saronic.jpg',
@@ -47,11 +42,6 @@ const Sponsors = () => {
       logo: '/Pictures/Sponsors/ansys.png',
       url: 'https://www.ansys.com/'
     },
-    // {
-    //   name: 'MIT Coop',
-    //   logo: '/Pictures/Sponsors/mit-coop-logo.png',
-    //   url: 'https://www.thecoop.com/coopstore/estore_home.jsp'
-    // },
     {
       name: 'Formlabs',
       logo: '/Pictures/Sponsors/formlabs-logo.png',
@@ -62,18 +52,13 @@ const Sponsors = () => {
       logo: '/Pictures/Sponsors/ptc.png',
       url: 'https://www.ptc.com/en/'
     },
-    // {
-    //   name: 'MIT OME',
-    //   logo: '/Pictures/Sponsors/mit-ome-logo.jpg',
-    //   url: 'https://ome.mit.edu/'
-    // }
   ]
 
   return (
     <div className="py-12">
       <div className="container mx-auto px-4">
         {/* Thank You Section */}
-        <section className="bg-bg-light py-16 -mx-4 px-4 mb-16">
+        <section className="bg-bg-light py-4 -mx-4 px-4 mb-4">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-4xl font-heading font-bold text-primary text-center mb-12">
               Thank you to our sponsors!
@@ -113,7 +98,7 @@ const Sponsors = () => {
 
           <div className="text-lg text-text space-y-4 mb-8">
             <p>
-              As a new team, we are looking for donations, partnerships, mentorships, and more.
+              We are looking for donations, partnerships, mentorships, and more.
               We are actively seeking donations ranging from $500 to $8,000 and beyond, with
               greater donations bringing greater benefits. All donations are tax deductible.
             </p>

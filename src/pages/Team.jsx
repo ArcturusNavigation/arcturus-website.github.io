@@ -122,14 +122,14 @@ const Team = () => {
             Officers
           </h2>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
             {officers.map((officer, index) => (
               <div key={index} className="flex items-start gap-4 mx-auto max-w-md w-full">
                 <div className="flex-shrink-0">
                   <img
                     src={officer.image}
                     alt={officer.name}
-                    className="w-24 h-24 rounded-lg object-cover"
+                    className="w-28 h-32 rounded-lg object-cover object-top"
                   />
                 </div>
                 <div className="flex-grow">

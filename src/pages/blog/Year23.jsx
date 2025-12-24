@@ -19,9 +19,9 @@ const Year23 = () => {
         <div className="max-w-6xl mx-auto mb-12">
           <h2 className="text-3xl font-heading font-bold text-primary mb-6 text-center">Our 2023 Season Vehicles</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <Link to="/blog/fish-n-ships" className="block bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow overflow-hidden">
+            <div className="block bg-white rounded-lg shadow-lg overflow-hidden">
               <img
-                src="/Pictures/Blogs/VehicleIcon_ShipHappens_1-1r.png"
+                src="/Pictures/Blogs/VehicleIcon_ShipHappens.png"
                 alt="Ship Happens"
                 className="w-full h-64 object-contain p-8"
               />
@@ -31,11 +31,11 @@ const Year23 = () => {
                   <em>Ship Happens</em> is the autonomous surface vehicle (ASV) Arcturus has designed for the RoboBoat 2023 competition and the Njord Challenge.
                 </p>
               </div>
-            </Link>
+            </div>
 
             <div className="block bg-white rounded-lg shadow-lg overflow-hidden">
               <img
-                src="/Pictures/Blogs/VehicleIcon_Athena_1-1r.png"
+                src="/Pictures/Blogs/VehicleIcon_Athena.png"
                 alt="Athena"
                 className="w-full h-64 object-contain p-8"
               />
