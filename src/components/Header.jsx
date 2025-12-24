@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
+import Search from './Search'
 
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -88,6 +89,9 @@ const Header = () => {
           >
             Sponsors
           </Link>
+
+          {/* Search Component - positioned at the end */}
+          <Search />
         </nav>
 
         {/* Mobile Menu Toggle */}
@@ -103,6 +107,12 @@ const Header = () => {
       {mobileMenuOpen && (
         <div className="lg:hidden bg-white border-t border-gray-200">
           <nav className="flex flex-col py-2">
+            {/* Mobile Search */}
+            <div className="px-6 py-2.5">
+              <Search />
+            </div>
+            <div className="border-t border-gray-200 my-2"></div>
+
             <Link
               to="/"
               className="px-6 py-2.5 text-text hover:bg-gray-100"
