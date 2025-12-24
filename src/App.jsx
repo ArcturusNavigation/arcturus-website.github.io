@@ -31,6 +31,21 @@ import EEBox from './pages/blog/mechanical/eebox'
 import SensorMast from './pages/blog/mechanical/sensormast'
 import Mechanisms from './pages/blog/mechanical/mechanisms'
 
+// Outreach blog posts
+import Spark2023 from './pages/blog/outreach/spark2023'
+import CPW from './pages/blog/outreach/cpw'
+import Azores from './pages/blog/outreach/azores'
+import OCEANS2023 from './pages/blog/outreach/oceans2023'
+import DiscoverOceanEngineering from './pages/blog/outreach/discoveroceanengineering'
+import AluminumCobblers from './pages/blog/outreach/aluminumcobblers'
+import BlueInnovationsSymposium from './pages/blog/outreach/blueinnovationssymposium'
+import CambridgeScienceFestival2022 from './pages/blog/outreach/cambridgesciencefestival2022'
+import CambridgeScienceFestival2024 from './pages/blog/outreach/cambridgesciencefestival2024'
+import EdgertonCenterShowcase from './pages/blog/outreach/edgertoncentersh owcase'
+import HealthOfThePlanet from './pages/blog/outreach/healthoftheplanet'
+import MITCorp from './pages/blog/outreach/mitcorp'
+import WeCodeHarvardConference from './pages/blog/outreach/wecodeharvardconference'
+
 function App() {
   return (
     <Layout>
@@ -64,6 +79,21 @@ function App() {
         <Route path="/blog/mechanical/eebox" element={<EEBox />} />
         <Route path="/blog/mechanical/sensormast" element={<SensorMast />} />
         <Route path="/blog/mechanical/mechanisms" element={<Mechanisms />} />
+
+        {/* Outreach blog posts */}
+        <Route path="/blog/outreach/spark2023" element={<Spark2023 />} />
+        <Route path="/blog/outreach/cpw" element={<CPW />} />
+        <Route path="/blog/outreach/azores" element={<Azores />} />
+        <Route path="/blog/outreach/oceans2023" element={<OCEANS2023 />} />
+        <Route path="/blog/outreach/discoveroceanengineering" element={<DiscoverOceanEngineering />} />
+        <Route path="/blog/outreach/aluminumcobblers" element={<AluminumCobblers />} />
+        <Route path="/blog/outreach/blueinnovationssymposium" element={<BlueInnovationsSymposium />} />
+        <Route path="/blog/outreach/cambridgesciencefestival2022" element={<CambridgeScienceFestival2022 />} />
+        <Route path="/blog/outreach/cambridgesciencefestival2024" element={<CambridgeScienceFestival2024 />} />
+        <Route path="/blog/outreach/edgertoncentersh owcase" element={<EdgertonCenterShowcase />} />
+        <Route path="/blog/outreach/healthoftheplanet" element={<HealthOfThePlanet />} />
+        <Route path="/blog/outreach/mitcorp" element={<MITCorp />} />
+        <Route path="/blog/outreach/wecodeharvardconference" element={<WeCodeHarvardConference />} />
       </Routes>
     </Layout>
   )

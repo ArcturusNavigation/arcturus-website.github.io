@@ -64,7 +64,17 @@ const Team = () => {
     'Daniel Kim',
     'Brian Xue',
     'Sara Koshi',
-    'Jesse Yang'
+    'Jesse Yang',
+    'Vincent Zheng',
+    'Alex Franks',
+    'Nico Bennett',
+    'Arthur De Los Santos',
+    'Youry Moise',
+    'Ashlinn Stoneking',
+    'Jason Yang',
+    'Tyler Proctor',
+    'Toya Takahashi',
+    'Jia Li'
   ]
 
   const electricalMembers = [
@@ -143,7 +153,7 @@ const Team = () => {
           </h2>
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 max-w-5xl mx-auto">
-            {autonomyMembers.map((member, index) => (
+            {autonomyMembers.sort().map((member, index) => (
               <div key={index} className="text-center">
                 <p className="text-lg text-text">{member}</p>
               </div>
@@ -160,7 +170,7 @@ const Team = () => {
           </h2>
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 max-w-5xl mx-auto">
-            {electricalMembers.map((member, index) => (
+            {electricalMembers.sort().map((member, index) => (
               <div key={index} className="text-center">
                 <p className="text-lg text-text">{member}</p>
               </div>
@@ -177,7 +187,7 @@ const Team = () => {
           </h2>
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 max-w-5xl mx-auto">
-            {mechanicalMembers.map((member, index) => (
+            {mechanicalMembers.sort().map((member, index) => (
               <div key={index} className="text-center">
                 <p className="text-lg text-text">{member}</p>
               </div>
