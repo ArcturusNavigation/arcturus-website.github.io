@@ -43,23 +43,12 @@ const Header = () => {
             Team Members
           </Link>
 
-          <div className="relative group">
-            <button className="text-white hover:text-primary-light flex items-center gap-1">
-              Technical Work
-              <i className="bi bi-chevron-down text-xs"></i>
-            </button>
-            <div className="absolute top-full left-0 mt-1 bg-white rounded shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-opacity duration-150 min-w-[160px]">
-              <Link to="/blog/autonomy" className="block px-4 py-2 text-text-dark hover:bg-gray-100">
-                Autonomy
-              </Link>
-              <Link to="/blog/mechanical" className="block px-4 py-2 text-text-dark hover:bg-gray-100">
-                Mechanical
-              </Link>
-              <Link to="/blog/electrical" className="block px-4 py-2 text-text-dark hover:bg-gray-100">
-                Electrical
-              </Link>
-            </div>
-          </div>
+          <Link
+            to="/blog/fish-n-ships"
+            className={`text-white hover:text-primary-light transition-colors ${isActive('/blog/fish-n-ships') ? 'text-primary-light' : ''}`}
+          >
+            Technical Work
+          </Link>
 
           <div className="relative group">
             <button className="text-white hover:text-primary-light flex items-center gap-1">
@@ -134,27 +123,12 @@ const Header = () => {
             >
               Team Members
             </Link>
-            <div className="px-6 py-2 text-sm text-gray-500 font-semibold">Technical Work</div>
             <Link
-              to="/blog/autonomy"
-              className="px-8 py-2 text-text hover:bg-gray-100"
+              to="/blog/fish-n-ships"
+              className="px-6 py-2.5 text-text hover:bg-gray-100"
               onClick={() => setMobileMenuOpen(false)}
             >
-              Autonomy
-            </Link>
-            <Link
-              to="/blog/mechanical"
-              className="px-8 py-2 text-text hover:bg-gray-100"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              Mechanical
-            </Link>
-            <Link
-              to="/blog/electrical"
-              className="px-8 py-2 text-text hover:bg-gray-100"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              Electrical
+              Technical Work
             </Link>
             <div className="px-6 py-2 text-sm text-gray-500 font-semibold">Past Seasons</div>
             <Link
