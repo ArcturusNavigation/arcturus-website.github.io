@@ -29,6 +29,13 @@ const Header = () => {
           </Link>
 
           <Link
+            to="/about"
+            className={`text-white hover:text-primary-light transition-colors ${isActive('/about') ? 'text-primary-light' : ''}`}
+          >
+            About Us
+          </Link>
+
+          <Link
             to="/team"
             className={`text-white hover:text-primary-light transition-colors ${isActive('/team') ? 'text-primary-light' : ''}`}
           >
@@ -102,6 +109,13 @@ const Header = () => {
               onClick={() => setMobileMenuOpen(false)}
             >
               Home
+            </Link>
+            <Link
+              to="/about"
+              className="px-6 py-2.5 text-text hover:bg-gray-100"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              About Us
             </Link>
             <Link
               to="/team"

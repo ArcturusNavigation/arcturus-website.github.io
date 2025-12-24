@@ -1,7 +1,17 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import Carousel from '../components/Carousel'
 
 const Home = () => {
+  const fishNShipsImages = [
+    { src: '/Pictures/fishnships_florida.jpg', alt: 'Fish N Ships in Florida' },
+    { src: '/Pictures/fishnships_pool.jpg', alt: 'Fish N Ships in Pool' },
+    { src: '/Pictures/fishnships_splash.jpg', alt: 'Fish N Ships Splash' },
+    { src: '/Pictures/fishnships1.jpg', alt: 'Fish N Ships 1' },
+    { src: '/Pictures/fishnships2.jpg', alt: 'Fish N Ships 2' },
+    { src: '/Pictures/fishnships3.jpg', alt: 'Fish N Ships 3' }
+  ]
+
   return (
     <div>
       {/* Hero Section with Video */}
@@ -78,11 +88,7 @@ const Home = () => {
                 </Link>
               </div>
               <div className="lg:w-5/12 order-1 lg:order-2">
-                <div id="carouselExampleFade" className="relative overflow-hidden rounded-lg shadow-lg">
-                  <div className="carousel-inner">
-                    <img src="/Pictures/fishnships_florida.jpg" className="w-full" alt="Fish N Ships in Florida" />
-                  </div>
-                </div>
+                <Carousel images={fishNShipsImages} autoPlayInterval={4000} />
               </div>
             </div>
           </div>
