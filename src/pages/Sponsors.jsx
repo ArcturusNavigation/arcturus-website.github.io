@@ -12,11 +12,11 @@ const Sponsors = () => {
       logo: '/Pictures/Sponsors/mit-meche-logo.jpg',
       url: 'https://meche.mit.edu/'
     },
-    {
-      name: 'MIT EECS',
-      logo: '/Pictures/Sponsors/eecslogo.png',
-      url: 'https://www.eecs.mit.edu/'
-    },
+    // {
+    //   name: 'MIT EECS',
+    //   logo: '/Pictures/Sponsors/eecslogo.png',
+    //   url: 'https://www.eecs.mit.edu/'
+    // },
     {
       name: 'Saronic',
       logo: '/Pictures/Sponsors/saronic.jpg',
@@ -28,15 +28,30 @@ const Sponsors = () => {
       url: 'https://www.cadence.com/en_US/home.html'
     },
     {
+      name: 'Anduril',
+      logo: '/Pictures/Sponsors/anduril.png',
+      url: 'https://www.anduril.com/'
+    },
+    {
+      name: 'Gordon-MIT Engineering Leadership',
+      logo: '/Pictures/Sponsors/gel.jpg',
+      url: 'https://gel.mit.edu/'
+    },
+    {
       name: 'Sea Grant',
-      logo: '/Pictures/Sponsors/seagrant-logo.png',
+      logo: '/Pictures/Sponsors/seagrant.png',
       url: 'https://seagrant.noaa.gov/'
     },
     {
-      name: 'MIT Coop',
-      logo: '/Pictures/Sponsors/mit-coop-logo.png',
-      url: 'https://www.thecoop.com/coopstore/estore_home.jsp'
+      name: 'Ansys',
+      logo: '/Pictures/Sponsors/ansys.png',
+      url: 'https://www.ansys.com/'
     },
+    // {
+    //   name: 'MIT Coop',
+    //   logo: '/Pictures/Sponsors/mit-coop-logo.png',
+    //   url: 'https://www.thecoop.com/coopstore/estore_home.jsp'
+    // },
     {
       name: 'Formlabs',
       logo: '/Pictures/Sponsors/formlabs-logo.png',
@@ -44,14 +59,14 @@ const Sponsors = () => {
     },
     {
       name: 'PTC',
-      logo: '/Pictures/Sponsors/ptc-logo.jpg',
+      logo: '/Pictures/Sponsors/ptc.png',
       url: 'https://www.ptc.com/en/'
     },
-    {
-      name: 'MIT OME',
-      logo: '/Pictures/Sponsors/mit-ome-logo.jpg',
-      url: 'https://ome.mit.edu/'
-    }
+    // {
+    //   name: 'MIT OME',
+    //   logo: '/Pictures/Sponsors/mit-ome-logo.jpg',
+    //   url: 'https://ome.mit.edu/'
+    // }
   ]
 
   return (
