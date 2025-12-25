@@ -5,6 +5,7 @@ import Home from './pages/Home'
 import Team from './pages/Team'
 import About from './pages/About'
 import Sponsors from './pages/Sponsors'
+import PastSeasons from './pages/PastSeasons'
 import BlogAutonomy from './pages/blog/Autonomy'
 import BlogMechanical from './pages/blog/Mechanical'
 import BlogElectrical from './pages/blog/Electrical'
@@ -54,6 +55,7 @@ function App() {
         <Route path="/team" element={<Team />} />
         <Route path="/about" element={<About />} />
         <Route path="/sponsors" element={<Sponsors />} />
+        <Route path="/past-seasons" element={<PastSeasons />} />
         <Route path="/blog/autonomy" element={<BlogAutonomy />} />
         <Route path="/blog/mechanical" element={<BlogMechanical />} />
         <Route path="/blog/electrical" element={<BlogElectrical />} />

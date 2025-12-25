@@ -50,20 +50,12 @@ const Header = () => {
             Technical Work
           </Link>
 
-          <div className="relative group">
-            <button className="text-white hover:text-primary-light flex items-center gap-1">
-              Past Seasons
-              <i className="bi bi-chevron-down text-xs"></i>
-            </button>
-            <div className="absolute top-full left-0 mt-1 bg-white rounded shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-opacity duration-150 min-w-[160px]">
-              <Link to="/blog/year-22" className="block px-4 py-2 text-text-dark hover:bg-gray-100">
-                2021-2022
-              </Link>
-              <Link to="/blog/year-23" className="block px-4 py-2 text-text-dark hover:bg-gray-100">
-                2022-2023
-              </Link>
-            </div>
-          </div>
+          <Link
+            to="/past-seasons"
+            className={`text-white hover:text-primary-light transition-colors ${isActive('/past-seasons') ? 'text-primary-light' : ''}`}
+          >
+            Past Seasons
+          </Link>
 
           <Link
             to="/blog/outreach"
@@ -130,20 +122,12 @@ const Header = () => {
             >
               Technical Work
             </Link>
-            <div className="px-6 py-2 text-sm text-gray-500 font-semibold">Past Seasons</div>
             <Link
-              to="/blog/year-22"
-              className="px-8 py-2 text-text hover:bg-gray-100"
+              to="/past-seasons"
+              className="px-6 py-2.5 text-text hover:bg-gray-100"
               onClick={() => setMobileMenuOpen(false)}
             >
-              2021-2022
-            </Link>
-            <Link
-              to="/blog/year-23"
-              className="px-8 py-2 text-text hover:bg-gray-100"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              2022-2023
+              Past Seasons
             </Link>
             <Link
               to="/blog/outreach"

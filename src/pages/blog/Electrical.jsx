@@ -26,6 +26,15 @@ const Electrical = () => {
   return (
     <div className="py-12">
       <div className="container mx-auto px-4">
+        <div className="mb-6">
+          <Link
+            to="/blog/fish-n-ships"
+            className="inline-flex items-center text-primary hover:text-secondary transition-colors"
+          >
+            <i className="bi bi-arrow-left mr-2"></i>
+            Back to Technical Work
+          </Link>
+        </div>
         <div className="text-center mb-8">
           <h1 className="text-4xl font-heading font-bold text-primary mb-4">
             Electrical Engineering

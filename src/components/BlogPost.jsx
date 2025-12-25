@@ -1,11 +1,14 @@
 import React, { useState, useEffect } from 'react'
+import { Link, useNavigate } from 'react-router-dom'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
+import rehypeRaw from 'rehype-raw'
 
 const BlogPost = ({ markdownPath }) => {
   const [content, setContent] = useState('')
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(null)
+  const navigate = useNavigate()
 
   useEffect(() => {
     setLoading(true)
@@ -52,10 +55,20 @@ const BlogPost = ({ markdownPath }) => {
   return (
     <div className="py-12">
       <div className="container mx-auto px-4 max-w-4xl">
+        <div className="mb-6">
+          <button
+            onClick={() => navigate(-1)}
+            className="inline-flex items-center text-primary hover:text-secondary transition-colors"
+          >
+            <i className="bi bi-arrow-left mr-2"></i>
+            Back
+          </button>
+        </div>
         <div className="bg-white rounded-lg shadow-md p-8">
           <div className="prose prose-lg max-w-none">
             <ReactMarkdown
               remarkPlugins={[remarkGfm]}
+              rehypePlugins={[rehypeRaw]}
               components={{
                 img: ({node, ...props}) => (
                   <img
