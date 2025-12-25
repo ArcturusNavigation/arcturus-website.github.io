@@ -1,0 +1,4 @@
+12/24/25
+- proper 404 page
+- fix cards on outreach page
+- clean up past seasons

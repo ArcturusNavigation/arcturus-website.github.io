@@ -38,7 +38,7 @@ const FishNShips = () => {
               className="w-full max-w-2xl rounded-lg shadow-lg"
             />
           </div>
-          <div className="space-y-6">
+          <div className="space-y-6 text-center">
             <p className="text-lg text-text">
               <em>Fish 'N Ships</em> is the autonomous surface vehicle (ASV) Arcturus has designed for the 2025 RoboBoat
               competition. The vessel features a catamaran hull with four thrusters in an X-drive configuration for

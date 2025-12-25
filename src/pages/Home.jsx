@@ -57,7 +57,8 @@ const Home = () => {
               </p>
               <Link
                 to="/about"
-                className="inline-block bg-gray-600 hover:bg-gray-700 text-white px-6 py-3 rounded-lg text-lg transition-colors"
+                className="inline-flex items-center justify-center rounded-md bg-primary px-6 py-3 text-white font-semibold hover:bg-primary-light transition-colors"
+                // className="inline-block bg-gray-600 hover:bg-gray-700 text-white px-6 py-3 rounded-lg text-lg transition-colors"
               >
                 About Us
               </Link>
@@ -81,7 +82,8 @@ const Home = () => {
               </p>
               <Link
                 to="/technical-work"
-                className="inline-block bg-gray-600 hover:bg-gray-700 text-white px-6 py-3 rounded-lg text-lg transition-colors"
+                // className="inline-block bg-gray-600 hover:bg-gray-700 text-white px-6 py-3 rounded-lg text-lg transition-colors"
+                className="inline-flex items-center justify-center rounded-md bg-primary px-6 py-3 text-white font-semibold hover:bg-primary-light transition-colors"
               >
                 Learn More
               </Link>
