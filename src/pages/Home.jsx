@@ -99,7 +99,7 @@ const Home = () => {
 
       {/* Our Design Process Section */}
       <section className="py-12">
-        <div className="container mx-auto max-w-8xl px-4">
+        <div className="container mx-auto max-w-7xl px-4">
           <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary text-center mb-12">
             Our Design Process
           </h2>
@@ -107,11 +107,12 @@ const Home = () => {
             {/* Autonomy Card */}
             <Link to="/blog/autonomy" className="block group">
               <div className="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow overflow-hidden h-full">
-                <div className="aspect-video w-full overflow-hidden">
+                <div className="p-8 flex justify-center">
                   <img
                     src="/Pictures/testing_fall2024.jpg"
                     alt="Autonomy"
-                    className="w-full h-full object-cover"
+                    className="max-w-full h-auto object-contain"
+                    style={{ maxHeight: '220px' }}
                   />
                 </div>
                 <div className="px-6 pb-6 pt-4">
@@ -128,11 +129,12 @@ const Home = () => {
             {/* Electrical Card */}
             <Link to="/blog/electrical" className="block group">
               <div className="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow overflow-hidden h-full">
-                <div className="aspect-video w-full overflow-hidden">
+                <div className="p-8 flex justify-center">
                   <img
                     src="/Pictures/Blogs/bms.png"
                     alt="Electrical"
-                    className="w-full h-full object-cover"
+                    className="max-w-full h-auto object-contain"
+                    style={{ maxHeight: '220px' }}
                   />
                 </div>
                 <div className="px-6 pb-6 pt-4">
@@ -149,11 +151,12 @@ const Home = () => {
             {/* Mechanical Card */}
             <Link to="/blog/mechanical" className="block group">
               <div className="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow overflow-hidden h-full">
-                <div className="aspect-video w-full overflow-hidden">
+                <div className="p-8 flex justify-center">
                   <img
                     src="/Pictures/boat_cad.jpg"
                     alt="Mechanical"
-                    className="w-full h-full object-cover"
+                    className="max-w-full h-auto object-contain"
+                    style={{ maxHeight: '220px' }}
                   />
                 </div>
                 <div className="px-6 pb-6 pt-4">

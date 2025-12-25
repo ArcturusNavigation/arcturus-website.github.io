@@ -54,9 +54,9 @@ const FishNShips = () => {
         </div>
 
         <div className="mt-12 text-center">
-          <h4 className="text-xl text-text">
-            Click on the cards below to explore each subteam&apos;s technical blogs.
-          </h4>
+          <h1 className="text-4xl font-heading font-bold text-primary text-center mb-10">
+            Subteam Technical Blogs
+          </h1>
         </div>
 
         <div className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">

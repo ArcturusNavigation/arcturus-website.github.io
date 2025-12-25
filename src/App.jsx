@@ -1,5 +1,5 @@
-import React from 'react'
-import { Routes, Route } from 'react-router-dom'
+import { useEffect } from 'react'
+import { Routes, Route, useLocation } from 'react-router-dom'
 import Layout from './components/Layout'
 import Home from './pages/Home'
 import Team from './pages/Team'
@@ -48,6 +48,12 @@ import MITCorp from './pages/blog/outreach/mitcorp'
 import WeCodeHarvardConference from './pages/blog/outreach/wecodeharvardconference'
 
 function App() {
+  const location = useLocation()
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [location.pathname])
+
   return (
     <Layout>
       <Routes>
