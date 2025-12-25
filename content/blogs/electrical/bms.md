@@ -1,4 +1,4 @@
-# Battery Management System
+# Battery Management System (BMS)
 
 Our previous vehicle used a commercially-available BMS that was bulky and difficult to interface with. To resolve this we designed a custom board that performs current, cell voltage, and thermal measurements. It is also able to cut off battery power with a transistor in the case of an emergency, functionality which was previously implemented by a separate device.
 
