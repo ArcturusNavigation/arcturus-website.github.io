@@ -23,6 +23,7 @@ lerna-debug.log*
 *.njsproj
 *.sln
 *.sw?
+.claude
 
 # Environment variables
 .env
