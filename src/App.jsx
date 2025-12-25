@@ -19,7 +19,7 @@ function App() {
   const location = useLocation()
 
   useEffect(() => {
-    window.scrollTo(0, 0)
+    window.scrollTo({ top: 0, behavior: 'instant' })
   }, [location.pathname])
 
   return (

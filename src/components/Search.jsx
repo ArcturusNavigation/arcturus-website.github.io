@@ -1,8 +1,8 @@
-import React, { useState, useEffect, useRef } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { useNavigate } from 'react-router-dom'
 import Fuse from 'fuse.js'
 import { Search as SearchIcon, X } from 'lucide-react'
-import { searchIndex } from '../searchIndex'
+import { categoryBlogs } from '../config/blogPosts'
 
 const Search = ({ mobile = false }) => {
   const [query, setQuery] = useState('')
@@ -10,28 +10,173 @@ const Search = ({ mobile = false }) => {
   const [isOpen, setIsOpen] = useState(false)
   const [isExpanded, setIsExpanded] = useState(false)
   const [selectedIndex, setSelectedIndex] = useState(0)
+  const [searchIndex, setSearchIndex] = useState([])
   const searchRef = useRef(null)
   const inputRef = useRef(null)
   const navigate = useNavigate()
+  const fuse = useRef(null)
 
-  // Initialize Fuse.js with search options
-  const fuse = useRef(
-    new Fuse(searchIndex, {
-      keys: [
-        { name: 'title', weight: 2 },
-        { name: 'content', weight: 1 },
-        { name: 'keywords', weight: 1.5 },
-        { name: 'category', weight: 0.5 }
-      ],
-      threshold: 0.4,
-      includeScore: true,
-      minMatchCharLength: 2
-    })
-  )
+  // Build dynamic search index from blog posts and markdown content
+  useEffect(() => {
+    const buildSearchIndex = async () => {
+      const index = []
+
+      // Add main static pages
+      index.push(
+        {
+          title: 'Home',
+          path: '/',
+          category: 'Main',
+          content: 'Arcturus MIT autonomous robotics team autonomous surface vehicles ASV Fish N Ships catamaran design process autonomy electrical mechanical',
+          keywords: ['home', 'arcturus', 'mit', 'robotics', 'asv', 'autonomous']
+        },
+        {
+          title: 'About Us',
+          path: '/about',
+          category: 'Main',
+          content: 'About Arcturus MIT autonomous robotics team history mission vision',
+          keywords: ['about', 'team', 'mission', 'vision', 'history']
+        },
+        {
+          title: 'Team Members',
+          path: '/team',
+          category: 'Main',
+          content: 'Team members students engineers developers autonomy electrical mechanical leadership',
+          keywords: ['team', 'members', 'students', 'people']
+        },
+        {
+          title: 'Sponsors',
+          path: '/sponsors',
+          category: 'Main',
+          content: 'Sponsors partners supporters funding donations companies organizations',
+          keywords: ['sponsors', 'partners', 'funding', 'support']
+        },
+        {
+          title: 'Past Seasons',
+          path: '/past-seasons',
+          category: 'Main',
+          content: 'Past seasons competition history development challenges achievements',
+          keywords: ['past', 'seasons', 'history', 'competition']
+        }
+      )
+
+      // Add category pages
+      index.push(
+        {
+          title: 'Autonomy',
+          path: '/blog/autonomy',
+          category: 'Technical Work',
+          content: 'Autonomy navigation perception localization path planning controller computer vision sensors algorithms',
+          keywords: ['autonomy', 'navigation', 'ai', 'sensors', 'perception', 'localization', 'path planning']
+        },
+        {
+          title: 'Mechanical',
+          path: '/blog/mechanical',
+          category: 'Technical Work',
+          content: 'Mechanical design manufacturing hulls propulsion mechanisms CAD prototyping machining',
+          keywords: ['mechanical', 'design', 'manufacturing', 'hulls', 'propulsion', 'cad']
+        },
+        {
+          title: 'Electrical',
+          path: '/blog/electrical',
+          category: 'Technical Work',
+          content: 'Electrical electronics PCB circuit boards wiring power systems battery management',
+          keywords: ['electrical', 'electronics', 'pcb', 'circuits', 'power', 'battery']
+        },
+        {
+          title: 'Outreach',
+          path: '/blog/outreach',
+          category: 'Outreach',
+          content: 'Outreach community events education demonstrations workshops science festivals',
+          keywords: ['outreach', 'community', 'events', 'education', 'demos']
+        },
+        {
+          title: 'Fish N Ships',
+          path: '/technical-work',
+          category: 'Vessels',
+          content: 'Fish N Ships competition vessel catamaran x-drive thrusters design build',
+          keywords: ['fish n ships', 'vessel', 'catamaran', 'boat', 'competition']
+        }
+      )
+
+      // Fetch and parse markdown content for each blog post
+      for (const [categoryName, posts] of Object.entries(categoryBlogs)) {
+        for (const post of posts) {
+          try {
+            const response = await fetch(post.markdownPath)
+            if (response.ok) {
+              const markdown = await response.text()
+
+              // Extract text content from markdown (remove markdown syntax)
+              const textContent = markdown
+                .replace(/!\[.*?\]\(.*?\)/g, '') // Remove images
+                .replace(/\[([^\]]+)\]\([^\)]+\)/g, '$1') // Remove links but keep text
+                .replace(/#{1,6}\s/g, '') // Remove headers
+                .replace(/[*_~`]/g, '') // Remove formatting
+                .replace(/\n+/g, ' ') // Replace newlines with spaces
+                .trim()
+
+              // Generate keywords from title and description
+              const keywords = [
+                post.title.toLowerCase(),
+                ...(post.description || '').toLowerCase().split(' '),
+                categoryName
+              ].filter(k => k.length > 2)
+
+              index.push({
+                title: post.title,
+                path: post.link || post.url,
+                category: categoryName.charAt(0).toUpperCase() + categoryName.slice(1),
+                content: `${post.title} ${post.description || ''} ${textContent.slice(0, 500)}`,
+                keywords: keywords
+              })
+            }
+          } catch (error) {
+            // If markdown fetch fails, still add basic info
+            console.warn(`Failed to fetch markdown for ${post.title}:`, error)
+            const keywords = [
+              post.title.toLowerCase(),
+              ...(post.description || '').toLowerCase().split(' '),
+              categoryName
+            ].filter(k => k.length > 2)
+
+            index.push({
+              title: post.title,
+              path: post.link || post.url,
+              category: categoryName.charAt(0).toUpperCase() + categoryName.slice(1),
+              content: `${post.title} ${post.description || ''}`,
+              keywords: keywords
+            })
+          }
+        }
+      }
+
+      setSearchIndex(index)
+    }
+
+    buildSearchIndex()
+  }, [])
+
+  // Initialize Fuse.js when search index is ready
+  useEffect(() => {
+    if (searchIndex.length > 0) {
+      fuse.current = new Fuse(searchIndex, {
+        keys: [
+          { name: 'title', weight: 2 },
+          { name: 'content', weight: 1 },
+          { name: 'keywords', weight: 1.5 },
+          { name: 'category', weight: 0.5 }
+        ],
+        threshold: 0.4,
+        includeScore: true,
+        minMatchCharLength: 2
+      })
+    }
+  }, [searchIndex])
 
   // Handle search input
   useEffect(() => {
-    if (query.trim().length >= 2) {
+    if (query.trim().length >= 2 && fuse.current) {
       const searchResults = fuse.current.search(query)
       setResults(searchResults.slice(0, 8)) // Limit to 8 results
       setIsOpen(true)
@@ -40,7 +185,7 @@ const Search = ({ mobile = false }) => {
       setResults([])
       setIsOpen(false)
     }
-  }, [query])
+  }, [query, searchIndex])
 
   // Handle click outside to close
   useEffect(() => {

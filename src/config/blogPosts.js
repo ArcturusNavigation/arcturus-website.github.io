@@ -80,7 +80,7 @@ export const categoryBlogs = {
   ],
   electrical: [
     {
-      title: 'Battery Management System',
+      title: 'Battery Management System (BMS)',
       image: '/Pictures/Blogs/bms.png',
       description: 'Power distribution and battery monitoring system',
       link: '/blog/electrical/bms',
