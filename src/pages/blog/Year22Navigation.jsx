@@ -13,7 +13,7 @@ const Year22Navigation = () => {
             to="/blog/year-22"
             className="px-6 py-3 text-text hover:text-primary transition-colors"
           >
-            Back to 2022-2023 Season
+            Back to 2021-2022 Season
           </Link>
         </div>
 
@@ -69,7 +69,7 @@ const Year22Navigation = () => {
             to="/blog/year-22"
             className="px-6 py-3 text-text hover:text-primary transition-colors"
           >
-            Back to 2022-2023 Season
+            Back to 2021-2022 Season
           </Link>
         </div>
       </div>
