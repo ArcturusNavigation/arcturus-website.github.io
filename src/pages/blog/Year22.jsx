@@ -46,8 +46,8 @@ const Year22 = () => {
           </div>
           <div className="space-y-6 text-center">
             <p className="text-lg text-text">
-              <em>CatamaROV</em> was the autonomous surface vehicle (ASV) Arcturus designed for the 2022 RoboBoat
-              competition. This was one of our first iterations featuring a catamaran hull with azimuthal thrusters
+              <em>Ship Happens</em> was the autonomous surface vehicle (ASV) Arcturus designed for the 2022 RoboBoat
+              competition. This was our first vehicle featuring a catamaran hull with azimuth thrusters
               (azipods) for enhanced maneuverability and control during navigation tasks.
             </p>
             <a
@@ -92,6 +92,23 @@ const Year22 = () => {
               </div>
             </Link>
           ))}
+        </div>
+
+        <div className="flex justify-between items-center mt-12 max-w-6xl mx-auto">
+          <div style={{ width: '200px' }}></div>
+          <Link
+            to="/past-seasons"
+            className="px-6 py-3 text-text hover:text-primary transition-colors text-center"
+          >
+            Back to Past Seasons
+          </Link>
+          <Link
+            to="/blog/year-23"
+            className="px-6 py-3 text-text hover:text-primary transition-colors"
+            style={{ width: '200px', textAlign: 'right' }}
+          >
+            Next Season →
+          </Link>
         </div>
       </div>
     </div>

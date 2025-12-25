@@ -1,10 +1,21 @@
+import { Link } from 'react-router-dom'
+
 const Year22Navigation = () => {
   return (
     <div className="py-12 bg-gray-50">
       <div className="container mx-auto px-4">
         <h1 className="text-4xl font-heading font-bold text-primary text-center mb-8">
-          Navigation Team Blog - 2022 Season
+          Navigation Team Blog
         </h1>
+
+        <div className="flex justify-center mb-8">
+          <Link
+            to="/blog/year-22"
+            className="px-6 py-3 text-text hover:text-primary transition-colors"
+          >
+            Back to 2022-2023 Season
+          </Link>
+        </div>
 
         <div className="max-w-4xl mx-auto space-y-12">
           {/* Buoy Detection */}
@@ -51,6 +62,15 @@ const Year22Navigation = () => {
               </p>
             </div>
           </article>
+        </div>
+
+        <div className="flex justify-center mt-12">
+          <Link
+            to="/blog/year-22"
+            className="px-6 py-3 text-text hover:text-primary transition-colors"
+          >
+            Back to 2022-2023 Season
+          </Link>
         </div>
       </div>
     </div>

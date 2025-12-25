@@ -46,7 +46,7 @@ const Year23 = () => {
           </div>
           <div className="space-y-6 text-center">
             <p className="text-lg text-text">
-              <em>Ship Happens</em> is the autonomous surface vehicle (ASV) Arcturus designed for the 2023 RoboBoat
+              Arcturus continued to develop <em>Ship Happens</em> for the 2023 RoboBoat
               competition and the Njord Challenge. The team also developed <em>Athena</em>, a smaller test boat that
               served as a testing platform while Ship Happens was being repaired.
             </p>
@@ -102,6 +102,23 @@ const Year23 = () => {
               </div>
             </Link>
           ))}
+        </div>
+
+        <div className="flex justify-between items-center mt-12 max-w-6xl mx-auto">
+          <Link
+            to="/blog/year-22"
+            className="px-6 py-3 text-text hover:text-primary transition-colors"
+            style={{ width: '200px', textAlign: 'left' }}
+          >
+            ← Previous Season
+          </Link>
+          <Link
+            to="/past-seasons"
+            className="px-6 py-3 text-text hover:text-primary transition-colors text-center"
+          >
+            Back to Past Seasons
+          </Link>
+          <div style={{ width: '200px' }}></div>
         </div>
       </div>
     </div>

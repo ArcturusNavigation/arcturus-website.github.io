@@ -4,16 +4,16 @@ import { Link } from 'react-router-dom'
 const PastSeasons = () => {
   const seasons = [
     {
-      title: '2022-2023 Season',
-      image: '/Pictures/roboboat2023_team.jpg',
-      link: '/blog/year-23',
-      year: '2022-2023'
-    },
-    {
       title: '2021-2022 Season',
       image: '/Pictures/comp_grouppic_2022.jpg',
       link: '/blog/year-22',
       year: '2021-2022'
+    },
+    {
+      title: '2022-2023 Season',
+      image: '/Pictures/roboboat2023_team.jpg',
+      link: '/blog/year-23',
+      year: '2022-2023'
     }
   ]
 
