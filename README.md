@@ -26,85 +26,17 @@ Production files will be in the `dist/` directory
 npm run preview
 ```
 
-## Tech Stack
-
-- **React 18.3.1**: UI library
-- **Tailwind CSS 3.4.13**: Utility-first CSS framework
-- **Vite 5.4.11**: Build tool and dev server
-- **React Router DOM 6.23.1**: Client-side routing
-- **React Markdown 9.0.3**: Markdown rendering for blog posts
-
-## Project Structure
-
-```
-arcturus-website.github.io/
-├── src/
-│   ├── components/          # Reusable components
-│   │   ├── Layout.jsx       # Main layout wrapper
-│   │   ├── Header.jsx       # Navigation header
-│   │   ├── Footer.jsx       # Site footer
-│   │   ├── NotificationBar.jsx  # Top notification banner
-│   │   └── BackToTop.jsx    # Scroll to top button
-│   ├── pages/              # Page components
-│   │   ├── Home.jsx        # Homepage
-│   │   ├── Team.jsx        # Team members page
-│   │   ├── About.jsx       # About page
-│   │   ├── Sponsors.jsx    # Sponsors page
-│   │   └── blog/           # Blog pages
-│   ├── assets/css/
-│   │   └── index.css       # Global styles + Tailwind
-│   ├── App.jsx             # Main app component with routing
-│   └── main.jsx            # Application entry point
-├── Pictures/               # Static assets (images, videos)
-├── package.json
-├── vite.config.js
-├── tailwind.config.js
-└── postcss.config.js
-```
-
-## Making Changes
-
-### Add a New Page
-
-1. Create a new component in `src/pages/`:
-```jsx
-import React from 'react'
-
-const NewPage = () => {
-  return (
-    <div className="py-12">
-      <div className="container mx-auto px-4">
-        <h1 className="text-4xl font-heading font-bold text-primary text-center mb-8">
-          Page Title
-        </h1>
-        {/* Your content here */}
-      </div>
-    </div>
-  )
-}
-
-export default NewPage
-```
-
-2. Add route in `src/App.jsx`:
-```jsx
-import NewPage from './pages/NewPage'
-
-// In the Routes component:
-<Route path="/new-page" element={<NewPage />} />
-```
-
-3. Add navigation link in `src/components/Header.jsx`
+## Project Details
 
 ### Add a Blog Post
 
-1. Create component in `src/pages/blog/YourPost.jsx`
-2. Add route in `App.jsx`
-3. Add link in Header dropdown
+1. Put markdown file with blog in `public/content/blogs/subteam/blog-name.md`
+2. Create component in `src/pages/blog/subteam/blog-name.jsx` for the blog card
+3. Add blog to respective subteam's page in `src/pages/blog/Subteam.jsx`
 
 ### Add Images
 
-Place images in `/Pictures/` and reference them with `/Pictures/filename.jpg`
+Place images in `/public/Pictures/` and reference them with `/Pictures/filename.jpg`
 
 ### Styling Guidelines
 
@@ -129,29 +61,7 @@ Custom fonts:
 
 ## Deployment
 
-### GitHub Pages
-
-1. Build the production version: `npm run build`
-2. The `dist/` folder contains your production-ready site
-3. Add a `404.html` file that redirects to `index.html` for client-side routing support
-4. Configure GitHub Actions to deploy from the `dist/` folder
-
-### Other Hosting
-
-1. Build: `npm run build`
-2. Copy contents of `dist/` to your web server root
-3. Configure server to redirect all routes to `index.html` (for client-side routing)
-
-## Features
-
-- Modern React component architecture
-- Responsive navigation with mobile hamburger menu
-- Active link highlighting
-- Blog system with multiple categories
-- Team and sponsor pages
-- Hero video and YouTube embeds
-- Image carousels
-- Smooth scrolling and back-to-top functionality
+Run `npm run deploy`. This generates `dist/` folder which contains the build and pushes the contents to the branch `gh-pages`. GH pages is setup to deploy from that branch to `arcturus.mit.edu`. 
 
 ## Resources
 
