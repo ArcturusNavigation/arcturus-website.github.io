@@ -21,7 +21,7 @@ const Year23 = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="block bg-white rounded-lg shadow-lg overflow-hidden">
               <img
-                src="/pictures/Blogs/VehicleIcon_ShipHappens.png"
+                src="/Pictures/Blogs/VehicleIcon_ShipHappens.png"
                 alt="Ship Happens"
                 className="w-full h-64 object-contain p-8"
               />
@@ -35,7 +35,7 @@ const Year23 = () => {
 
             <div className="block bg-white rounded-lg shadow-lg overflow-hidden">
               <img
-                src="/pictures/Blogs/VehicleIcon_Athena.png"
+                src="/Pictures/Blogs/VehicleIcon_Athena.png"
                 alt="Athena"
                 className="w-full h-64 object-contain p-8"
               />
@@ -109,7 +109,7 @@ const Year23 = () => {
               {/* Buoy Detection */}
               <article className="border-b pb-8">
                 <img
-                  src="/pictures/Blogs/navigation_11.png"
+                  src="/Pictures/Blogs/navigation_11.png"
                   alt="Buoy Detection"
                   className="w-full max-w-md mx-auto mb-4 rounded-lg"
                 />
@@ -134,7 +134,7 @@ const Year23 = () => {
               {/* Path Planning */}
               <article>
                 <img
-                  src="/pictures/Blogs/navigation_1.png"
+                  src="/Pictures/Blogs/navigation_1.png"
                   alt="Path Planning"
                   className="w-full mb-4 rounded-lg"
                 />

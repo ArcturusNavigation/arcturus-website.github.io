@@ -1652,7 +1652,7 @@ p {
   background-color: red;
 }
 .parallax-img {
-  background-image: url("../../pictures/team-pic-2023.jpg");
+  background-image: url("../../Pictures/team-pic-2023.jpg");
   height: 100px;
   width: 100vw;
   height: calc(100vw / 1.8561);

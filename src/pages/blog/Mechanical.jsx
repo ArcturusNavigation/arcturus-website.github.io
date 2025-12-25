@@ -5,31 +5,31 @@ const Mechanical = () => {
   const subsystems = [
     {
       title: 'Hulls',
-      image: '/pictures/Blogs/hulls2.png',
+      image: '/Pictures/Blogs/hulls2.png',
       description: 'Foundation of our boat',
       link: '/blog/mechanical/hulls'
     },
     {
       title: 'Propulsion/Thruster Cages',
-      image: '/pictures/Blogs/propulsion.png',
+      image: '/Pictures/Blogs/propulsion.png',
       description: 'Driving force of our boat',
       link: '/blog/mechanical/propulsion'
     },
     {
       title: 'EE Box',
-      image: '/pictures/Blogs/eebox3.png',
+      image: '/Pictures/Blogs/eebox3.png',
       description: 'Electronics protector',
       link: '/blog/mechanical/eebox'
     },
     {
       title: 'Sensor Mast',
-      image: '/pictures/Blogs/sensormast2.png',
+      image: '/Pictures/Blogs/sensormast2.png',
       description: 'Mounting point for sensors',
       link: '/blog/mechanical/sensormast'
     },
     {
       title: 'Mechanisms',
-      image: '/pictures/Blogs/mechanism.jpg',
+      image: '/Pictures/Blogs/mechanism.jpg',
       description: 'Allow for robotic functions',
       link: '/blog/mechanical/mechanisms'
     }

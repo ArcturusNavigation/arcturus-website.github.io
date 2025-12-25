@@ -9,7 +9,7 @@ const About = () => {
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div className="flex justify-center">
               <img
-                src="/pictures/team_1_2024.jpg"
+                src="/Pictures/team_1_2024.jpg"
                 alt="Arcturus Team 2024"
                 className="rounded-lg shadow-lg w-full"
               />
@@ -60,7 +60,7 @@ const About = () => {
 
             <div className="order-1 md:order-2 flex justify-center">
               <img
-                src="/pictures/testing2_fall2024.jpg"
+                src="/Pictures/testing2_fall2024.jpg"
                 alt="Testing Fall 2024"
                 className="rounded-lg shadow-lg w-full"
               />
@@ -76,7 +76,7 @@ const About = () => {
             {/* image column (placeholder) */}
             <div className="flex justify-center">
               <img
-                src="/pictures/boat_cad.jpg"
+                src="/Pictures/boat_cad.jpg"
                 alt="Mission placeholder"
                 className="rounded-lg shadow-lg w-full"
               />
@@ -147,7 +147,7 @@ const About = () => {
             {/* image column */}
             <div className="order-1 md:order-2 flex justify-center">
               <img
-                src="/pictures/RoboBoat25/roboboat25_7.jpg"
+                src="/Pictures/RoboBoat25/roboboat25_7.jpg"
                 alt="RoboBoat 2025"
                 className="rounded-lg shadow-lg w-full"
               />

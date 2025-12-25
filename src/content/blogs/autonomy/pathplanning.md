@@ -6,5 +6,5 @@ We use the A* algorithm and an occupancy grid of obstacles to efficiently find a
 
 We chose to use the A* algorithm for its speed and optimality. The A* algorithm leverages the heuristic function to bias the search toward the goal, which improves efficiency by reducing the search space significantly, especially in an obstacle sparse environment. Additionally, the resulting path is still optimal, even though we have a reduced search space, because our heuristic is an underestimate of the true cost of reaching the goal.
 
-<video src="/pictures/Blogs/path_map.mp4" autoplay muted loop playsinline style="width: 70%; max-width: 70%; max-height: 70%; display: block; margin: 0 auto 30px;"></video>
+<video src="/Pictures/Blogs/path_map.mp4" autoplay muted loop playsinline style="width: 70%; max-width: 70%; max-height: 70%; display: block; margin: 0 auto 30px;"></video>
 *Fig 1. Our path planning algorithm visualized in RViz.*

@@ -4,5 +4,5 @@ Our sensor mast provides a stable platform with an unobstructed field of view fo
 
 The current design features three mounting points instead of two, contributing to a much stabler platform. It is made of ⅛" aluminum box tube braised into a rigid frame, and it features adjustable height vibration dampers to prevent the swaying behavior.
 
-![Old sensor mast vs new sensor mast](/pictures/Blogs/sensormast1.png)
+![Old sensor mast vs new sensor mast](/Pictures/Blogs/sensormast1.png)
 *Fig 1. (L to R) Old sensor mast vs new sensor mast*
