@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react'
 import { useNavigate } from 'react-router-dom'
 import Fuse from 'fuse.js'
+import { Search as SearchIcon, X } from 'lucide-react'
 import { searchIndex } from '../searchIndex'
 
 const Search = () => {
@@ -121,10 +122,10 @@ const Search = () => {
       {!isExpanded && (
         <button
           onClick={handleSearchIconClick}
-          className="text-white hover:text-primary-light transition-colors text-xl"
+          className="mr-2 h-10 w-10 flex items-center justify-center text-white hover:text-primary-light transition-colors"
           aria-label="Open search"
         >
-          <i className="bi bi-search"></i>
+          <SearchIcon size={20} />
         </button>
       )}
 
@@ -141,7 +142,7 @@ const Search = () => {
             placeholder="Search..."
             className="w-full lg:w-64 px-4 py-2 pl-10 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent text-gray-900"
           />
-          <i className="bi bi-search absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"></i>
+          <SearchIcon className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" size={18} />
           <button
             onClick={() => {
               setQuery('')
@@ -152,7 +153,7 @@ const Search = () => {
             className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-600"
             aria-label="Close search"
           >
-            <i className="bi bi-x-lg"></i>
+            <X size={18} />
           </button>
         </div>
       )}
@@ -195,7 +196,7 @@ const Search = () => {
       {isOpen && query.trim().length >= 2 && results.length === 0 && (
         <div className="absolute top-full left-0 right-0 mt-2 bg-white rounded-lg shadow-2xl border border-gray-200 p-4 z-50">
           <div className="text-center text-gray-500">
-            <i className="bi bi-search text-2xl mb-2"></i>
+            <SearchIcon className="mx-auto mb-2" size={24} />
             <p>No results found for "{query}"</p>
           </div>
         </div>
