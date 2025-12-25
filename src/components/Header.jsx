@@ -14,7 +14,7 @@ const Header = () => {
         {/* Logo */}
         <Link to="/" className="flex-shrink-0">
           <img
-            src="/Pictures/arcturus-logo-crp.png"
+            src="/pictures/arcturus-logo-crp.png"
             alt="Arcturus Logo"
             className="h-12 w-auto"
           />

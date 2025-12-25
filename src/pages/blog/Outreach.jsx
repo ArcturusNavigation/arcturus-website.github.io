@@ -6,67 +6,67 @@ const Outreach = () => {
     {
       title: "Cambridge Science Festival 2024",
       url: "/blog/outreach/cambridgesciencefestival2024",
-      image: "/Pictures/Blogs/csf2024.jpg"
+      image: "/pictures/Blogs/csf2024.jpg"
     },
     {
       title: "Discover Ocean Engineering Program for MIT Freshman 2023",
       url: "/blog/outreach/discoveroceanengineering",
-      image: "/Pictures/Blogs/outreach-8-22-23-pic3.png"
+      image: "/pictures/Blogs/outreach-8-22-23-pic3.png"
     },
     {
       title: "MIT-Portugal Marine Robotics Summer School in the Azores",
       url: "/blog/outreach/azores",
-      image: "/Pictures/Blogs/outreach-7-10-23-pic1.PNG"
+      image: "/pictures/Blogs/outreach-7-10-23-pic1.PNG"
     },
     {
       title: "OCEANS 2023",
       url: "/blog/outreach/oceans2023",
-      image: "/Pictures/Blogs/outreach-6-5-23-pic4.PNG"
+      image: "/pictures/Blogs/outreach-6-5-23-pic4.PNG"
     },
     {
       title: "MIT MechE Health of the Planet Showcase",
       url: "/blog/outreach/healthoftheplanet",
-      image: "/Pictures/Blogs/outreach-4-19-23-pic1.png"
+      image: "/pictures/Blogs/outreach-4-19-23-pic1.png"
     },
     {
       title: "Campus Preview Weekend (CPW)",
       url: "/blog/outreach/cpw",
-      image: "/Pictures/Blogs/outreach-4-15-23-pic2.jpg"
+      image: "/pictures/Blogs/outreach-4-15-23-pic2.jpg"
     },
     {
       title: "Edgerton Center Showcase",
       url: "/blog/outreach/edgertoncentersh owcase",
-      image: "/Pictures/Blogs/outreach-4-11-23-pic04.jpg"
+      image: "/pictures/Blogs/outreach-4-11-23-pic04.jpg"
     },
     {
       title: "Spark",
       url: "/blog/outreach/spark2023",
-      image: "/Pictures/Blogs/outreach-3-18-23-pic3.jpg"
+      image: "/pictures/Blogs/outreach-3-18-23-pic3.jpg"
     },
     {
       title: "WeCode Harvard Conference",
       url: "/blog/outreach/wecodeharvardconference",
-      image: "/Pictures/Blogs/wecode.png"
+      image: "/pictures/Blogs/wecode.png"
     },
     {
       title: "Blue Innovations Symposium",
       url: "/blog/outreach/blueinnovationssymposium",
-      image: "/Pictures/Blogs/outreach-1-24-23-pic1.jpg"
+      image: "/pictures/Blogs/outreach-1-24-23-pic1.jpg"
     },
     {
       title: "HS Robotics Team, the Aluminum Cobblers, came to visit!",
       url: "/blog/outreach/aluminumcobblers",
-      image: "/Pictures/Blogs/outreach-11-6-22-pic2.jpg"
+      image: "/pictures/Blogs/outreach-11-6-22-pic2.jpg"
     },
     {
       title: "Cambridge Science Festival 2022",
       url: "/blog/outreach/cambridgesciencefestival2022",
-      image: "/Pictures/Blogs/outreach-10-9-22-pic1.jpg"
+      image: "/pictures/Blogs/outreach-10-9-22-pic1.jpg"
     },
     {
       title: "Boat Demo for the MIT Corporation",
       url: "/blog/outreach/mitcorp",
-      image: "/Pictures/Blogs/ship-happens-10-31-22-EE-pic5.jpg"
+      image: "/pictures/Blogs/ship-happens-10-31-22-EE-pic5.jpg"
     }
   ]
 
@@ -87,7 +87,7 @@ const Outreach = () => {
           </p>
 
           <img
-            src="/Pictures/Blogs/outreach-11-6-22-pic3.jpg"
+            src="/pictures/Blogs/outreach-11-6-22-pic3.jpg"
             alt="Outreach event"
             className="w-full max-w-4xl mx-auto mb-12 rounded-lg shadow-lg"
             style={{ maxHeight: '400px', objectFit: 'cover' }}

@@ -5,19 +5,19 @@ const Electrical = () => {
   const subsystems = [
     {
       title: 'Battery Management System',
-      image: '/Pictures/Blogs/bms.png',
+      image: '/pictures/Blogs/bms.png',
       description: 'Power distribution and battery monitoring system',
       link: '/blog/electrical/bms'
     },
     {
       title: 'Buck Board',
-      image: '/Pictures/Blogs/buckboard.jpg',
+      image: '/pictures/Blogs/buckboard.jpg',
       description: 'Voltage regulation for electronic components',
       link: '/blog/electrical/buckboard'
     },
     {
       title: 'E-Stop',
-      image: '/Pictures/Blogs/estop.png',
+      image: '/pictures/Blogs/estop.png',
       description: 'Emergency stop system for safety',
       link: '/blog/electrical/estop'
     }

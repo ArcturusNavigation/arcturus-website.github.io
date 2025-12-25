@@ -75,7 +75,7 @@ const Year22 = () => {
               {/* Buoy Detection */}
               <article className="border-b pb-8">
                 <img
-                  src="/Pictures/Blogs/navigation_11.png"
+                  src="/pictures/Blogs/navigation_11.png"
                   alt="Buoy Detection"
                   className="w-full max-w-md mx-auto mb-4 rounded-lg"
                 />
@@ -100,7 +100,7 @@ const Year22 = () => {
               {/* Path Planning */}
               <article>
                 <img
-                  src="/Pictures/Blogs/navigation_1.png"
+                  src="/pictures/Blogs/navigation_1.png"
                   alt="Path Planning"
                   className="w-full mb-4 rounded-lg"
                 />
@@ -138,7 +138,7 @@ const Year22 = () => {
               {/* Entry 1 */}
               <article className="border-b pb-8">
                 <img
-                  src="/Pictures/Blogs/hullectronics_1.png"
+                  src="/pictures/Blogs/hullectronics_1.png"
                   alt="Hullelectronics"
                   className="w-full mb-4 rounded-lg"
                 />
@@ -162,7 +162,7 @@ const Year22 = () => {
               {/* Entry 2 */}
               <article className="border-b pb-8">
                 <img
-                  src="/Pictures/Blogs/hullectronics_2.png"
+                  src="/pictures/Blogs/hullectronics_2.png"
                   alt="Hullelectronics"
                   className="w-full mb-4 rounded-lg"
                 />
@@ -180,7 +180,7 @@ const Year22 = () => {
               {/* Entry 3 */}
               <article>
                 <img
-                  src="/Pictures/Blogs/hullectronics_3.png"
+                  src="/pictures/Blogs/hullectronics_3.png"
                   alt="Hullelectronics"
                   className="w-full mb-4 rounded-lg"
                 />
@@ -216,7 +216,7 @@ const Year22 = () => {
               {/* Entry 1 */}
               <article className="border-b pb-8">
                 <img
-                  src="/Pictures/Blogs/taskforce_1.png"
+                  src="/pictures/Blogs/taskforce_1.png"
                   alt="Task Force"
                   className="w-full mb-4 rounded-lg"
                 />
@@ -239,7 +239,7 @@ const Year22 = () => {
               {/* Entry 2 */}
               <article>
                 <img
-                  src="/Pictures/Blogs/taskforce_2.png"
+                  src="/pictures/Blogs/taskforce_2.png"
                   alt="Task Force"
                   className="w-full mb-4 rounded-lg"
                 />

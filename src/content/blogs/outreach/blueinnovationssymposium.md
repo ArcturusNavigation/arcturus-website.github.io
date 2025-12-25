@@ -12,4 +12,4 @@ Seeing how these startups create different technologies to contribute to the blu
 
 Overall, we thought the Blue Innovations Symposium was a wonderful opportunity to meet those interested in the Ocean Engineering space and learn more about where our technology might be applied in industry.
 
-![Blue Innovations Symposium](/Pictures/Blogs/outreach-1-24-23-pic1.jpg)
+![Blue Innovations Symposium](/pictures/Blogs/outreach-1-24-23-pic1.jpg)

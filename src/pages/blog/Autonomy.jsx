@@ -5,25 +5,25 @@ const Autonomy = () => {
   const subsystems = [
     {
       title: 'Perception',
-      image: '/Pictures/Blogs/buoydetection.png',
+      image: '/pictures/Blogs/buoydetection.png',
       description: 'Computer vision and sensor fusion for object detection and environment understanding',
       link: '/blog/autonomy/perception'
     },
     {
       title: 'Localization',
-      image: '/Pictures/Blogs/lidar.jpg',
+      image: '/pictures/Blogs/lidar.jpg',
       description: 'GPS, IMU, and sensor integration for accurate position tracking',
       link: '/blog/autonomy/localization'
     },
     {
       title: 'Path Planning',
-      image: '/Pictures/Blogs/pathplanning.png',
+      image: '/pictures/Blogs/pathplanning.png',
       description: 'Algorithms for generating optimal routes and avoiding obstacles',
       link: '/blog/autonomy/pathplanning'
     },
     {
       title: 'Controller',
-      image: '/Pictures/Blogs/gazebo.jpg',
+      image: '/pictures/Blogs/gazebo.jpg',
       description: 'Low-level controllers for precise navigation and maneuvering',
       link: '/blog/autonomy/controller'
     }

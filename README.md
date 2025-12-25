@@ -55,7 +55,7 @@ arcturus-website.github.io/
 │   │   └── index.css       # Global styles + Tailwind
 │   ├── App.jsx             # Main app component with routing
 │   └── main.jsx            # Application entry point
-├── Pictures/               # Static assets (images, videos)
+├── pictures/               # Static assets (images, videos)
 ├── package.json
 ├── vite.config.js
 ├── tailwind.config.js
@@ -104,7 +104,7 @@ import NewPage from './pages/NewPage'
 
 ### Add Images
 
-Place images in `/Pictures/` and reference them with `/Pictures/filename.jpg`
+Place images in `/pictures/` and reference them with `/pictures/filename.jpg`
 
 ### Styling Guidelines
 

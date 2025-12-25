@@ -6,5 +6,5 @@ Arcturus participated in the Cambridge Science Festival located in Kendall Squar
 
 Overall, it was a very fun and educational day, and we look forward to participating in the future! Thank you CSF!
 
-![Cambridge Science Festival booth](/Pictures/Blogs/outreach-10-9-22-pic1.jpg)
-![Demonstrating autonomous vehicle](/Pictures/Blogs/outreach-10-9-22-pic2.jpg)
+![Cambridge Science Festival booth](/pictures/Blogs/outreach-10-9-22-pic1.jpg)
+![Demonstrating autonomous vehicle](/pictures/Blogs/outreach-10-9-22-pic2.jpg)

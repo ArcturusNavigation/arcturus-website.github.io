@@ -10,5 +10,5 @@ At CSF, the toy boats were a big success! We ran out of boats after about 1.5 ho
 
 Other team members joined us at CSF and were a great help in teaching visitors about Minerva and Arcturus. Since we were located right next to SeaPerch, some of our volunteers helped children navigate the SeaPerch robot activity.
 
-![3D printed toy boats](/Pictures/Blogs/csf24%20(1).jpg)
-![CSF booth activity](/Pictures/Blogs/csf24%20(2).jpg)
+![3D printed toy boats](/pictures/Blogs/csf24%20(1).jpg)
+![CSF booth activity](/pictures/Blogs/csf24%20(2).jpg)

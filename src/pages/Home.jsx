@@ -4,12 +4,12 @@ import Carousel from '../components/Carousel'
 
 const Home = () => {
   const fishNShipsImages = [
-    { src: '/Pictures/fishnships_florida.jpg', alt: 'Fish N Ships in Florida' },
-    { src: '/Pictures/fishnships_pool.jpg', alt: 'Fish N Ships in Pool' },
-    { src: '/Pictures/fishnships_splash.jpg', alt: 'Fish N Ships Splash' },
-    { src: '/Pictures/fishnships1.jpg', alt: 'Fish N Ships 1' },
-    { src: '/Pictures/fishnships2.jpg', alt: 'Fish N Ships 2' },
-    { src: '/Pictures/fishnships3.jpg', alt: 'Fish N Ships 3' }
+    { src: '/pictures/fishnships_florida.jpg', alt: 'Fish N Ships in Florida' },
+    { src: '/pictures/fishnships_pool.jpg', alt: 'Fish N Ships in Pool' },
+    { src: '/pictures/fishnships_splash.jpg', alt: 'Fish N Ships Splash' },
+    { src: '/pictures/fishnships1.jpg', alt: 'Fish N Ships 1' },
+    { src: '/pictures/fishnships2.jpg', alt: 'Fish N Ships 2' },
+    { src: '/pictures/fishnships3.jpg', alt: 'Fish N Ships 3' }
   ]
 
   return (
@@ -17,7 +17,7 @@ const Home = () => {
       {/* Hero Section with Video */}
       <section className="relative w-full h-[60vh] min-h-[400px] overflow-hidden">
         <video
-          src="/Pictures/flour-vid-24-25-crop.mp4"
+          src="/pictures/flour-vid-24-25-crop.mp4"
           autoPlay
           muted
           loop
@@ -111,7 +111,7 @@ const Home = () => {
               <div className="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow overflow-hidden h-full">
                 <div className="p-8 flex justify-center">
                   <img
-                    src="/Pictures/testing_fall2024.jpg"
+                    src="/pictures/testing_fall2024.jpg"
                     alt="Autonomy"
                     className="max-w-full h-auto object-contain"
                     style={{ maxHeight: '220px' }}
@@ -133,7 +133,7 @@ const Home = () => {
               <div className="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow overflow-hidden h-full">
                 <div className="p-8 flex justify-center">
                   <img
-                    src="/Pictures/Blogs/bms.png"
+                    src="/pictures/Blogs/bms.png"
                     alt="Electrical"
                     className="max-w-full h-auto object-contain"
                     style={{ maxHeight: '220px' }}
@@ -155,7 +155,7 @@ const Home = () => {
               <div className="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow overflow-hidden h-full">
                 <div className="p-8 flex justify-center">
                   <img
-                    src="/Pictures/boat_cad.jpg"
+                    src="/pictures/boat_cad.jpg"
                     alt="Mechanical"
                     className="max-w-full h-auto object-contain"
                     style={{ maxHeight: '220px' }}

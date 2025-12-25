@@ -5,19 +5,19 @@ const FishNShips = () => {
   const subteams = [
     {
       title: 'Autonomy',
-      image: '/Pictures/testing_fall2024.jpg',
+      image: '/pictures/testing_fall2024.jpg',
       description: 'Perception, localization, and planning systems that guide the ASV.',
       link: '/blog/autonomy'
     },
     {
       title: 'Electrical',
-      image: '/Pictures/Blogs/bms.png',
+      image: '/pictures/Blogs/bms.png',
       description: 'Power distribution, sensing, and onboard electronics for our vehicle.',
       link: '/blog/electrical'
     },
     {
       title: 'Mechanical',
-      image: '/Pictures/boat_cad.jpg',
+      image: '/pictures/boat_cad.jpg',
       description: 'Hull design, propulsion integration, and mechanical systems.',
       link: '/blog/mechanical'
     }
@@ -33,7 +33,7 @@ const FishNShips = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center max-w-6xl mx-auto">
           <div className="flex justify-center">
             <img
-              src="/Pictures/fishnships_pool.jpg"
+              src="/pictures/fishnships_pool.jpg"
               alt="Fish N Ships at the pool"
               className="w-full max-w-2xl rounded-lg shadow-lg"
             />
@@ -45,7 +45,7 @@ const FishNShips = () => {
               precision control and agility.
             </p>
             <a
-              href="/Pictures/Blogs/TDR_MITArcturus_RB2025.pdf"
+              href="/pictures/Blogs/TDR_MITArcturus_RB2025.pdf"
               className="inline-flex items-center justify-center rounded-md bg-primary px-6 py-3 text-white font-semibold hover:bg-primary-light transition-colors"
             >
               RoboBoat 2025 Technical Design Report

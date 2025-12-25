@@ -4,7 +4,7 @@ In order to complete task 5 (in Roboboat) and properly deliver water and balls t
 
 **Ball Launcher:** The ball launcher is designed to launch balls with a high velocity as straight as possible to simplify the requirements of the aiming system. The launcher consists of two inverted curved edge wheels rotating in opposite directions, powered by a motors spinning at ~2000 rpm. The wheels slightly compress the balls to maximize contact area and launch them in a straight path without spin. A lead screw mechanism feeds the balls into the wheels, which launches them when the dedicated camera shows that the launcher is properly aimed at a vessel.
 
-![Ball Launcher](/Pictures/Blogs/mechanism.jpg)
+![Ball Launcher](/pictures/Blogs/mechanism.jpg)
 *Fig 1. Ball Launcher.*
 
 **Water Gun:** The water delivery system features a pump that pulls water from below the boat and directs it through tubing that runs underneath the ball launcher. This ensures that the water is delivered at the same angle and incline as the launcher, meaning that the two assemblies can use the same aiming system. The pump delivers a flow rate of 271.2 cm3/s with a 1.27cm outlet diameter. Using this information, a resin-printed, replaceable nozzle with a reduced outlet diameter of 0.635cm was designed. This nozzle allows the water stream to travel up to 7.5m without manually altering the turret's angle.
