@@ -44,8 +44,8 @@ const Header = () => {
           </Link>
 
           <Link
-            to="/blog/fish-n-ships"
-            className={`text-white hover:text-primary-light transition-colors ${isActive('/blog/fish-n-ships') ? 'text-primary-light' : ''}`}
+            to="/technical-work"
+            className={`text-white hover:text-primary-light transition-colors ${isActive('/technical-work') ? 'text-primary-light' : ''}`}
           >
             Technical Work
           </Link>
@@ -116,7 +116,7 @@ const Header = () => {
               Team Members
             </Link>
             <Link
-              to="/blog/fish-n-ships"
+              to="/technical-work"
               className="px-6 py-2.5 text-text hover:bg-gray-100"
               onClick={() => setMobileMenuOpen(false)}
             >

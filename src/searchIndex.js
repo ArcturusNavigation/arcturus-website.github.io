@@ -168,7 +168,7 @@ export const searchIndex = [
   },
   {
     title: 'Fish N Ships',
-    path: '/blog/fish-n-ships',
+    path: '/technical-work',
     category: 'Vessels',
     content: 'Fish N Ships competition vessel catamaran x-drive thrusters design build',
     keywords: ['fish n ships', 'vessel', 'catamaran', 'boat', 'competition']

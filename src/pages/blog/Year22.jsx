@@ -11,15 +11,6 @@ const Year22 = () => {
   return (
     <div className="py-12 bg-gray-50">
       <div className="container mx-auto px-4">
-        <div className="mb-6">
-          <Link
-            to="/past-seasons"
-            className="inline-flex items-center text-primary hover:text-secondary transition-colors"
-          >
-            <i className="bi bi-arrow-left mr-2"></i>
-            Back to Past Seasons
-          </Link>
-        </div>
         <h1 className="text-4xl font-heading font-bold text-primary text-center mb-8">
           2021-2022 Season
         </h1>

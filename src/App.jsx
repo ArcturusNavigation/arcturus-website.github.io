@@ -60,7 +60,7 @@ function App() {
         <Route path="/blog/mechanical" element={<BlogMechanical />} />
         <Route path="/blog/electrical" element={<BlogElectrical />} />
         <Route path="/blog/outreach" element={<BlogOutreach />} />
-        <Route path="/blog/fish-n-ships" element={<BlogFishNShips />} />
+        <Route path="/technical-work" element={<BlogFishNShips />} />
         <Route path="/blog/year-22" element={<BlogYear22 />} />
         <Route path="/blog/year-23" element={<BlogYear23 />} />
 

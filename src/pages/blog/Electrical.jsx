@@ -26,22 +26,10 @@ const Electrical = () => {
   return (
     <div className="py-12">
       <div className="container mx-auto px-4">
-        <div className="mb-6">
-          <Link
-            to="/blog/fish-n-ships"
-            className="inline-flex items-center text-primary hover:text-secondary transition-colors"
-          >
-            <i className="bi bi-arrow-left mr-2"></i>
-            Back to Technical Work
-          </Link>
-        </div>
         <div className="text-center mb-8">
           <h1 className="text-4xl font-heading font-bold text-primary mb-4">
             Electrical Engineering
           </h1>
-          <h4 className="text-xl text-text mb-12">
-            Click on the cards below to read more about our subsystems on <em>Fish 'N Ships</em>.
-          </h4>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
@@ -69,6 +57,27 @@ const Electrical = () => {
               </div>
             </Link>
           ))}
+        </div>
+
+        <div className="flex justify-between items-center mt-12 max-w-6xl mx-auto">
+          <Link
+            to="/blog/autonomy"
+            className="px-6 py-3 text-text hover:text-primary transition-colors"
+          >
+            ← Autonomy
+          </Link>
+          <Link
+            to="/technical-work"
+            className="px-6 py-3 text-text hover:text-primary transition-colors"
+          >
+            Back to Technical Work
+          </Link>
+          <Link
+            to="/blog/mechanical"
+            className="px-6 py-3 text-text hover:text-primary transition-colors"
+          >
+            Mechanical →
+          </Link>
         </div>
       </div>
     </div>

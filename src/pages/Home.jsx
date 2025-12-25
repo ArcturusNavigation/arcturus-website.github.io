@@ -32,7 +32,7 @@ const Home = () => {
           <div className="flex flex-col lg:flex-row lg:justify-center lg:items-center gap-8">
             {/* media column */}
             <div className="w-full lg:w-5/12">
-              <div className="video-container">
+              <div className="video-container rounded-lg overflow-hidden shadow-lg">
                 <iframe
                   width="560"
                   height="315"
@@ -57,7 +57,7 @@ const Home = () => {
               </p>
               <Link
                 to="/about"
-                className="inline-block bg-gray-600 hover:bg-gray-700 text-white px-6 py-3 rounded text-lg transition-colors"
+                className="inline-block bg-gray-600 hover:bg-gray-700 text-white px-6 py-3 rounded-lg text-lg transition-colors"
               >
                 About Us
               </Link>
@@ -80,8 +80,8 @@ const Home = () => {
                 in an x-drive configuration to allow for precision and control.
               </p>
               <Link
-                to="/blog/fish-n-ships"
-                className="inline-block bg-gray-600 hover:bg-gray-700 text-white px-6 py-3 rounded text-lg transition-colors"
+                to="/technical-work"
+                className="inline-block bg-gray-600 hover:bg-gray-700 text-white px-6 py-3 rounded-lg text-lg transition-colors"
               >
                 Learn More
               </Link>
@@ -107,14 +107,14 @@ const Home = () => {
             {/* Autonomy Card */}
             <Link to="/blog/autonomy" className="block group">
               <div className="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow overflow-hidden h-full">
-                <div className="p-8 flex justify-center">
+                <div className="aspect-video w-full overflow-hidden">
                   <img
                     src="/Pictures/testing_fall2024.jpg"
                     alt="Autonomy"
-                    className="max-w-full h-auto"
+                    className="w-full h-full object-cover"
                   />
                 </div>
-                <div className="px-6 pb-6">
+                <div className="px-6 pb-6 pt-4">
                   <h4 className="text-xl font-heading font-bold text-primary mb-3">Autonomy</h4>
                   <p className="text-text">
                     The autonomy team is responsible for the implementation of autonomous functions on our vessel.
@@ -128,14 +128,14 @@ const Home = () => {
             {/* Electrical Card */}
             <Link to="/blog/electrical" className="block group">
               <div className="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow overflow-hidden h-full">
-                <div className="p-8 flex justify-center">
+                <div className="aspect-video w-full overflow-hidden">
                   <img
                     src="/Pictures/Blogs/bms.png"
                     alt="Electrical"
-                    className="max-w-full h-auto"
+                    className="w-full h-full object-cover"
                   />
                 </div>
-                <div className="px-6 pb-6">
+                <div className="px-6 pb-6 pt-4">
                   <h4 className="text-xl font-heading font-bold text-primary mb-3">Electrical</h4>
                   <p className="text-text">
                     The electrical team is responsible for the electrical system of the boat. This includes
@@ -149,14 +149,14 @@ const Home = () => {
             {/* Mechanical Card */}
             <Link to="/blog/mechanical" className="block group">
               <div className="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow overflow-hidden h-full">
-                <div className="p-8 flex justify-center">
+                <div className="aspect-video w-full overflow-hidden">
                   <img
                     src="/Pictures/boat_cad.jpg"
                     alt="Mechanical"
-                    className="max-w-full h-auto"
+                    className="w-full h-full object-cover"
                   />
                 </div>
-                <div className="px-6 pb-6">
+                <div className="px-6 pb-6 pt-4">
                   <h4 className="text-xl font-heading font-bold text-primary mb-3">Mechanical</h4>
                   <p className="text-text">
                     The mechanical team designs, prototypes, and builds all of the physical aspects of the vessel.

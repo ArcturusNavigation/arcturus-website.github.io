@@ -65,7 +65,7 @@ const Sponsors = () => {
             </h2>
 
             {/* Sponsor Logos Grid */}
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mb-12">
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mb-12 content-center">
               {sponsors.map((sponsor, index) => (
                 <div
                   key={index}
@@ -90,7 +90,7 @@ const Sponsors = () => {
         </section>
 
         {/* Become a Sponsor Section */}
-        <section className="max-w-4xl mx-auto">
+        <section className="max-w-6xl mx-auto">
           <hr className="border-t-4 border-primary mb-8" />
           <h2 className="text-3xl font-heading font-bold text-primary mb-6">
             Interested in becoming a sponsor?

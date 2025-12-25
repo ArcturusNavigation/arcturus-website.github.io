@@ -26,7 +26,7 @@ const About = () => {
                 marine research to and surveying. This is our fourth competition season, and we are
                 will be competing with our flagship, Fish &apos;N Ships! We&apos;re excited to make a splash in the
                 RoboBoat 2026 competition. Check out our{' '}
-                <a href="/blog/fish-n-ships" className="text-primary hover:text-primary-light underline">
+                <a href="/technical-work" className="text-primary hover:text-primary-light underline">
                   blog series
                 </a>{' '}
                 to see what we&apos;re up to!
@@ -76,7 +76,7 @@ const About = () => {
             {/* image column (placeholder) */}
             <div className="flex justify-center">
               <img
-                src="https://placehold.co/1200x800"
+                src="/Pictures/boat_cad.jpg"
                 alt="Mission placeholder"
                 className="rounded-lg shadow-lg w-full"
               />
