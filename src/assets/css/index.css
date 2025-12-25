@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles to match the original design */
+@layer base {
+  body {
+    @apply font-sans text-text;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+  }
+}
+
+@layer components {
+  /* Video container for 16:9 aspect ratio */
+  .video-container {
+    @apply relative w-full pb-[56.25%] h-0 overflow-hidden;
+  }
+
+  .video-container iframe {
+    @apply absolute top-0 left-0 w-full h-full;
+  }
+
+  /* Back to top button */
+  .back-to-top {
+    @apply fixed bottom-4 right-4 bg-primary w-10 h-10 rounded flex items-center justify-center text-white opacity-0 invisible transition-all z-[996];
+  }
+
+  .back-to-top.active {
+    @apply opacity-100 visible;
+  }
+
+  /* Card styles */
+  .card-overlink {
+    @apply block no-underline;
+  }
+
+  .card-overlink:hover .card {
+    @apply shadow-lg;
+  }
+
+}
+
+@layer utilities {
+  /* Smooth scrolling */
+  html {
+    scroll-behavior: smooth;
+  }
+}
