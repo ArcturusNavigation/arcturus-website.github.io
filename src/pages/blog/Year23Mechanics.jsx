@@ -114,89 +114,6 @@ const Year23Mechanics = () => {
             </div>
           </article>
 
-          {/* Entry 6 - CAD Time */}
-          <article className="bg-white p-8 rounded-lg shadow-lg">
-            <h2 className="text-3xl font-bold text-primary mb-3">Mechanics: CAD Time!</h2>
-            <p className="text-sm text-gray-600 mb-6">December 15, 2022</p>
-            <div className="space-y-6 text-text">
-              <p>
-                We have mostly finished CADding the boat! This includes designs for our ball scooper, ball launcher, and thruster azipods (rotating thrusters that will make our turning radius smaller in the water). Manufacturing has started for the ball launcher and will continue when we come back in January.
-              </p>
-
-              <div>
-                <h3 className="text-xl font-bold text-primary mb-3">Subteam 1: Task-Ponce de Leon / Fountain of Youth</h3>
-                <p>
-                  No mechanical changes have been made to this mechanism. Last season, we simply did not get to this task in competition, but from our testing we believe that the mechanism we set out to spray water last season should work again.
-                </p>
-              </div>
-
-              <div>
-                <h3 className="text-xl font-bold text-primary mb-3">Subteam 2: Task- Feed the fish</h3>
-                <p>
-                  We finished the finalized the first version of the ball launcher. The system is divided into three main subsections: the revolver, the turret, the shooter. The revolver holds all the balls and controls when they are deposited into the shooter. The turret allows the shooter to rotate so we can aim independent of the boat's positions and the shooter is the flywheel system that launches the balls.
-                </p>
-                <p>
-                  The revolver/ball deposit system is modeled after the ball drop arcade game. There are slots for the balls to sit in and a servo rotates a plate to move the balls until one eventually falls through the hole to the shooter. We went with this system because it utilizes only one moving part and we can reliably ensure that only one ball goes into the shooter at a time. All the balls are also stored horizontally which is an additional benefit because we want to minimize obstruction to the lidar. We also included a 3D printed dome to prevent balls deposited from the ball collection system from staying in the center of the plate or falling and damaging the servo.
-                </p>
-                <div className="flex justify-center my-6">
-                  <img src="/Pictures/Blogs/ship-happens-12-15-22-ME-pic1.png" alt="Revolver system" className="max-w-md w-full" />
-                </div>
-                <p>
-                  The turret is controlled by a 180 degree servo. A small gear attached to the servo controls a larger ring gear that is connected to the rest of the system. The gears are laser cut out of ⅛" aluminum and stacked for a final height of ¼". Originally we planned for the pieces to be made of acrylic because they could easily be cut for exact sizes, but after meeting with Chandler Griffin of iSensys recommended we go with metal because acrylic tends to crack easily. The turret is attached to the underside of the revolver so that the pivot point of the turret is concentric to where the balls drop.
-                </p>
-                <div className="flex justify-center my-6">
-                  <img src="/Pictures/Blogs/ship-happens-12-15-22-ME-pic2.png" alt="Turret system" className="max-w-md w-full" />
-                </div>
-                <p>
-                  The shooter is powered by a 6,000 rpm goBilda yellow jacket series motor. We haven't found the ideal speed the flywheels should rotate at, but we decided to go with the fastest motor in the GoBilda series because the flywheel speed is more of a concern than the amount of torque. The motor is belted to the flywheel with the ability to easily change the gearing ratio. We also went with a belted drive so the motor could be placed such that the center of mass is as symmetrical as possible. The flywheel has a rubber tread which provides grip and compression to help launch the racquetballs. Once the ball drops into through the hole in the revolver the ball makes contact with the flywheel and is compressed between the flywheel and the ramp to gain rotational speed before being launched out. The shooter connects to the turret through two tabs that go into the ring gear. The shooter also has a delrin plastic bottom to support the weight of the shooter instead of the tabs and to increase the friction between the shooter and the deck.
-                </p>
-                <div className="flex justify-center my-6">
-                  <img src="/Pictures/Blogs/ship-happens-12-15-22-ME-pic3.png" alt="Shooter system" className="max-w-md w-full" />
-                </div>
-                <p className="font-semibold">Final CAD of all three systems:</p>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
-                  <img src="/Pictures/Blogs/ship-happens-12-15-22-ME-pic4.png" alt="Ball launcher CAD 1" className="w-full" />
-                  <img src="/Pictures/Blogs/ship-happens-12-15-22-ME-pic5.png" alt="Ball launcher CAD 2" className="w-full" />
-                </div>
-                <p>
-                  Next steps: Over IAP (January) we should begin the prototyping, fabricating, and assembly process.
-                </p>
-              </div>
-
-              <div>
-                <h3 className="text-xl font-bold text-primary mb-3">Subteam 3: Task-Ocean Clean up</h3>
-                <p>
-                  At the last team time, we learned that the boat cannot drive into the enclosure with the balls so we moved forwards with the arm and elevator system. A spring loaded PVC arm with a sliding L piece is spring loaded and released when the boat approaches the task. The boat drives around the perimeter of the enclosure collecting balls. Once all the balls have been collected the L arm is reeled in with a winch to collect all the balls into one location. An elevator mechanism on the side of the boat will then pick up all the balls and deposit them into the revolver on the ball launcher.
-                </p>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
-                  <img src="/Pictures/Blogs/ship-happens-12-15-22-ME-pic6.png" alt="Ocean cleanup arm 1" className="w-full" />
-                  <img src="/Pictures/Blogs/ship-happens-12-15-22-ME-pic7.png" alt="Ocean cleanup arm 2" className="w-full" />
-                </div>
-                <p>
-                  Next Steps: At the moment, we are unsure if we have the manpower to implement this design so it is currently on hold for further development.
-                </p>
-              </div>
-
-              <div>
-                <h3 className="text-xl font-bold text-primary mb-3">Subteam 4: Azimuth Thrusters</h3>
-                <p>
-                  In our azimuth thruster design, a servo is connected on one side of a 1.7" diameter, PVC pipe, and a thruster is connected on the other, allowing the servo to rotate the entire subsystem. This subsystem is mounted inside a larger 2.4" diameter PVC pipe with Delrin bushings so the thrusters can easily rotate and be lifted into the hull during transport.
-                </p>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
-                  <img src="/Pictures/Blogs/ship-happens-12-15-22-ME-pic8.png" alt="Azimuth thruster design 1" className="w-full" />
-                  <img src="/Pictures/Blogs/ship-happens-12-15-22-ME-pic9.png" alt="Azimuth thruster design 2" className="w-full" />
-                </div>
-                <p>
-                  A 2.5" in hole will be drilled 6" inches from the top for the larger pvc to be mounted to and a 5" inch hole will be drilled 5" inches from the bottom to create a channel for the thruster to rest when the system is retracted.
-                </p>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
-                  <img src="/Pictures/Blogs/ship-happens-12-15-22-ME-pic10.png" alt="Azimuth thruster drilling 1" className="w-full" />
-                  <img src="/Pictures/Blogs/ship-happens-12-15-22-ME-pic11.png" alt="Azimuth thruster drilling 2" className="w-full" />
-                </div>
-              </div>
-            </div>
-          </article>
-
           {/* Entry 7 - IAP Project Reviews */}
           <article className="bg-white p-8 rounded-lg shadow-lg">
             <h2 className="text-3xl font-bold text-primary mb-3">IAP Project Reviews: Mechanics</h2>
@@ -289,6 +206,90 @@ const Year23Mechanics = () => {
               </div>
             </div>
           </article>
+
+          {/* Entry 6 - CAD Time */}
+          <article className="bg-white p-8 rounded-lg shadow-lg">
+            <h2 className="text-3xl font-bold text-primary mb-3">Mechanics: CAD Time!</h2>
+            <p className="text-sm text-gray-600 mb-6">December 15, 2022</p>
+            <div className="space-y-6 text-text">
+              <p>
+                We have mostly finished CADding the boat! This includes designs for our ball scooper, ball launcher, and thruster azipods (rotating thrusters that will make our turning radius smaller in the water). Manufacturing has started for the ball launcher and will continue when we come back in January.
+              </p>
+
+              <div>
+                <h3 className="text-xl font-bold text-primary mb-3">Subteam 1: Task-Ponce de Leon / Fountain of Youth</h3>
+                <p>
+                  No mechanical changes have been made to this mechanism. Last season, we simply did not get to this task in competition, but from our testing we believe that the mechanism we set out to spray water last season should work again.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="text-xl font-bold text-primary mb-3">Subteam 2: Task- Feed the fish</h3>
+                <p>
+                  We finished the finalized the first version of the ball launcher. The system is divided into three main subsections: the revolver, the turret, the shooter. The revolver holds all the balls and controls when they are deposited into the shooter. The turret allows the shooter to rotate so we can aim independent of the boat's positions and the shooter is the flywheel system that launches the balls.
+                </p>
+                <p>
+                  The revolver/ball deposit system is modeled after the ball drop arcade game. There are slots for the balls to sit in and a servo rotates a plate to move the balls until one eventually falls through the hole to the shooter. We went with this system because it utilizes only one moving part and we can reliably ensure that only one ball goes into the shooter at a time. All the balls are also stored horizontally which is an additional benefit because we want to minimize obstruction to the lidar. We also included a 3D printed dome to prevent balls deposited from the ball collection system from staying in the center of the plate or falling and damaging the servo.
+                </p>
+                <div className="flex justify-center my-6">
+                  <img src="/Pictures/Blogs/ship-happens-12-15-22-ME-pic1.png" alt="Revolver system" className="max-w-md w-full" />
+                </div>
+                <p>
+                  The turret is controlled by a 180 degree servo. A small gear attached to the servo controls a larger ring gear that is connected to the rest of the system. The gears are laser cut out of ⅛" aluminum and stacked for a final height of ¼". Originally we planned for the pieces to be made of acrylic because they could easily be cut for exact sizes, but after meeting with Chandler Griffin of iSensys recommended we go with metal because acrylic tends to crack easily. The turret is attached to the underside of the revolver so that the pivot point of the turret is concentric to where the balls drop.
+                </p>
+                <div className="flex justify-center my-6">
+                  <img src="/Pictures/Blogs/ship-happens-12-15-22-ME-pic2.png" alt="Turret system" className="max-w-md w-full" />
+                </div>
+                <p>
+                  The shooter is powered by a 6,000 rpm goBilda yellow jacket series motor. We haven't found the ideal speed the flywheels should rotate at, but we decided to go with the fastest motor in the GoBilda series because the flywheel speed is more of a concern than the amount of torque. The motor is belted to the flywheel with the ability to easily change the gearing ratio. We also went with a belted drive so the motor could be placed such that the center of mass is as symmetrical as possible. The flywheel has a rubber tread which provides grip and compression to help launch the racquetballs. Once the ball drops into through the hole in the revolver the ball makes contact with the flywheel and is compressed between the flywheel and the ramp to gain rotational speed before being launched out. The shooter connects to the turret through two tabs that go into the ring gear. The shooter also has a delrin plastic bottom to support the weight of the shooter instead of the tabs and to increase the friction between the shooter and the deck.
+                </p>
+                <div className="flex justify-center my-6">
+                  <img src="/Pictures/Blogs/ship-happens-12-15-22-ME-pic3.png" alt="Shooter system" className="max-w-md w-full" />
+                </div>
+                <p className="font-semibold">Final CAD of all three systems:</p>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
+                  <img src="/Pictures/Blogs/ship-happens-12-15-22-ME-pic4.png" alt="Ball launcher CAD 1" className="w-full" />
+                  <img src="/Pictures/Blogs/ship-happens-12-15-22-ME-pic5.png" alt="Ball launcher CAD 2" className="w-full" />
+                </div>
+                <p>
+                  Next steps: Over IAP (January) we should begin the prototyping, fabricating, and assembly process.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="text-xl font-bold text-primary mb-3">Subteam 3: Task-Ocean Clean up</h3>
+                <p>
+                  At the last team time, we learned that the boat cannot drive into the enclosure with the balls so we moved forwards with the arm and elevator system. A spring loaded PVC arm with a sliding L piece is spring loaded and released when the boat approaches the task. The boat drives around the perimeter of the enclosure collecting balls. Once all the balls have been collected the L arm is reeled in with a winch to collect all the balls into one location. An elevator mechanism on the side of the boat will then pick up all the balls and deposit them into the revolver on the ball launcher.
+                </p>
+                <div className="grid grid-cols-1 md:grid-cols-[3fr_2fr] gap-4 my-6 place-items-center">
+                  <img src="/Pictures/Blogs/ship-happens-12-15-22-ME-pic6.png" alt="Ocean cleanup arm 1" className="object-contain" />
+                  <img src="/Pictures/Blogs/ship-happens-12-15-22-ME-pic7.png" alt="Ocean cleanup arm 2" className="object-contain" />
+                </div>
+                <p>
+                  Next Steps: At the moment, we are unsure if we have the manpower to implement this design so it is currently on hold for further development.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="text-xl font-bold text-primary mb-3">Subteam 4: Azimuth Thrusters</h3>
+                <p>
+                  In our azimuth thruster design, a servo is connected on one side of a 1.7" diameter, PVC pipe, and a thruster is connected on the other, allowing the servo to rotate the entire subsystem. This subsystem is mounted inside a larger 2.4" diameter PVC pipe with Delrin bushings so the thrusters can easily rotate and be lifted into the hull during transport.
+                </p>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6 place-items-center">
+                  <img src="/Pictures/Blogs/ship-happens-12-15-22-ME-pic8.png" alt="Azimuth thruster design 1" className="object-contain" />
+                  <img src="/Pictures/Blogs/ship-happens-12-15-22-ME-pic9.png" alt="Azimuth thruster design 2" className="object-contain" />
+                </div>
+                <p>
+                  A 2.5" in hole will be drilled 6" inches from the top for the larger pvc to be mounted to and a 5" inch hole will be drilled 5" inches from the bottom to create a channel for the thruster to rest when the system is retracted.
+                </p>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6 place-items-center">
+                  <img src="/Pictures/Blogs/ship-happens-12-15-22-ME-pic10.png" alt="Azimuth thruster drilling 1" className="object-contain" />
+                  <img src="/Pictures/Blogs/ship-happens-12-15-22-ME-pic11.png" alt="Azimuth thruster drilling 2" className="object-contain" />
+                </div>
+              </div>
+            </div>
+          </article>
+
 
           {/* Entry 8 - Subteams Created and more Brainstorming */}
           <article className="bg-white p-8 rounded-lg shadow-lg">
