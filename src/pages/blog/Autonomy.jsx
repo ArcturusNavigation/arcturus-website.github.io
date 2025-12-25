@@ -1,33 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { categoryBlogs } from '../../config/blogPosts'
 
 const Autonomy = () => {
-  const subsystems = [
-    {
-      title: 'Perception',
-      image: '/Pictures/Blogs/buoydetection.png',
-      description: 'Computer vision and sensor fusion for object detection and environment understanding',
-      link: '/blog/autonomy/perception'
-    },
-    {
-      title: 'Localization',
-      image: '/Pictures/Blogs/lidar.jpg',
-      description: 'GPS, IMU, and sensor integration for accurate position tracking',
-      link: '/blog/autonomy/localization'
-    },
-    {
-      title: 'Path Planning',
-      image: '/Pictures/Blogs/pathplanning.png',
-      description: 'Algorithms for generating optimal routes and avoiding obstacles',
-      link: '/blog/autonomy/pathplanning'
-    },
-    {
-      title: 'Controller',
-      image: '/Pictures/Blogs/gazebo.jpg',
-      description: 'Low-level controllers for precise navigation and maneuvering',
-      link: '/blog/autonomy/controller'
-    }
-  ]
+  const subsystems = categoryBlogs.autonomy
 
   return (
     <div className="py-12">

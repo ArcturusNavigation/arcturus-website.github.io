@@ -4,7 +4,7 @@ import Fuse from 'fuse.js'
 import { Search as SearchIcon, X } from 'lucide-react'
 import { searchIndex } from '../searchIndex'
 
-const Search = () => {
+const Search = ({ mobile = false }) => {
   const [query, setQuery] = useState('')
   const [results, setResults] = useState([])
   const [isOpen, setIsOpen] = useState(false)
@@ -116,10 +116,13 @@ const Search = () => {
     return colors[category] || 'bg-gray-100 text-gray-800'
   }
 
+  // For mobile, always show expanded input
+  const shouldShowInput = mobile || isExpanded
+
   return (
     <div className="relative" ref={searchRef}>
-      {/* Search Icon Button (collapsed state) */}
-      {!isExpanded && (
+      {/* Search Icon Button (collapsed state) - desktop only */}
+      {!mobile && !isExpanded && (
         <button
           onClick={handleSearchIconClick}
           className="mr-2 h-10 w-10 flex items-center justify-center text-white hover:text-primary-light transition-colors"
@@ -129,8 +132,8 @@ const Search = () => {
         </button>
       )}
 
-      {/* Search Input (expanded state) */}
-      {isExpanded && (
+      {/* Search Input (expanded state or mobile) */}
+      {shouldShowInput && (
         <div className="relative">
           <input
             ref={inputRef}
@@ -143,18 +146,20 @@ const Search = () => {
             className="w-full lg:w-64 px-4 py-2 pl-10 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent text-gray-900"
           />
           <SearchIcon className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" size={18} />
-          <button
-            onClick={() => {
-              setQuery('')
-              setResults([])
-              setIsOpen(false)
-              setIsExpanded(false)
-            }}
-            className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-600"
-            aria-label="Close search"
-          >
-            <X size={18} />
-          </button>
+          {!mobile && (
+            <button
+              onClick={() => {
+                setQuery('')
+                setResults([])
+                setIsOpen(false)
+                setIsExpanded(false)
+              }}
+              className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-600"
+              aria-label="Close search"
+            >
+              <X size={18} />
+            </button>
+          )}
         </div>
       )}
 

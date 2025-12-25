@@ -4,11 +4,27 @@ import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import rehypeRaw from 'rehype-raw'
 
-const BlogPost = ({ markdownPath }) => {
+const BlogPost = ({ markdownPath, category }) => {
   const [content, setContent] = useState('')
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(null)
   const navigate = useNavigate()
+
+  // Determine category display name and link
+  const getCategoryInfo = () => {
+    if (!category) return null
+
+    const categoryMap = {
+      'autonomy': { name: 'Autonomy', link: '/blog/autonomy' },
+      'electrical': { name: 'Electrical', link: '/blog/electrical' },
+      'mechanical': { name: 'Mechanical', link: '/blog/mechanical' },
+      'outreach': { name: 'Outreach', link: '/blog/outreach' }
+    }
+
+    return categoryMap[category.toLowerCase()] || null
+  }
+
+  const categoryInfo = getCategoryInfo()
 
   useEffect(() => {
     setLoading(true)
@@ -55,15 +71,6 @@ const BlogPost = ({ markdownPath }) => {
   return (
     <div className="py-12">
       <div className="container mx-auto px-4 max-w-4xl">
-        <div className="mb-6">
-          <button
-            onClick={() => navigate(-1)}
-            className="inline-flex items-center text-primary hover:text-secondary transition-colors"
-          >
-            <i className="bi bi-arrow-left mr-2"></i>
-            Back
-          </button>
-        </div>
         <div className="bg-white rounded-lg shadow-md p-8">
           <div className="prose prose-lg max-w-none">
             <ReactMarkdown
@@ -108,6 +115,25 @@ const BlogPost = ({ markdownPath }) => {
               {content}
             </ReactMarkdown>
           </div>
+        </div>
+
+        {/* Back button at bottom */}
+        <div className="mt-8 flex justify-center">
+          {categoryInfo ? (
+            <Link
+              to={categoryInfo.link}
+              className="px-6 py-3 text-text hover:text-primary transition-colors"
+            >
+              Back to {categoryInfo.name}
+            </Link>
+          ) : (
+            <button
+              onClick={() => navigate(-1)}
+              className="px-6 py-3 text-text hover:text-primary transition-colors"
+            >
+              Back
+            </button>
+          )}
         </div>
       </div>
     </div>

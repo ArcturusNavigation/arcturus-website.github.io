@@ -30,9 +30,20 @@ npm run preview
 
 ### Add a Blog Post
 
-1. Put markdown file with blog in `public/content/blogs/subteam/blog-name.md`
-2. Create component in `src/pages/blog/subteam/blog-name.jsx` for the blog card
-3. Add blog to respective subteam's page in `src/pages/blog/Subteam.jsx`
+1. Add markdown file: `public/content/blogs/{category}/{slug}.md`
+2. Add entry to the appropriate category array in `src/config/blogPosts.js`:
+   ```javascript
+   {
+     title: 'Post Title',
+     image: '/Pictures/Blogs/image.jpg',
+     description: 'Brief description',
+     link: '/blog/{category}/{slug}',  // or 'url' for outreach
+     markdownPath: '/content/blogs/{category}/{slug}.md',
+     category: '{category}'
+   }
+   ```
+
+Note: Category pages automatically import from `blogPosts.js`, so you only need to update one file.
 
 ### Add Images
 

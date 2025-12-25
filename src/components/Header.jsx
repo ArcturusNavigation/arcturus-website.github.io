@@ -9,8 +9,8 @@ const Header = () => {
   const isActive = (path) => location.pathname === path
 
   return (
-    <header className="sticky top-0 z-50 bg-primary shadow-md">
-      <div className="container mx-auto px-4 py-3 flex items-center justify-between">
+    <header className="sticky top-0 z-50 bg-primary shadow-md w-full">
+      <div className="container mx-auto px-4 py-3 flex items-center justify-between min-h-[60px]">
         {/* Logo */}
         <Link to="/" className="flex-shrink-0">
           <img
@@ -21,7 +21,7 @@ const Header = () => {
         </Link>
 
         {/* Desktop Navigation */}
-        <nav className="hidden lg:flex items-center space-x-8">
+        <nav className="hidden lg:flex items-center space-x-6">
           <Link
             to="/"
             className={`text-white hover:text-primary-light transition-colors ${isActive('/') ? 'text-primary-light' : ''}`}
@@ -77,8 +77,9 @@ const Header = () => {
 
         {/* Mobile Menu Toggle */}
         <button
-          className="lg:hidden text-white text-2xl"
+          className="lg:hidden text-white text-2xl p-2 hover:bg-primary-dark rounded transition-colors flex-shrink-0"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          aria-label="Toggle menu"
         >
           <i className={`bi ${mobileMenuOpen ? 'bi-x' : 'bi-list'}`}></i>
         </button>
@@ -89,8 +90,8 @@ const Header = () => {
         <div className="lg:hidden bg-white border-t border-gray-200">
           <nav className="flex flex-col py-2">
             {/* Mobile Search */}
-            <div className="px-6 py-2.5">
-              <Search />
+            <div className="px-4 py-2">
+              <Search mobile={true} />
             </div>
             <div className="border-t border-gray-200 my-2"></div>
 
