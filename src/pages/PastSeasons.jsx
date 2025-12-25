@@ -34,13 +34,6 @@ const PastSeasons = () => {
               to={season.link}
               className="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow overflow-hidden block group"
             >
-              {/* <div className="relative w-full aspect-[4/3] bg-white">
-                <img
-                  src={season.image}
-                  alt={season.title}
-                  className="absolute inset-0 w-full h-full object-cover"
-                />
-              </div> */}
               <div className="p-8">
                 <div className="relative w-full aspect-[3/2] overflow-hidden bg-gray-50">
 
@@ -52,14 +45,6 @@ const PastSeasons = () => {
                 </div>
               </div> 
 
-              {/* <div className="p-8 flex justify-center items-center bg-white" style={{ minHeight: '250px' }}>
-                <img
-                  src={season.image}
-                  alt={season.title}
-                  className="max-w-full h-auto object-contain"
-                  style={{ maxHeight: '300px' }}
-                />
-              </div> */}
               <div className="px-6 pb-6">
                 <h2 className="text-2xl font-heading font-bold text-primary mb-3 text-center">
                   {season.year}

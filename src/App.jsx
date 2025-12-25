@@ -13,6 +13,12 @@ import BlogOutreach from './pages/blog/Outreach'
 import BlogFishNShips from './pages/blog/FishNShips'
 import BlogYear22 from './pages/blog/Year22'
 import BlogYear23 from './pages/blog/Year23'
+import BlogYear22Navigation from './pages/blog/Year22Navigation'
+import BlogYear22Hullelectronics from './pages/blog/Year22Hullelectronics'
+import BlogYear22TaskForce from './pages/blog/Year22TaskForce'
+import BlogYear23Mechanics from './pages/blog/Year23Mechanics'
+import BlogYear23Electronics from './pages/blog/Year23Electronics'
+import BlogYear23Navigation from './pages/blog/Year23Navigation'
 import BlogPostWrapper from './pages/blog/BlogPostWrapper'
 
 function App() {
@@ -42,6 +48,12 @@ function App() {
         <Route path="/technical-work" element={<BlogFishNShips />} />
         <Route path="/blog/year-22" element={<BlogYear22 />} />
         <Route path="/blog/year-23" element={<BlogYear23 />} />
+        <Route path="/blog/year-22/navigation" element={<BlogYear22Navigation />} />
+        <Route path="/blog/year-22/hullelectronics" element={<BlogYear22Hullelectronics />} />
+        <Route path="/blog/year-22/taskforce" element={<BlogYear22TaskForce />} />
+        <Route path="/blog/year-23/mechanics" element={<BlogYear23Mechanics />} />
+        <Route path="/blog/year-23/electronics" element={<BlogYear23Electronics />} />
+        <Route path="/blog/year-23/navigation" element={<BlogYear23Navigation />} />
 
         {/* Dynamic blog post route - handles all category/slug combinations */}
         <Route path="/blog/:category/:slug" element={<BlogPostWrapper />} />
