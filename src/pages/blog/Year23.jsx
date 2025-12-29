@@ -118,7 +118,13 @@ const Year23 = () => {
           >
             Back to Past Seasons
           </Link>
-          <div style={{ width: '200px' }}></div>
+          <Link
+            to="/blog/year-25"
+            className="px-6 py-3 text-text hover:text-primary transition-colors"
+            style={{ width: '200px', textAlign: 'right' }}
+          >
+            Next Season →
+          </Link>
         </div>
       </div>
     </div>

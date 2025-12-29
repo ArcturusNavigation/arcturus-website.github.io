@@ -8,57 +8,60 @@ const Electrical = () => {
   return (
     <div className="py-12">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-8">
-          <h1 className="text-4xl font-heading font-bold text-primary mb-4">
-            Electrical Engineering
-          </h1>
+        <h1 className="text-4xl font-heading font-bold text-primary text-center mb-10">
+          Electrical Systems
+        </h1>
+
+        <div className="max-w-4xl mx-auto mb-12 text-center">
+          <p className="text-lg text-text mb-6">
+            Our electrical systems handle power distribution, sensing, and all onboard electronics for our autonomous surface vehicle.
+            This page will be updated with technical details for the 2025-2026 season.
+          </p>
+          <p className="text-text italic">
+            Content coming soon...
+          </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-          {subsystems.map((subsystem, index) => (
-            <Link
-              key={index}
-              to={subsystem.link}
-              className="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow overflow-hidden block group"
-            >
-              <div className="p-8 flex justify-center items-center bg-white" style={{ minHeight: '200px' }}>
-                <img
-                  src={subsystem.image}
-                  alt={subsystem.title}
-                  className="max-w-full h-auto object-contain"
-                  style={{ maxHeight: '180px' }}
-                />
-              </div>
-              <div className="px-6 pb-6">
-                <h4 className="text-xl font-heading font-bold text-primary mb-3 text-center">
-                  {subsystem.title}
-                </h4>
-                <p className="text-text text-center">
-                  {subsystem.description}
-                </p>
-              </div>
-            </Link>
-          ))}
-        </div>
+        {subsystems && subsystems.length > 0 && (
+          <>
+            <h2 className="text-3xl font-heading font-bold text-primary text-center mb-8">
+              Previous Work
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {subsystems.map((subsystem) => (
+                <Link
+                  key={subsystem.slug}
+                  to={`/blog/electrical/${subsystem.slug}`}
+                  className="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow overflow-hidden block group"
+                >
+                  <div className="p-8 flex justify-center items-center bg-white" style={{ minHeight: '200px' }}>
+                    <img
+                      src={subsystem.image}
+                      alt={subsystem.title}
+                      className="max-w-full h-auto object-contain"
+                      style={{ maxHeight: '180px' }}
+                    />
+                  </div>
+                  <div className="px-6 pb-6">
+                    <h4 className="text-xl font-heading font-bold text-primary mb-3 text-center">
+                      {subsystem.title}
+                    </h4>
+                    <p className="text-text text-center">
+                      {subsystem.description}
+                    </p>
+                  </div>
+                </Link>
+              ))}
+            </div>
+          </>
+        )}
 
-        <div className="flex justify-between items-center mt-12 max-w-6xl mx-auto">
-          <Link
-            to="/blog/autonomy"
-            className="px-6 py-3 text-text hover:text-primary transition-colors"
-          >
-            ← Autonomy
-          </Link>
+        <div className="mt-12 text-center">
           <Link
             to="/technical-work"
             className="px-6 py-3 text-text hover:text-primary transition-colors"
           >
-            Back to Technical Work
-          </Link>
-          <Link
-            to="/blog/mechanical"
-            className="px-6 py-3 text-text hover:text-primary transition-colors"
-          >
-            Mechanical →
+            ← Back to Current Technical Work
           </Link>
         </div>
       </div>

@@ -1,18 +1,18 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const FishNShips = () => {
+const TechnicalWork = () => {
   const subteams = [
     {
       title: 'Autonomy',
       image: '/Pictures/testing_fall2024.jpg',
-      description: 'Perception, localization, and planning systems that guide the ASV.',
+      description: 'Perception, localization, and planning systems for our ASV.',
       link: '/blog/autonomy'
     },
     {
       title: 'Electrical',
       image: '/Pictures/Blogs/bms.png',
-      description: 'Power distribution, sensing, and onboard electronics for our vehicle.',
+      description: 'Power distribution, sensing, and onboard electronics.',
       link: '/blog/electrical'
     },
     {
@@ -27,29 +27,23 @@ const FishNShips = () => {
     <div className="py-12 bg-gray-50">
       <div className="container mx-auto px-4">
         <h1 className="text-4xl font-heading font-bold text-primary text-center mb-10">
-          Fish 'N Ships Technical Documentation
+          Current Technical Work
         </h1>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center max-w-6xl mx-auto">
           <div className="flex justify-center">
-            <img
-              src="/Pictures/fishnships_pool.jpg"
-              alt="Fish N Ships at the pool"
-              className="w-full max-w-2xl rounded-lg shadow-lg"
-            />
+            <div className="w-full max-w-2xl rounded-lg shadow-lg bg-gray-200 aspect-video flex items-center justify-center">
+              <p className="text-gray-500 text-xl">Coming Soon</p>
+            </div>
           </div>
           <div className="space-y-6 text-center">
             <p className="text-lg text-text">
-              <em>Fish 'N Ships</em> is the autonomous surface vehicle (ASV) Arcturus has designed for the 2025 RoboBoat
-              competition. The vessel features a catamaran hull with four thrusters in an X-drive configuration for
-              precision control and agility.
+              Arcturus is currently developing our autonomous surface vehicle for the 2026 RoboBoat competition.
+              Stay tuned for updates on our technical progress throughout the season.
             </p>
-            <a
-              href="/Pictures/Blogs/TDR_MITArcturus_RB2025.pdf"
-              className="inline-flex items-center justify-center rounded-md bg-primary px-6 py-3 text-white font-semibold hover:bg-primary-light transition-colors"
-            >
-              RoboBoat 2025 Technical Design Report
-            </a>
+            <p className="text-text">
+              Check back later for our technical design report and detailed documentation.
+            </p>
           </div>
         </div>
 
@@ -90,4 +84,4 @@ const FishNShips = () => {
   )
 }
 
-export default FishNShips
+export default TechnicalWork

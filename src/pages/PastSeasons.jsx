@@ -14,6 +14,12 @@ const PastSeasons = () => {
       image: '/Pictures/roboboat2023_team.jpg',
       link: '/blog/year-23',
       year: '2022-2023'
+    },
+    {
+      title: '2023-2025 Season',
+      image: '/Pictures/fishnships_pool.jpg',
+      link: '/blog/year-25',
+      year: '2023-2025'
     }
   ]
 

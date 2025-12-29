@@ -10,9 +10,13 @@ import BlogAutonomy from './pages/blog/Autonomy'
 import BlogMechanical from './pages/blog/Mechanical'
 import BlogElectrical from './pages/blog/Electrical'
 import BlogOutreach from './pages/blog/Outreach'
-import BlogFishNShips from './pages/blog/FishNShips'
+import BlogTechnicalWork from './pages/blog/TechnicalWork'
 import BlogYear22 from './pages/blog/Year22'
 import BlogYear23 from './pages/blog/Year23'
+import BlogYear25 from './pages/blog/Year25'
+import BlogYear25Autonomy from './pages/blog/Year25Autonomy'
+import BlogYear25Electrical from './pages/blog/Year25Electrical'
+import BlogYear25Mechanical from './pages/blog/Year25Mechanical'
 import BlogYear22Navigation from './pages/blog/Year22Navigation'
 import BlogYear22Hullelectronics from './pages/blog/Year22Hullelectronics'
 import BlogYear22TaskForce from './pages/blog/Year22TaskForce'
@@ -45,9 +49,13 @@ function App() {
         <Route path="/blog/mechanical" element={<BlogMechanical />} />
         <Route path="/blog/electrical" element={<BlogElectrical />} />
         <Route path="/blog/outreach" element={<BlogOutreach />} />
-        <Route path="/technical-work" element={<BlogFishNShips />} />
+        <Route path="/technical-work" element={<BlogTechnicalWork />} />
         <Route path="/blog/year-22" element={<BlogYear22 />} />
         <Route path="/blog/year-23" element={<BlogYear23 />} />
+        <Route path="/blog/year-25" element={<BlogYear25 />} />
+        <Route path="/blog/year-25/autonomy" element={<BlogYear25Autonomy />} />
+        <Route path="/blog/year-25/electrical" element={<BlogYear25Electrical />} />
+        <Route path="/blog/year-25/mechanical" element={<BlogYear25Mechanical />} />
         <Route path="/blog/year-22/navigation" element={<BlogYear22Navigation />} />
         <Route path="/blog/year-22/hullelectronics" element={<BlogYear22Hullelectronics />} />
         <Route path="/blog/year-22/taskforce" element={<BlogYear22TaskForce />} />
