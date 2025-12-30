@@ -9,29 +9,22 @@ const Autonomy = () => {
     <div className="py-12">
       <div className="container mx-auto px-4">
         <h1 className="text-4xl font-heading font-bold text-primary text-center mb-10">
-          Autonomy Systems
+          Autonomy 
         </h1>
 
         <div className="max-w-4xl mx-auto mb-12 text-center">
           <p className="text-lg text-text mb-6">
             Our autonomy systems integrate perception, localization, and planning to enable fully autonomous navigation.
-            This page will be updated with technical details for the 2025-2026 season.
-          </p>
-          <p className="text-text italic">
-            Content coming soon...
           </p>
         </div>
 
         {subsystems && subsystems.length > 0 && (
           <>
-            <h2 className="text-3xl font-heading font-bold text-primary text-center mb-8">
-              Previous Work
-            </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {subsystems.map((subsystem) => (
                 <Link
                   key={subsystem.slug}
-                  to={`/blog/autonomy/${subsystem.slug}`}
+                  to={subsystem.link.replace('/blog/', '/blog/year-25/')}
                   className="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow overflow-hidden block group"
                 >
                   <div className="p-8 flex justify-center items-center bg-white" style={{ minHeight: '200px' }}>
@@ -61,7 +54,7 @@ const Autonomy = () => {
             to="/technical-work"
             className="px-6 py-3 text-text hover:text-primary transition-colors"
           >
-            ← Back to Current Technical Work
+            Back to Technical Work
           </Link>
         </div>
       </div>

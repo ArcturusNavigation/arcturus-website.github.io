@@ -9,6 +9,7 @@ import PastSeasons from './pages/PastSeasons'
 import BlogAutonomy from './pages/blog/Autonomy'
 import BlogMechanical from './pages/blog/Mechanical'
 import BlogElectrical from './pages/blog/Electrical'
+import BlogTesting from './pages/blog/Testing'
 import BlogOutreach from './pages/blog/Outreach'
 import BlogTechnicalWork from './pages/blog/TechnicalWork'
 import BlogYear22 from './pages/blog/Year22'
@@ -48,6 +49,7 @@ function App() {
         <Route path="/blog/autonomy" element={<BlogAutonomy />} />
         <Route path="/blog/mechanical" element={<BlogMechanical />} />
         <Route path="/blog/electrical" element={<BlogElectrical />} />
+        <Route path="/blog/testing" element={<BlogTesting />} />
         <Route path="/blog/outreach" element={<BlogOutreach />} />
         <Route path="/technical-work" element={<BlogTechnicalWork />} />
         <Route path="/blog/year-22" element={<BlogYear22 />} />
@@ -64,6 +66,7 @@ function App() {
         <Route path="/blog/year-23/navigation" element={<BlogYear23Navigation />} />
 
         {/* Dynamic blog post route - handles all category/slug combinations */}
+        <Route path="/blog/year-25/:category/:slug" element={<BlogPostWrapper />} />
         <Route path="/blog/:category/:slug" element={<BlogPostWrapper />} />
       </Routes>
     </Layout>

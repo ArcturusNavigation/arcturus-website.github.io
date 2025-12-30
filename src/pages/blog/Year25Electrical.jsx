@@ -18,7 +18,7 @@ const Year25Electrical = () => {
           {subsystems.map((subsystem, index) => (
             <Link
               key={index}
-              to={subsystem.link}
+              to={subsystem.link.replace('/blog/', '/blog/year-25/')}
               className="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow overflow-hidden block group"
             >
               <div className="p-8 flex justify-center items-center bg-white" style={{ minHeight: '200px' }}>
@@ -43,19 +43,19 @@ const Year25Electrical = () => {
 
         <div className="flex justify-between items-center mt-12 max-w-6xl mx-auto">
           <Link
-            to="/blog/autonomy"
+            to="/blog/year-25/autonomy"
             className="px-6 py-3 text-text hover:text-primary transition-colors"
           >
             ← Autonomy
           </Link>
           <Link
-            to="/technical-work"
+            to="/blog/year-25"
             className="px-6 py-3 text-text hover:text-primary transition-colors"
           >
-            Back to Technical Work
+            Back to 2023-2025 Season
           </Link>
           <Link
-            to="/blog/mechanical"
+            to="/blog/year-25/mechanical"
             className="px-6 py-3 text-text hover:text-primary transition-colors"
           >
             Mechanical →

@@ -20,6 +20,12 @@ const TechnicalWork = () => {
       image: '/Pictures/boat_cad.jpg',
       description: 'Hull design, propulsion integration, and mechanical systems.',
       link: '/blog/mechanical'
+    },
+    {
+      title: 'Testing',
+      image: '/Pictures/testing.png',
+      description: 'System integration, testing procedures, and validation.',
+      link: '/blog/testing'
     }
   ]
 
@@ -32,17 +38,15 @@ const TechnicalWork = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center max-w-6xl mx-auto">
           <div className="flex justify-center">
-            <div className="w-full max-w-2xl rounded-lg shadow-lg bg-gray-200 aspect-video flex items-center justify-center">
-              <p className="text-gray-500 text-xl">Coming Soon</p>
-            </div>
+            <img
+              src="/Pictures/fishnships_florida.jpg"
+              className="w-full max-w-2xl rounded-lg shadow-lg"
+            />
           </div>
           <div className="space-y-6 text-center">
             <p className="text-lg text-text">
-              Arcturus is currently developing our autonomous surface vehicle for the 2026 RoboBoat competition.
-              Stay tuned for updates on our technical progress throughout the season.
-            </p>
-            <p className="text-text">
-              Check back later for our technical design report and detailed documentation.
+              <i>Fish 'N Ships</i> is the autonomous surface vehicle (ASV) Arcturus is competing with for the 2026 Roboboat
+              competition. In parallel, Arcturus is currently developing a new autonomous surface vehicle for Roboboat 2027!
             </p>
           </div>
         </div>

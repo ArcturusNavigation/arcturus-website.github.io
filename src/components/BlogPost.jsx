@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { Link, useNavigate } from 'react-router-dom'
+import { Link, useNavigate, useLocation } from 'react-router-dom'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import rehypeRaw from 'rehype-raw'
@@ -9,6 +9,7 @@ const BlogPost = ({ markdownPath, category }) => {
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(null)
   const navigate = useNavigate()
+  const location = useLocation()
 
   // Determine category display name and link
   const getCategoryInfo = () => {
@@ -21,7 +22,14 @@ const BlogPost = ({ markdownPath, category }) => {
       'outreach': { name: 'Outreach', link: '/blog/outreach' }
     }
 
-    return categoryMap[category.toLowerCase()] || null
+    const info = categoryMap[category.toLowerCase()] || null
+
+    // If current URL contains /year-25/, adjust the back link to include it
+    if (info && location.pathname.includes('/year-25/')) {
+      return { ...info, link: `/blog/year-25/${category}` }
+    }
+
+    return info
   }
 
   const categoryInfo = getCategoryInfo()
@@ -102,6 +110,15 @@ const BlogPost = ({ markdownPath, category }) => {
                 ),
                 a: ({node, ...props}) => (
                   <a className="text-secondary hover:text-primary underline" target="_blank" rel="noopener noreferrer" {...props} />
+                ),
+                ul: ({node, ...props}) => (
+                  <ul className="list-disc list-outside ml-6 mb-4 space-y-2" {...props} />
+                ),
+                ol: ({node, ...props}) => (
+                  <ol className="list-decimal list-outside ml-6 mb-4 space-y-2" {...props} />
+                ),
+                li: ({node, ...props}) => (
+                  <li className="text-gray-700 leading-relaxed" {...props} />
                 ),
                 video: ({node, ...props}) => (
                   <video

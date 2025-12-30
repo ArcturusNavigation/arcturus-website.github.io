@@ -104,6 +104,136 @@ export const categoryBlogs = {
       category: 'electrical'
     }
   ],
+  testing: [
+    {
+      title: '04/18/25 System Test',
+      date: '2025-04-18',
+      description: 'System integration and validation testing',
+      link: '/blog/testing/system-test-04-18-25',
+      markdownPath: '/content/blogs/testing/system-test-04-18-25.md',
+      category: 'testing'
+    },
+    {
+      title: '05/02/25 System Test',
+      date: '2025-05-02',
+      description: 'System integration and validation testing',
+      link: '/blog/testing/system-test-05-02-25',
+      markdownPath: '/content/blogs/testing/system-test-05-02-25.md',
+      category: 'testing'
+    },
+    {
+      title: '07/22/25 Sensor Cart Pre-Test Debugging/Validation',
+      date: '2025-07-22',
+      description: 'Sensor cart debugging and validation procedures',
+      link: '/blog/testing/sensor-cart-pre-test-07-22-25',
+      markdownPath: '/content/blogs/testing/sensor-cart-pre-test-07-22-25.md',
+      category: 'testing'
+    },
+    {
+      title: '07/26/25 Follow the Path Test to Validate SLAM w/ 360 Camera',
+      date: '2025-07-26',
+      description: 'Path following test with SLAM and 360 camera validation',
+      link: '/blog/testing/slam-path-test-07-26-25',
+      markdownPath: '/content/blogs/testing/slam-path-test-07-26-25.md',
+      category: 'testing'
+    },
+    {
+      title: '07/27/25 Post-test ROSBag Analysis & Debugging',
+      date: '2025-07-27',
+      description: 'Analysis of ROSBag data and post-test debugging',
+      link: '/blog/testing/rosbag-analysis-07-27-25',
+      markdownPath: '/content/blogs/testing/rosbag-analysis-07-27-25.md',
+      category: 'testing'
+    },
+    {
+      title: '08/20/25 DiscOE Shock + Vibe Test',
+      date: '2025-08-20',
+      description: 'Shock and vibration testing for DiscOE program',
+      link: '/blog/testing/discoe-shock-vibe-08-20-25',
+      markdownPath: '/content/blogs/testing/discoe-shock-vibe-08-20-25.md',
+      category: 'testing'
+    },
+    {
+      title: '09/20/25 System Test',
+      date: '2025-09-20',
+      description: 'System integration and validation testing',
+      link: '/blog/testing/system-test-09-20-25',
+      markdownPath: '/content/blogs/testing/system-test-09-20-25.md',
+      category: 'testing'
+    },
+    {
+      title: '10/01/25 Thruster Latency Test',
+      date: '2025-10-01',
+      description: 'Testing and measurement of thruster response latency',
+      link: '/blog/testing/thruster-latency-10-01-25',
+      markdownPath: '/content/blogs/testing/thruster-latency-10-01-25.md',
+      category: 'testing'
+    },
+    {
+      title: '10/04/25 System Test',
+      date: '2025-10-04',
+      description: 'System integration and validation testing',
+      link: '/blog/testing/system-test-10-04-25',
+      markdownPath: '/content/blogs/testing/system-test-10-04-25.md',
+      category: 'testing'
+    },
+    {
+      title: '10/18/25 System Test',
+      date: '2025-10-18',
+      description: 'System integration and validation testing',
+      link: '/blog/testing/system-test-10-18-25',
+      markdownPath: '/content/blogs/testing/system-test-10-18-25.md',
+      category: 'testing'
+    },
+    {
+      title: '11/08/25 System Test',
+      date: '2025-11-08',
+      description: 'System integration and validation testing',
+      link: '/blog/testing/system-test-11-08-25',
+      markdownPath: '/content/blogs/testing/system-test-11-08-25.md',
+      category: 'testing'
+    },
+    {
+      title: '11/11/25 System Test',
+      date: '2025-11-11',
+      description: 'System integration and validation testing',
+      link: '/blog/testing/system-test-11-11-25',
+      markdownPath: '/content/blogs/testing/system-test-11-11-25.md',
+      category: 'testing'
+    },
+    {
+      title: '11/15/25 System Test',
+      date: '2025-11-15',
+      description: 'System integration and validation testing',
+      link: '/blog/testing/system-test-11-15-25',
+      markdownPath: '/content/blogs/testing/system-test-11-15-25.md',
+      category: 'testing'
+    },
+    {
+      title: '11/19/25 System Test',
+      date: '2025-11-19',
+      description: 'System integration and validation testing',
+      link: '/blog/testing/system-test-11-19-25',
+      markdownPath: '/content/blogs/testing/system-test-11-19-25.md',
+      category: 'testing'
+    },
+    {
+      title: '11/24/25 System Test',
+      date: '2025-11-24',
+      description: 'System integration and validation testing',
+      link: '/blog/testing/system-test-11-24-25',
+      markdownPath: '/content/blogs/testing/system-test-11-24-25.md',
+      category: 'testing'
+    },
+    {
+      title: '12/08/25 Ball Launcher Test',
+      date: '2025-12-08',
+      description: 'Testing and validation of ball launcher mechanism',
+      link: '/blog/testing/ball-launcher-12-08-25',
+      markdownPath: '/content/blogs/testing/ball-launcher-12-08-25.md',
+      category: 'testing'
+    }
+  ],
   outreach: [
     {
       title: "Cambridge Science Festival 2024",
