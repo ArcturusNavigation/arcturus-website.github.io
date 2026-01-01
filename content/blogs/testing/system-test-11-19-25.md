@@ -24,7 +24,7 @@
 - On the way back boat bypassed first two pairs and just navigated through the third—not sure if this is related to above or a different issue
 
 <video src="/Pictures/Blogs/testing-11-19-25-combined.mp4" autoplay muted loop playsinline style="width: 70%; max-width: 70%; max-height: 70%; display: block; margin: 0 auto 30px;"></video>
-*Fig 1. A run of the Debris Clearance task. The vehicle successfully navigates through the transit channel and around the color indicator (currently just a regular buoy while the color indicator is being built), but it doesn't go through the transit channel on the way back. *
+*Fig 1. A run of the Debris Clearance task. The vehicle successfully navigates through the transit channel and around the color indicator (currently just a regular buoy while the color indicator is being built), but it doesn't go through the transit channel on the way back.*
 
 <video src="/Pictures/Blogs/testing-11-19-25-speed.mp4" autoplay muted loop playsinline style="width: 70%; max-width: 70%; max-height: 70%; display: block; margin: 0 auto 30px;"></video>
 *Fig 2. A successful run of the vehicle completing the Emergency Response Sprint / Speed Challenge.*
