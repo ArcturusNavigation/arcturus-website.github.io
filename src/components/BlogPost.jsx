@@ -3,6 +3,7 @@ import { Link, useNavigate, useLocation } from 'react-router-dom'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import rehypeRaw from 'rehype-raw'
+import { categoryBlogs } from '../config/blogPosts'
 
 const BlogPost = ({ markdownPath, category }) => {
   const [content, setContent] = useState('')
@@ -38,6 +39,23 @@ const BlogPost = ({ markdownPath, category }) => {
   }
 
   const categoryInfo = getCategoryInfo()
+
+  // Get prev/next navigation for testing category
+  const getAdjacentPosts = () => {
+    if (category !== 'testing') return { prev: null, next: null }
+
+    const posts = categoryBlogs.testing
+    const currentIndex = posts.findIndex(post => post.markdownPath === markdownPath)
+
+    if (currentIndex === -1) return { prev: null, next: null }
+
+    return {
+      prev: currentIndex > 0 ? posts[currentIndex - 1] : null,
+      next: currentIndex < posts.length - 1 ? posts[currentIndex + 1] : null
+    }
+  }
+
+  const { prev, next } = getAdjacentPosts()
 
   useEffect(() => {
     setLoading(true)
@@ -157,8 +175,21 @@ const BlogPost = ({ markdownPath, category }) => {
           </div>
         </div>
 
-        {/* Back button at bottom */}
-        <div className="mt-8 flex justify-center">
+        {/* Navigation buttons at bottom */}
+        <div className="mt-8 flex justify-between items-center">
+          {/* Previous button */}
+          {prev ? (
+            <Link
+              to={prev.link}
+              className="px-6 py-3 text-text hover:text-primary transition-colors"
+            >
+              ← Previous
+            </Link>
+          ) : (
+            <div className="px-6 py-3 invisible">← Previous</div>
+          )}
+
+          {/* Back button */}
           {categoryInfo ? (
             <Link
               to={categoryInfo.link}
@@ -173,6 +204,18 @@ const BlogPost = ({ markdownPath, category }) => {
             >
               Back
             </button>
+          )}
+
+          {/* Next button */}
+          {next ? (
+            <Link
+              to={next.link}
+              className="px-6 py-3 text-text hover:text-primary transition-colors"
+            >
+              Next →
+            </Link>
+          ) : (
+            <div className="px-6 py-3 invisible">Next →</div>
           )}
         </div>
       </div>
