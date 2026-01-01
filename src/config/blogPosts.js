@@ -194,7 +194,7 @@ export const categoryBlogs = {
       category: 'testing'
     },
     {
-      title: '11/11/25 and 11/15/25 System Test',
+      title: '11/11/25 and 11/15/25 System Tests',
       date: '2025-11-15',
       description: 'System integration and validation testing',
       link: '/blog/testing/system-test-11-11-25',
@@ -202,19 +202,11 @@ export const categoryBlogs = {
       category: 'testing'
     },
     {
-      title: '11/19/25 System Test',
+      title: '11/19/25 and 11/24/25 System Tests',
       date: '2025-11-19',
       description: 'System integration and validation testing',
       link: '/blog/testing/system-test-11-19-25',
       markdownPath: '/content/blogs/testing/system-test-11-19-25.md',
-      category: 'testing'
-    },
-    {
-      title: '11/24/25 System Test',
-      date: '2025-11-24',
-      description: 'System integration and validation testing',
-      link: '/blog/testing/system-test-11-24-25',
-      markdownPath: '/content/blogs/testing/system-test-11-24-25.md',
       category: 'testing'
     },
   ],
