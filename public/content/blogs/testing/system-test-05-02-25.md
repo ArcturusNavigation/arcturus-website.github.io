@@ -1,18 +1,12 @@
 # 05/02/25 System Test
 
-This system test focused on validating the integration and functionality of our autonomous surface vehicle's key subsystems.
-
 ## Test Objectives
-
-- Validate system integration
-- Test autonomous navigation capabilities
-- Verify sensor performance
-- Assess overall vehicle reliability
+- Test follow the path with our new SLAM implementation
 
 ## Results
+- We encountered perception issues during the test. 
+- When running follow the path, the camera didn't see the buoys. 
+- The camera also stopped updating when the boat moved. 
 
-[Test results and findings to be added]
-
-## Key Takeaways
-
-[Lessons learned and next steps to be documented]
+## Next Steps
+- This is the last test we were able to run for the semester. We'll spend the summer focused on perception, integrating the new 360 camera system. 

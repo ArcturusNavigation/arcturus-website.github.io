@@ -24,16 +24,13 @@ const Testing = () => {
               <Link
                 key={test.link}
                 to={test.link}
-                className="block bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow p-6 group"
+                className="block bg-white rounded-lg shadow-md hover:shadow-xl transition-all p-6 group"
               >
                 <div className="flex items-start justify-between gap-4">
                   <div className="flex-1">
-                    <h3 className="text-xl font-heading font-bold text-primary mb-2 group-hover:underline">
+                    <h3 className="text-xl font-heading font-bold text-primary group-hover:text-accent transition-colors">
                       {test.title}
                     </h3>
-                    <p className="text-text">
-                      {test.description}
-                    </p>
                   </div>
                   <div className="text-sm text-gray-500 whitespace-nowrap">
                     {(() => {

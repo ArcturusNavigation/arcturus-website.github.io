@@ -194,19 +194,11 @@ export const categoryBlogs = {
       category: 'testing'
     },
     {
-      title: '11/11/25 System Test',
-      date: '2025-11-11',
+      title: '11/11/25 and 11/15/25 System Test',
+      date: '2025-11-15',
       description: 'System integration and validation testing',
       link: '/blog/testing/system-test-11-11-25',
       markdownPath: '/content/blogs/testing/system-test-11-11-25.md',
-      category: 'testing'
-    },
-    {
-      title: '11/15/25 System Test',
-      date: '2025-11-15',
-      description: 'System integration and validation testing',
-      link: '/blog/testing/system-test-11-15-25',
-      markdownPath: '/content/blogs/testing/system-test-11-15-25.md',
       category: 'testing'
     },
     {
@@ -225,14 +217,6 @@ export const categoryBlogs = {
       markdownPath: '/content/blogs/testing/system-test-11-24-25.md',
       category: 'testing'
     },
-    {
-      title: '12/08/25 Ball Launcher Test',
-      date: '2025-12-08',
-      description: 'Testing and validation of ball launcher mechanism',
-      link: '/blog/testing/ball-launcher-12-08-25',
-      markdownPath: '/content/blogs/testing/ball-launcher-12-08-25.md',
-      category: 'testing'
-    }
   ],
   outreach: [
     {

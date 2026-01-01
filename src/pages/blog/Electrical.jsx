@@ -25,6 +25,7 @@ const Electrical = () => {
                 <Link
                   key={subsystem.slug}
                   to={subsystem.link.replace('/blog/', '/blog/year-25/')}
+                  state={{ from: '/blog/electrical' }}
                   className="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow overflow-hidden block group"
                 >
                   <div className="p-8 flex justify-center items-center bg-white" style={{ minHeight: '200px' }}>

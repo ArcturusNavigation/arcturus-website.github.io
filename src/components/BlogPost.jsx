@@ -24,7 +24,12 @@ const BlogPost = ({ markdownPath, category }) => {
 
     const info = categoryMap[category.toLowerCase()] || null
 
-    // If current URL contains /year-25/, adjust the back link to include it
+    // If user navigated from a category page, use that as the back link
+    if (location.state?.from) {
+      return { ...info, link: location.state.from }
+    }
+
+    // Otherwise, if current URL contains /year-25/, adjust the back link to include it
     if (info && location.pathname.includes('/year-25/')) {
       return { ...info, link: `/blog/year-25/${category}` }
     }
@@ -126,6 +131,24 @@ const BlogPost = ({ markdownPath, category }) => {
                     className="mx-auto my-8 rounded-lg"
                     style={{maxWidth: '70%'}}
                   />
+                ),
+                table: ({node, ...props}) => (
+                  <table className="min-w-full border-collapse border border-gray-300 my-6" {...props} />
+                ),
+                thead: ({node, ...props}) => (
+                  <thead className="bg-gray-100" {...props} />
+                ),
+                tbody: ({node, ...props}) => (
+                  <tbody {...props} />
+                ),
+                tr: ({node, ...props}) => (
+                  <tr className="border-b border-gray-300" {...props} />
+                ),
+                th: ({node, ...props}) => (
+                  <th className="border border-gray-300 px-4 py-2 text-left font-semibold" {...props} />
+                ),
+                td: ({node, ...props}) => (
+                  <td className="border border-gray-300 px-4 py-2" {...props} />
                 ),
               }}
             >
