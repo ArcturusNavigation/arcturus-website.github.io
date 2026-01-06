@@ -20,7 +20,8 @@ const BlogPost = ({ markdownPath, category }) => {
       'autonomy': { name: 'Autonomy', link: '/blog/autonomy' },
       'electrical': { name: 'Electrical', link: '/blog/electrical' },
       'mechanical': { name: 'Mechanical', link: '/blog/mechanical' },
-      'outreach': { name: 'Outreach', link: '/blog/outreach' }
+      'outreach': { name: 'Outreach', link: '/blog/outreach' },
+      'testing': { name: 'Testing', link: '/blog/testing' }
     }
 
     const info = categoryMap[category.toLowerCase()] || null
