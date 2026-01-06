@@ -11,12 +11,15 @@
 **Localization/SLAM Optimization:**
 - Worked very well, almost no duplicates. when they appeared seems to be caused by GPS teleporting. 
 - Also works much better when rviz is closed
+
 **Controller:**
 - Kp_theta turned up till boat heading is just a little bit unstable but mostly works
+
 **Speed:**
 - Couple 100% successful runs going between gates around buoy and back thru gates
 - Generally much better performance when probe ends such that boat only needs to semi-circle buoy vs full circle (e.g., if has to cross its own wake to round the buoy it adds a bunch of extra spins)
 - Weird behavior where after being fed first waypoint boat waits for like 2 sec before following it
+
 **Follow the Path:**
 - Having a hard time w/ waypoint tolerances—boat navigates v slowly and collides w/ lots of buoys
 - Generally, waypoints don’t really provide any incentive for the boat to actually go through the buoys. It just sort of meanders over (not necessarily in the channel)
