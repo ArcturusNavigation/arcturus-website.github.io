@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { categoryBlogs } from '../../config/blogPosts'
 
 const Year25Mechanical = () => {
-  const subsystems = categoryBlogs.mechanical
+  const subsystems = categoryBlogs.mechanical25
 
   return (
     <div className="py-12">
@@ -18,7 +18,7 @@ const Year25Mechanical = () => {
           {subsystems.map((subsystem, index) => (
             <Link
               key={index}
-              to={subsystem.link.replace('/blog/', '/blog/year-25/')}
+              to={subsystem.link}
               className="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow overflow-hidden block group"
             >
               <div className="p-8 flex justify-center items-center bg-white" style={{ minHeight: '200px' }}>

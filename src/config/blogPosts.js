@@ -138,6 +138,74 @@ export const categoryBlogs = {
       category: 'electrical'
     }
   ],
+  electrical25: [
+    {
+      title: 'Battery Management System (BMS)',
+      image: '/pictures/Blogs/bms.png',
+      description: 'Power distribution and battery monitoring system',
+      link: '/blog/year-25/electrical/bms',
+      markdownPath: '/content/blogs/electrical25/bms.md',
+      category: 'electrical25'
+    },
+    {
+      title: 'Buck Board',
+      image: '/pictures/Blogs/buckboard.jpg',
+      description: 'Voltage regulation for electronic components',
+      link: '/blog/year-25/electrical/buckboard',
+      markdownPath: '/content/blogs/electrical25/buckboard.md',
+      category: 'electrical25'
+    },
+    {
+      title: 'E-Stop',
+      image: '/pictures/Blogs/estop.png',
+      description: 'Emergency stop system for safety',
+      link: '/blog/year-25/electrical/estop',
+      markdownPath: '/content/blogs/electrical25/estop.md',
+      category: 'electrical25'
+    }
+  ],
+  mechanical25: [
+    {
+      title: 'Hulls',
+      image: '/pictures/Blogs/hulls2.png',
+      description: 'Foundation of our boat',
+      link: '/blog/year-25/mechanical/hulls',
+      markdownPath: '/content/blogs/mechanical25/hulls.md',
+      category: 'mechanical25'
+    },
+    {
+      title: 'Propulsion/Thruster Cages',
+      image: '/pictures/Blogs/propulsion.png',
+      description: 'Driving force of our boat',
+      link: '/blog/year-25/mechanical/propulsion',
+      markdownPath: '/content/blogs/mechanical25/propulsion.md',
+      category: 'mechanical25'
+    },
+    {
+      title: 'EE Box',
+      image: '/pictures/Blogs/eebox3.png',
+      description: 'Electronics protector',
+      link: '/blog/year-25/mechanical/eebox',
+      markdownPath: '/content/blogs/mechanical25/eebox.md',
+      category: 'mechanical25'
+    },
+    {
+      title: 'Sensor Mast',
+      image: '/pictures/Blogs/sensormast2.png',
+      description: 'Mounting point for sensors',
+      link: '/blog/year-25/mechanical/sensormast',
+      markdownPath: '/content/blogs/mechanical25/sensormast.md',
+      category: 'mechanical25'
+    },
+    {
+      title: 'Mechanisms',
+      image: '/pictures/Blogs/mechanism.jpg',
+      description: 'Allow for robotic functions',
+      link: '/blog/year-25/mechanical/mechanisms',
+      markdownPath: '/content/blogs/mechanical25/mechanisms.md',
+      category: 'mechanical25'
+    }
+  ],
   testing: [
     {
       title: '04/18/25 System Test',
