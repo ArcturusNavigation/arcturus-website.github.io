@@ -4,52 +4,52 @@ const Sponsors = () => {
   const sponsors = [
     {
       name: 'Edgerton Center',
-      logo: '/Pictures/Sponsors/edgerton-logo-new.png',
+      logo: '/pictures/Sponsors/edgerton-logo-new.png',
       url: 'https://edgerton.mit.edu/'
     },
     {
       name: 'MIT MechE',
-      logo: '/Pictures/Sponsors/mit-meche-logo.jpg',
+      logo: '/pictures/Sponsors/mit-meche-logo.jpg',
       url: 'https://meche.mit.edu/'
     },
     {
       name: 'Saronic',
-      logo: '/Pictures/Sponsors/saronic.jpg',
+      logo: '/pictures/Sponsors/saronic.jpg',
       url: 'https://www.saronic.com/'
     },
     {
       name: 'Cadence',
-      logo: '/Pictures/Sponsors/cadence-logo.png',
+      logo: '/pictures/Sponsors/cadence-logo.png',
       url: 'https://www.cadence.com/en_US/home.html'
     },
     {
       name: 'Anduril',
-      logo: '/Pictures/Sponsors/anduril.png',
+      logo: '/pictures/Sponsors/anduril.png',
       url: 'https://www.anduril.com/'
     },
     {
       name: 'Gordon-MIT Engineering Leadership',
-      logo: '/Pictures/Sponsors/gel.jpg',
+      logo: '/pictures/Sponsors/gel.jpg',
       url: 'https://gel.mit.edu/'
     },
     {
       name: 'Sea Grant',
-      logo: '/Pictures/Sponsors/seagrant.png',
+      logo: '/pictures/Sponsors/seagrant.png',
       url: 'https://seagrant.noaa.gov/'
     },
     {
       name: 'Ansys',
-      logo: '/Pictures/Sponsors/ansys.png',
+      logo: '/pictures/Sponsors/ansys.png',
       url: 'https://www.ansys.com/'
     },
     {
       name: 'Formlabs',
-      logo: '/Pictures/Sponsors/formlabs-logo.png',
+      logo: '/pictures/Sponsors/formlabs-logo.png',
       url: 'https://formlabs.com/'
     },
     {
       name: 'PTC',
-      logo: '/Pictures/Sponsors/ptc.png',
+      logo: '/pictures/Sponsors/ptc.png',
       url: 'https://www.ptc.com/en/'
     },
   ]
@@ -136,7 +136,7 @@ const Sponsors = () => {
           {/* Donation Tiers Image */}
           <div className="flex justify-center mt-12">
             <img
-              src="/Pictures/donation-tier.png"
+              src="/pictures/donation-tier.png"
               alt="Donation Tiers"
               className="max-w-full md:max-w-md lg:max-w-lg rounded-lg shadow-lg"
             />

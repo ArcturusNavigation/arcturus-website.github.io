@@ -15,7 +15,7 @@ We tested follow the path in four different scenarios, varying the speed of the 
 | Straight Path | Consistent          | Pretty good consistency; failures caused by being in convex hull of "obstacle" |
 | Curved        | Somewhat Consistent | Errors believed to be caused by: <br> 1. Misdetection of a dark spot on the wall as a green buoy <br> 2. Generating waypoints between diagonal pairs |
 
-<video src="/Pictures/Blogs/testing-10-18-25.mov" autoplay muted loop playsinline style="width: 70%; max-width: 70%; max-height: 70%; display: block; margin: 0 auto 30px;"></video>
+<video src="/pictures/Blogs/testing-10-18-25.mov" autoplay muted loop playsinline style="width: 70%; max-width: 70%; max-height: 70%; display: block; margin: 0 auto 30px;"></video>
 *Fig 1. At higher speeds, our approach to Follow the Path is less consistent.*
 
 **Speed Challenge**

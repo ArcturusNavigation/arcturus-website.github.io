@@ -5,25 +5,25 @@ const TechnicalWork = () => {
   const subteams = [
     {
       title: 'Autonomy',
-      image: '/Pictures/testing_fall2024.jpg',
+      image: '/pictures/testing_fall2024.jpg',
       description: 'Perception, localization, and planning systems for our ASV.',
       link: '/blog/autonomy'
     },
     {
       title: 'Electrical',
-      image: '/Pictures/Blogs/bms.png',
+      image: '/pictures/Blogs/bms.png',
       description: 'Power distribution, sensing, and onboard electronics.',
       link: '/blog/electrical'
     },
     {
       title: 'Mechanical',
-      image: '/Pictures/boat_cad.jpg',
+      image: '/pictures/boat_cad.jpg',
       description: 'Hull design, propulsion integration, and mechanical systems.',
       link: '/blog/mechanical'
     },
     {
       title: 'Testing',
-      image: '/Pictures/testing.png',
+      image: '/pictures/testing.png',
       description: 'System integration, testing procedures, and validation.',
       link: '/blog/testing'
     }
@@ -39,7 +39,7 @@ const TechnicalWork = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center max-w-6xl mx-auto">
           <div className="flex justify-center">
             <img
-              src="/Pictures/fishnships_florida.jpg"
+              src="/pictures/fishnships_florida.jpg"
               className="w-full max-w-2xl rounded-lg shadow-lg"
             />
           </div>

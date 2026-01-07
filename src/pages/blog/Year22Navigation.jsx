@@ -21,7 +21,7 @@ const Year22Navigation = () => {
           {/* Buoy Detection */}
           <article className="bg-white p-8 rounded-lg shadow-lg">
             <img
-              src="/Pictures/Blogs/navigation_11.png"
+              src="/pictures/Blogs/navigation_11.png"
               alt="Buoy Detection"
               className="w-full max-w-md mx-auto mb-6 rounded-lg"
             />
@@ -46,7 +46,7 @@ const Year22Navigation = () => {
           {/* Path Planning */}
           <article className="bg-white p-8 rounded-lg shadow-lg">
             <img
-              src="/Pictures/Blogs/navigation_1.png"
+              src="/pictures/Blogs/navigation_1.png"
               alt="Path Planning"
               className="w-full mb-6 rounded-lg"
             />

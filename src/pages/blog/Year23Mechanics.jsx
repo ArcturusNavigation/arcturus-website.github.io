@@ -90,7 +90,7 @@ const Year23Mechanics = () => {
                 storage.
               </p>
               <div className="flex justify-center mt-6">
-                <img src="/Pictures/Blogs/ship-happens-3-2-23-ME-pic2.png" alt="Cradle design" className="max-w-md w-full" />
+                <img src="/pictures/Blogs/ship-happens-3-2-23-ME-pic2.png" alt="Cradle design" className="max-w-md w-full" />
               </div>
             </div>
           </article>
@@ -109,7 +109,7 @@ const Year23Mechanics = () => {
                 Design Center of MIT.
               </p>
               <div className="flex justify-center mt-6">
-                <img src="/Pictures/Blogs/ship-happens-3-23-23-ME-pic1.png" alt="Heat sink design" className="max-w-md w-full" />
+                <img src="/pictures/Blogs/ship-happens-3-23-23-ME-pic1.png" alt="Heat sink design" className="max-w-md w-full" />
               </div>
             </div>
           </article>
@@ -144,17 +144,17 @@ const Year23Mechanics = () => {
                   What ended up being more time-consuming than expected was the process of drilling out the hulls. Since the thruster pods penetrate the hulls, we needed to drill out a large 2.5" diameter though each hull of our catamaran using a large forstner bit. Initially we attempted to do still the hold outside with a hands drill. The forstner bit worked well to cut the fiberglass and foam, but it was difficult to cut straight down so we switched to the drill press.
                 </p>
                 <div className="flex justify-center my-6">
-                  <video src="/Pictures/Blogs/ship-happens-1-8-23-ME-vid1.mp4" controls className="max-w-2xl w-full" />
+                  <video src="/pictures/Blogs/ship-happens-1-8-23-ME-vid1.mp4" controls className="max-w-2xl w-full" />
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
-                  <img src="/Pictures/Blogs/ship-happens-1-8-23-ME-pic1.jpg" alt="Azipod assembly 1" className="w-full" />
-                  <img src="/Pictures/Blogs/ship-happens-1-8-23-ME-pic2.jpg" alt="Azipod assembly 2" className="w-full" />
+                  <img src="/pictures/Blogs/ship-happens-1-8-23-ME-pic1.jpg" alt="Azipod assembly 1" className="w-full" />
+                  <img src="/pictures/Blogs/ship-happens-1-8-23-ME-pic2.jpg" alt="Azipod assembly 2" className="w-full" />
                 </div>
                 <p>
                   Once the holes were cut, we did a layup process on the newly exposed foam. For this, we added a few layers of fiberglass and epoxy to reinforce the foam and water proof everything. The first layer of fiberglass saturated in epoxy did not attach well to the foam so we used push pins to hold it in place.
                 </p>
                 <div className="flex justify-center my-6">
-                  <img src="/Pictures/Blogs/ship-happens-1-8-23-ME-pic3.jpg" alt="Fiberglass layup" className="max-w-md w-full" />
+                  <img src="/pictures/Blogs/ship-happens-1-8-23-ME-pic3.jpg" alt="Fiberglass layup" className="max-w-md w-full" />
                 </div>
                 <p>
                   We are very excited to integrate our thruster pod into <em>Ship Happens</em> and test out the new design as soon as the last aspects of assembling are completed!
@@ -176,8 +176,8 @@ const Year23Mechanics = () => {
                   Most of the first iteration of the launcher is finished, and we learned a lot about the design through the fabrication of the shooter. First, we learned that the current method for connecting the shooter to the turret is not the most stable. These two mechanisms are currently connected by acrylic laser cut tabs that attach to the shooter's side panels and hang from the gear. However, when we assembled this we discovered that the brackets did not provide a lot of stability for the shooter. We plan to stabilize this connection by using an L-bracket or axle to minimize movement between the shooter and turret.
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
-                  <img src="/Pictures/Blogs/ship-happens-1-8-23-ME-pic4.jpg" alt="Ball launcher 1" className="w-full" />
-                  <img src="/Pictures/Blogs/ship-happens-1-8-23-ME-pic5.jpg" alt="Ball launcher 2" className="w-full" />
+                  <img src="/pictures/Blogs/ship-happens-1-8-23-ME-pic4.jpg" alt="Ball launcher 1" className="w-full" />
+                  <img src="/pictures/Blogs/ship-happens-1-8-23-ME-pic5.jpg" alt="Ball launcher 2" className="w-full" />
                 </div>
               </div>
 
@@ -187,21 +187,21 @@ const Year23Mechanics = () => {
                   The goal of this sub-project is to redo the deck of our autonomous surface vehicle, <em>Ship Happens</em>. The deck of the boat provides a flat and strong working surface for other sub teams to attach their modules to, and provides a barrier between the water splashing up between the hulls to the mechanical and electrical components that sit on the deck.
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
-                  <img src="/Pictures/Blogs/ship-happens-1-8-23-ME-pic6.jpg" alt="Boat deck 1" className="w-full" />
-                  <img src="/Pictures/Blogs/ship-happens-1-8-23-ME-pic7.JPG" alt="Boat deck 2" className="w-full" />
+                  <img src="/pictures/Blogs/ship-happens-1-8-23-ME-pic6.jpg" alt="Boat deck 1" className="w-full" />
+                  <img src="/pictures/Blogs/ship-happens-1-8-23-ME-pic7.JPG" alt="Boat deck 2" className="w-full" />
                 </div>
                 <p>
                   Because the boat is estimated to be very close to our max weight for the RoboBoat competition in March, we wanted to decrease the weight of the deck while we planned out what parts we needed to buy. We decided to replace our aluminum 8020 beams with carbon fiber beams, which we found in our lab, MIT Sea Grant. We also decided that since we were able to cut a lot of weight by using carbon fiber instead of aluminum, we wanted to add an additional beam along the length of the boat that will provide support below the wood planks that sit on top. This is important since the wood slightly warped last year, and we wanted to ensure that this deck would survive both the RoboBoat competition in March and the Njord Challenge which we plan to compete in in the Fall. We used strips of aluminum that were vertically oriented to support the wood, and bent the ends so that we could connect them to the carbon fiber tubes that run horizontally along the boat.
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
-                  <img src="/Pictures/Blogs/ship-happens-1-8-23-ME-pic8.jpg" alt="Deck assembly 1" className="w-full" />
-                  <img src="/Pictures/Blogs/ship-happens-1-8-23-ME-pic9.jpg" alt="Deck assembly 2" className="w-full" />
+                  <img src="/pictures/Blogs/ship-happens-1-8-23-ME-pic8.jpg" alt="Deck assembly 1" className="w-full" />
+                  <img src="/pictures/Blogs/ship-happens-1-8-23-ME-pic9.jpg" alt="Deck assembly 2" className="w-full" />
                 </div>
                 <p>
                   Currently, we are working on preparing the marine plywood for the top of the deck. This wood will need to be cut to size, holes that fit the new azipods will need to be measured and drilled, and screw holes will need to be drilled to attach to our support beams underneath. We also need to attach our support beams, and then finally assemble the deck and test it with weights.
                 </p>
                 <div className="flex justify-center my-6">
-                  <video src="/Pictures/Blogs/ship-happens-1-8-23-ME-vid1.mp4" controls className="max-w-2xl w-full" />
+                  <video src="/pictures/Blogs/ship-happens-1-8-23-ME-vid1.mp4" controls className="max-w-2xl w-full" />
                 </div>
               </div>
             </div>
@@ -232,24 +232,24 @@ const Year23Mechanics = () => {
                   The revolver/ball deposit system is modeled after the ball drop arcade game. There are slots for the balls to sit in and a servo rotates a plate to move the balls until one eventually falls through the hole to the shooter. We went with this system because it utilizes only one moving part and we can reliably ensure that only one ball goes into the shooter at a time. All the balls are also stored horizontally which is an additional benefit because we want to minimize obstruction to the lidar. We also included a 3D printed dome to prevent balls deposited from the ball collection system from staying in the center of the plate or falling and damaging the servo.
                 </p>
                 <div className="flex justify-center my-6">
-                  <img src="/Pictures/Blogs/ship-happens-12-15-22-ME-pic1.png" alt="Revolver system" className="max-w-md w-full" />
+                  <img src="/pictures/Blogs/ship-happens-12-15-22-ME-pic1.png" alt="Revolver system" className="max-w-md w-full" />
                 </div>
                 <p>
                   The turret is controlled by a 180 degree servo. A small gear attached to the servo controls a larger ring gear that is connected to the rest of the system. The gears are laser cut out of ⅛" aluminum and stacked for a final height of ¼". Originally we planned for the pieces to be made of acrylic because they could easily be cut for exact sizes, but after meeting with Chandler Griffin of iSensys recommended we go with metal because acrylic tends to crack easily. The turret is attached to the underside of the revolver so that the pivot point of the turret is concentric to where the balls drop.
                 </p>
                 <div className="flex justify-center my-6">
-                  <img src="/Pictures/Blogs/ship-happens-12-15-22-ME-pic2.png" alt="Turret system" className="max-w-md w-full" />
+                  <img src="/pictures/Blogs/ship-happens-12-15-22-ME-pic2.png" alt="Turret system" className="max-w-md w-full" />
                 </div>
                 <p>
                   The shooter is powered by a 6,000 rpm goBilda yellow jacket series motor. We haven't found the ideal speed the flywheels should rotate at, but we decided to go with the fastest motor in the GoBilda series because the flywheel speed is more of a concern than the amount of torque. The motor is belted to the flywheel with the ability to easily change the gearing ratio. We also went with a belted drive so the motor could be placed such that the center of mass is as symmetrical as possible. The flywheel has a rubber tread which provides grip and compression to help launch the racquetballs. Once the ball drops into through the hole in the revolver the ball makes contact with the flywheel and is compressed between the flywheel and the ramp to gain rotational speed before being launched out. The shooter connects to the turret through two tabs that go into the ring gear. The shooter also has a delrin plastic bottom to support the weight of the shooter instead of the tabs and to increase the friction between the shooter and the deck.
                 </p>
                 <div className="flex justify-center my-6">
-                  <img src="/Pictures/Blogs/ship-happens-12-15-22-ME-pic3.png" alt="Shooter system" className="max-w-md w-full" />
+                  <img src="/pictures/Blogs/ship-happens-12-15-22-ME-pic3.png" alt="Shooter system" className="max-w-md w-full" />
                 </div>
                 <p className="font-semibold">Final CAD of all three systems:</p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
-                  <img src="/Pictures/Blogs/ship-happens-12-15-22-ME-pic4.png" alt="Ball launcher CAD 1" className="w-full" />
-                  <img src="/Pictures/Blogs/ship-happens-12-15-22-ME-pic5.png" alt="Ball launcher CAD 2" className="w-full" />
+                  <img src="/pictures/Blogs/ship-happens-12-15-22-ME-pic4.png" alt="Ball launcher CAD 1" className="w-full" />
+                  <img src="/pictures/Blogs/ship-happens-12-15-22-ME-pic5.png" alt="Ball launcher CAD 2" className="w-full" />
                 </div>
                 <p>
                   Next steps: Over IAP (January) we should begin the prototyping, fabricating, and assembly process.
@@ -262,8 +262,8 @@ const Year23Mechanics = () => {
                   At the last team time, we learned that the boat cannot drive into the enclosure with the balls so we moved forwards with the arm and elevator system. A spring loaded PVC arm with a sliding L piece is spring loaded and released when the boat approaches the task. The boat drives around the perimeter of the enclosure collecting balls. Once all the balls have been collected the L arm is reeled in with a winch to collect all the balls into one location. An elevator mechanism on the side of the boat will then pick up all the balls and deposit them into the revolver on the ball launcher.
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-[3fr_2fr] gap-4 my-6 place-items-center">
-                  <img src="/Pictures/Blogs/ship-happens-12-15-22-ME-pic6.png" alt="Ocean cleanup arm 1" className="object-contain" />
-                  <img src="/Pictures/Blogs/ship-happens-12-15-22-ME-pic7.png" alt="Ocean cleanup arm 2" className="object-contain" />
+                  <img src="/pictures/Blogs/ship-happens-12-15-22-ME-pic6.png" alt="Ocean cleanup arm 1" className="object-contain" />
+                  <img src="/pictures/Blogs/ship-happens-12-15-22-ME-pic7.png" alt="Ocean cleanup arm 2" className="object-contain" />
                 </div>
                 <p>
                   Next Steps: At the moment, we are unsure if we have the manpower to implement this design so it is currently on hold for further development.
@@ -276,15 +276,15 @@ const Year23Mechanics = () => {
                   In our azimuth thruster design, a servo is connected on one side of a 1.7" diameter, PVC pipe, and a thruster is connected on the other, allowing the servo to rotate the entire subsystem. This subsystem is mounted inside a larger 2.4" diameter PVC pipe with Delrin bushings so the thrusters can easily rotate and be lifted into the hull during transport.
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6 place-items-center">
-                  <img src="/Pictures/Blogs/ship-happens-12-15-22-ME-pic8.png" alt="Azimuth thruster design 1" className="object-contain" />
-                  <img src="/Pictures/Blogs/ship-happens-12-15-22-ME-pic9.png" alt="Azimuth thruster design 2" className="object-contain" />
+                  <img src="/pictures/Blogs/ship-happens-12-15-22-ME-pic8.png" alt="Azimuth thruster design 1" className="object-contain" />
+                  <img src="/pictures/Blogs/ship-happens-12-15-22-ME-pic9.png" alt="Azimuth thruster design 2" className="object-contain" />
                 </div>
                 <p>
                   A 2.5" in hole will be drilled 6" inches from the top for the larger pvc to be mounted to and a 5" inch hole will be drilled 5" inches from the bottom to create a channel for the thruster to rest when the system is retracted.
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6 place-items-center">
-                  <img src="/Pictures/Blogs/ship-happens-12-15-22-ME-pic10.png" alt="Azimuth thruster drilling 1" className="object-contain" />
-                  <img src="/Pictures/Blogs/ship-happens-12-15-22-ME-pic11.png" alt="Azimuth thruster drilling 2" className="object-contain" />
+                  <img src="/pictures/Blogs/ship-happens-12-15-22-ME-pic10.png" alt="Azimuth thruster drilling 1" className="object-contain" />
+                  <img src="/pictures/Blogs/ship-happens-12-15-22-ME-pic11.png" alt="Azimuth thruster drilling 2" className="object-contain" />
                 </div>
               </div>
             </div>
@@ -326,17 +326,17 @@ const Year23Mechanics = () => {
                   The net is mounted between the hulls; one side is free to pivot and the other side is attached to a winch to control the height. The net will be lowered and the boat will drive through the area with the balls and once the balls are collected the net will be raised. The net would be well-supported by both hulls and any actuators required to move the balls can be mounted to top of the boat. The downside to the water well mechanism is we are unsure if we will be able to go inside the region where the balls are located.
                 </p>
                 <div className="flex justify-center my-6">
-                  <img src="/Pictures/Blogs/ship-happens-10-31-22-ME-pic1.jpg" alt="Net design concept" className="max-w-md w-full" />
+                  <img src="/pictures/Blogs/ship-happens-10-31-22-ME-pic1.jpg" alt="Net design concept" className="max-w-md w-full" />
                 </div>
                 <p>
                   The alternative method we discussed was an arm that reaches into the enclosure to collect the balls. A PVC arm is spring loaded to the side of the boat and will be released when we approach the region with the balls. The boat will drive around the perimeter collecting balls. A sliding L PVC piece is attached to the arm and can be pulled in with a winch system. The L PVC piece will ensure all the balls end up in a corner near the side of the hull. There will be a separate elevator on the side of the hull that takes the collected balls to the ball launcher. Because the pvc extends beyond the boat we are going to add pool noodles on the L slides so that it's supported by the buoyancy force. We also wanted to test how well the pvc would work at herding the balls so we did a couple of tests (video and photo shown below). The downside to this mechanism is that there are significantly more moving parts and therefore a higher risk for failure.
                 </p>
                 <div className="space-y-4 my-6">
                   <div className="flex justify-center">
-                    <img src="/Pictures/Blogs/ship-happens-10-31-22-ME-pic7.jpg" alt="Arm design testing" className="max-w-2xl w-full" />
+                    <img src="/pictures/Blogs/ship-happens-10-31-22-ME-pic7.jpg" alt="Arm design testing" className="max-w-2xl w-full" />
                   </div>
                   <div className="flex justify-center">
-                    <video src="/Pictures/Blogs/ship-happens-10-31-22-ME-vid1.MOV" controls className="max-w-2xl w-full" />
+                    <video src="/pictures/Blogs/ship-happens-10-31-22-ME-vid1.MOV" controls className="max-w-2xl w-full" />
                   </div>
                 </div>
               </div>
@@ -353,7 +353,7 @@ const Year23Mechanics = () => {
                   This year we are planning to implement a retractable azimuth thruster to provide additional maneuverability for alignment tasks. Retracting the thruster into the hull of the boat for transport would help protect the thrusters and simplify the deploying and retrieval process. A servo controls a pvc strut attached to a thruster, thus rotating it in place and changing the angle of thrust force relative to the boat.
                 </p>
                 <div className="flex justify-center my-6">
-                  <img src="/Pictures/Blogs/ship-happens-10-31-22-ME-pic2.jpg" alt="Azimuth thruster concept" className="max-w-md w-full" />
+                  <img src="/pictures/Blogs/ship-happens-10-31-22-ME-pic2.jpg" alt="Azimuth thruster concept" className="max-w-md w-full" />
                 </div>
                 <p>
                   Next Steps: Begin CAD model

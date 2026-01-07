@@ -4,19 +4,19 @@ const Year22 = () => {
   const subteams = [
     {
       title: 'Navigation',
-      image: '/Pictures/Blogs/navigation_11.png',
+      image: '/pictures/Blogs/navigation_11.png',
       description: 'Perception and path planning systems for autonomous navigation.',
       link: '/blog/year-22/navigation'
     },
     {
       title: 'Hullelectronics',
-      image: '/Pictures/Blogs/hullectronics_1.png',
+      image: '/pictures/Blogs/hullectronics_1.png',
       description: 'Hull design, assembly, and electronics integration.',
       link: '/blog/year-22/hullelectronics'
     },
     {
       title: 'Task Force',
-      image: '/Pictures/Blogs/taskforce_1.png',
+      image: '/pictures/Blogs/taskforce_1.png',
       description: 'Competition task mechanisms and prototypes.',
       link: '/blog/year-22/taskforce'
     }

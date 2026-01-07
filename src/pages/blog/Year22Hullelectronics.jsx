@@ -21,7 +21,7 @@ const Year22Hullelectronics = () => {
           {/* Entry 1 */}
           <article className="bg-white p-8 rounded-lg shadow-lg">
             <img
-              src="/Pictures/Blogs/hullectronics_1.png"
+              src="/pictures/Blogs/hullectronics_1.png"
               alt="Hullelectronics"
               className="w-full mb-6 rounded-lg"
             />
@@ -63,7 +63,7 @@ const Year22Hullelectronics = () => {
           {/* Entry 2 */}
           <article className="bg-white p-8 rounded-lg shadow-lg">
             <img
-              src="/Pictures/Blogs/hullectronics_2.png"
+              src="/pictures/Blogs/hullectronics_2.png"
               alt="Hullelectronics"
               className="w-full mb-6 rounded-lg"
             />
@@ -94,7 +94,7 @@ const Year22Hullelectronics = () => {
           {/* Entry 3 */}
           <article className="bg-white p-8 rounded-lg shadow-lg">
             <img
-              src="/Pictures/Blogs/hullectronics_3.png"
+              src="/pictures/Blogs/hullectronics_3.png"
               alt="Hullelectronics"
               className="w-full mb-6 rounded-lg"
             />

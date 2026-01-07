@@ -21,7 +21,7 @@ const Year22TaskForce = () => {
           {/* Entry 1 */}
           <article className="bg-white p-8 rounded-lg shadow-lg">
             <img
-              src="/Pictures/Blogs/taskforce_1.png"
+              src="/pictures/Blogs/taskforce_1.png"
               alt="Task Force"
               className="w-full mb-6 rounded-lg"
             />
@@ -60,7 +60,7 @@ const Year22TaskForce = () => {
           {/* Entry 2 */}
           <article className="bg-white p-8 rounded-lg shadow-lg">
             <img
-              src="/Pictures/Blogs/taskforce_2.png"
+              src="/pictures/Blogs/taskforce_2.png"
               alt="Task Force"
               className="w-full mb-6 rounded-lg"
             />

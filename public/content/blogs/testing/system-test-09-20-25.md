@@ -16,5 +16,5 @@
 - Lag between detections & processing/pixhawk lag during fast turns puts objects in the wrong place -> green over red and red over green is sometimes caused by that
 - Duplicate YOLO detections (one object has two bounding boxes) when confidence threshold is low
 
-![A red buoy is detected as yellow due to high saturation.](/Pictures/Blogs/testing-09-20-25-yellow.png)
+![A red buoy is detected as yellow due to high saturation.](/pictures/Blogs/testing-09-20-25-yellow.png)
 *Fig 1. A red buoy is detected as yellow due to high saturation.*

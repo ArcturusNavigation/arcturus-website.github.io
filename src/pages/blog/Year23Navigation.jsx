@@ -140,7 +140,7 @@ const Year23Navigation = () => {
                   We are currently using ROS1 for our autonomy code, but we wanted to experiment with MOOS-IvP since many marine research labs at MIT use it, the software is more specific for marine vehicles, and it has the potential to increase our parallel processing power. Similar to ROS, MOOS-IvP is a bundle of open-source C++ modules, but specifically for autonomous marine vehicles. MOOS acts as a middleware that connects many applications together including MOOSDB (the database), IvP Helm (determines the behavior of the marine vehicles), and others. New applications can be made with C++ using the MOOS-IvP libraries, be deployed together in a single mission using MOOS, and share their data via MOOSDB. To get started on MOOS-IvP, we completed lab assignments for MIT's graduate class 2.680 Unmanned Marine Vehicle Autonomy, Sensing and Communications. In the picture below, we have a sample mission from one of the lab assignments running on an application called pMarineViewer.
                 </p>
                 <div className="flex justify-center my-6">
-                  <img src="/Pictures/Blogs/ship-happens-1-8-23-nav-pic1.png" alt="MOOS-IvP pMarineViewer" className="max-w-2xl w-full" />
+                  <img src="/pictures/Blogs/ship-happens-1-8-23-nav-pic1.png" alt="MOOS-IvP pMarineViewer" className="max-w-2xl w-full" />
                 </div>
                 <p>
                   Furthermore, Professor Michael DeFilippo, a research engineer at MIT Sea Grant, has been working on a ROS node and MOOS application that connects the two software. His software serves as a bridge between MOOS-IvP and ROS, allowing ROS to publish MOOS variables into MOOSDB and vice versa. We have been and will continue to work with Professor DeFilippo to experiment with how we can integrate both ROS and MOOS-IvP to increase our parallel processing power and combine the strengths of the two software.
@@ -189,8 +189,8 @@ const Year23Navigation = () => {
                   <p className="font-semibold mt-4">Image segmentation algorithm results:</p>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
-                  <img src="/Pictures/Blogs/ship-happens-1-8-23-nav-pic2.png" alt="Image segmentation result 1" className="w-full" />
-                  <img src="/Pictures/Blogs/ship-happens-1-8-23-nav-pic3.png" alt="Image segmentation result 2" className="w-full" />
+                  <img src="/pictures/Blogs/ship-happens-1-8-23-nav-pic2.png" alt="Image segmentation result 1" className="w-full" />
+                  <img src="/pictures/Blogs/ship-happens-1-8-23-nav-pic3.png" alt="Image segmentation result 2" className="w-full" />
                 </div>
               </div>
 
@@ -235,7 +235,7 @@ const Year23Navigation = () => {
                 center of the target. We still need to test the actual water gun with the target, which we will finish in a few days.
               </p>
               <div className="flex justify-center mt-6">
-                <img src="/Pictures/Blogs/ship-happens-3-23-23-nav-pic1.JPG" alt="Water gun testing" className="max-w-md w-full" />
+                <img src="/pictures/Blogs/ship-happens-3-23-23-nav-pic1.JPG" alt="Water gun testing" className="max-w-md w-full" />
               </div>
             </div>
           </article>
@@ -251,7 +251,7 @@ const Year23Navigation = () => {
                 Herbie, the Navigations team lead, is also holding office hours to assist Navigation team members in their projects.
               </p>
               <div className="flex justify-center mt-6">
-                <video src="/Pictures/Blogs/ship-happens-11-10-22-nav-vid1.mp4" controls className="max-w-md w-full" />
+                <video src="/pictures/Blogs/ship-happens-11-10-22-nav-vid1.mp4" controls className="max-w-md w-full" />
               </div>
             </div>
           </article>
@@ -268,7 +268,7 @@ const Year23Navigation = () => {
                 was a good chance for our members to practice setting up the boat and putting it in the water.
               </p>
               <div className="flex justify-center mt-6">
-                <img src="/Pictures/Blogs/ship-happens-10-10-22-nav-pic1.png" alt="On-the-water test" className="max-w-md w-full" />
+                <img src="/pictures/Blogs/ship-happens-10-10-22-nav-pic1.png" alt="On-the-water test" className="max-w-md w-full" />
               </div>
             </div>
           </article>

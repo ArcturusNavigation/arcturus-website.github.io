@@ -6,55 +6,55 @@ const Team = () => {
       name: 'Janelle Cai',
       role: 'Captain',
       email: 'jcai18@mit.edu',
-      image: '/Pictures/Headshots/janelle-headshot.jpg'
+      image: '/pictures/Headshots/janelle-headshot.jpg'
     },
     {
       name: 'Brendon Jiang',
       role: 'Autonomy Co-Lead',
       email: 'brendonj@mit.edu',
-      image: '/Pictures/Headshots/brendon-headshot.jpg'
+      image: '/pictures/Headshots/brendon-headshot.jpg'
     },
     {
       name: 'Panagiotis Liampas',
       role: 'Autonomy Co-Lead',
       email: 'pliam005@mit.edu',
-      image: '/Pictures/Headshots/panos-headshot.jpg'
+      image: '/pictures/Headshots/panos-headshot.jpg'
     },
     {
       name: 'Noah Haefner',
       role: 'EE Co-Lead',
       email: 'nhaefner@mit.edu',
-      image: '/Pictures/Headshots/noah-headshot.jpg'
+      image: '/pictures/Headshots/noah-headshot.jpg'
     },
     {
       name: 'Jack Bolte',
       role: 'EE Co-Lead',
       email: 'jbolte@mit.edu',
-      image: '/Pictures/Headshots/jack-headshot.jpg'
+      image: '/pictures/Headshots/jack-headshot.jpg'
     },
     {
       name: 'Ved Ganesh',
       role: 'MechE Co-Lead',
       email: 'vxg@mit.edu',
-      image: '/Pictures/Headshots/ved-headshot.jpg'
+      image: '/pictures/Headshots/ved-headshot.jpg'
     },
     {
       name: 'McKinley Pestano-Young',
       role: 'MechE Co-Lead',
       email: 'mpest519@mit.edu',
-      image: '/Pictures/Headshots/mckinley-headshot.jpg'
+      image: '/pictures/Headshots/mckinley-headshot.jpg'
     },
     {
       name: 'Teagan Sullivan',
       role: 'MechE Co-Lead',
       email: 'cteagans@mit.edu',
-      image: '/Pictures/Headshots/teagan-headshot.jpg'
+      image: '/pictures/Headshots/teagan-headshot.jpg'
     },
     {
       name: 'Angelica Fortuno',
       role: 'Outreach Lead',
       email: 'afortuno@mit.edu',
-      image: '/Pictures/Headshots/angelica-headshot.png'
+      image: '/pictures/Headshots/angelica-headshot.png'
     }
   ]
 
@@ -109,7 +109,7 @@ const Team = () => {
       {/* Team Photo Section */}
       <section className="mb-0">
         <img
-          src="/Pictures/team_spring2025.jpg"
+          src="/pictures/team_spring2025.jpg"
           alt="Arcturus Team Spring 2025"
           className="w-full h-auto object-cover"
         />

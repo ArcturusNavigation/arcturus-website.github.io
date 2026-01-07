@@ -4,19 +4,19 @@ const Year23 = () => {
   const subteams = [
     {
       title: 'Mechanics',
-      image: '/Pictures/Blogs/ship-happens-3-2-23-ME-pic2.png',
+      image: '/pictures/Blogs/ship-happens-3-2-23-ME-pic2.png',
       description: 'Hull design, mechanisms, and mechanical systems for Ship Happens.',
       link: '/blog/year-23/mechanics'
     },
     {
       title: 'Electronics',
-      image: '/Pictures/Blogs/hullectronics_1.png',
+      image: '/pictures/Blogs/hullectronics_1.png',
       description: 'Power systems, electronics box, and thermal management.',
       link: '/blog/year-23/electronics'
     },
     {
       title: 'Navigation/Autonomy',
-      image: '/Pictures/Blogs/navigation_11.png',
+      image: '/pictures/Blogs/navigation_11.png',
       description: 'Perception, control systems, and autonomous navigation stack.',
       link: '/blog/year-23/navigation'
     }
@@ -60,7 +60,7 @@ const Year23 = () => {
                 RoboBoat 2023 Technical Design Report
               </a>
               <a
-                href="/Pictures/Blogs/Njord_Challenge_2023_TDR.pdf"
+                href="/pictures/Blogs/Njord_Challenge_2023_TDR.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center rounded-md bg-primary px-6 py-3 text-white font-semibold hover:bg-primary-light transition-colors"

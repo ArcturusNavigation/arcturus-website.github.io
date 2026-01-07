@@ -35,7 +35,7 @@ npm run preview
    ```javascript
    {
      title: 'Post Title',
-     image: '/Pictures/Blogs/image.jpg',
+     image: '/pictures/Blogs/image.jpg',
      description: 'Brief description',
      link: '/blog/{category}/{slug}',  // or 'url' for outreach
      markdownPath: '/content/blogs/{category}/{slug}.md',
@@ -47,7 +47,7 @@ Note: Category pages automatically import from `blogPosts.js`, so you only need 
 
 ### Add Images
 
-Place images in `/public/Pictures/` and reference them with `/Pictures/filename.jpg`
+Place images in `/public/pictures/` and reference them with `/pictures/filename.jpg`
 
 ### Styling Guidelines
 

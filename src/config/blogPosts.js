@@ -5,7 +5,7 @@ export const categoryBlogs = {
   autonomy: [
     {
       title: 'Perception',
-      image: '/Pictures/Blogs/buoydetection.png',
+      image: '/pictures/Blogs/buoydetection.png',
       description: 'Computer vision and sensor fusion for object detection and environment understanding',
       link: '/blog/autonomy/perception',
       markdownPath: '/content/blogs/autonomy/perception.md',
@@ -13,7 +13,7 @@ export const categoryBlogs = {
     },
     {
       title: 'Localization',
-      image: '/Pictures/Blogs/lidar.jpg',
+      image: '/pictures/Blogs/lidar.jpg',
       description: 'GPS, IMU, and sensor integration for accurate position tracking',
       link: '/blog/autonomy/localization',
       markdownPath: '/content/blogs/autonomy/localization.md',
@@ -21,7 +21,7 @@ export const categoryBlogs = {
     },
     {
       title: 'Path Planning',
-      image: '/Pictures/Blogs/pathplanning.png',
+      image: '/pictures/Blogs/pathplanning.png',
       description: 'Algorithms for generating optimal routes and avoiding obstacles',
       link: '/blog/autonomy/pathplanning',
       markdownPath: '/content/blogs/autonomy/pathplanning.md',
@@ -29,7 +29,7 @@ export const categoryBlogs = {
     },
     {
       title: 'Controller',
-      image: '/Pictures/Blogs/gazebo.jpg',
+      image: '/pictures/Blogs/gazebo.jpg',
       description: 'Low-level controllers for precise navigation and maneuvering',
       link: '/blog/autonomy/controller',
       markdownPath: '/content/blogs/autonomy/controller.md',
@@ -39,7 +39,7 @@ export const categoryBlogs = {
   mechanical: [
     {
       title: 'Hulls',
-      image: '/Pictures/Blogs/hulls2.png',
+      image: '/pictures/Blogs/hulls2.png',
       description: 'Foundation of our boat',
       link: '/blog/mechanical/hulls',
       markdownPath: '/content/blogs/mechanical/hulls.md',
@@ -47,7 +47,7 @@ export const categoryBlogs = {
     },
     {
       title: 'Propulsion/Thruster Cages',
-      image: '/Pictures/Blogs/propulsion.png',
+      image: '/pictures/Blogs/propulsion.png',
       description: 'Driving force of our boat',
       link: '/blog/mechanical/propulsion',
       markdownPath: '/content/blogs/mechanical/propulsion.md',
@@ -55,7 +55,7 @@ export const categoryBlogs = {
     },
     {
       title: 'EE Box',
-      image: '/Pictures/Blogs/eebox3.png',
+      image: '/pictures/Blogs/eebox3.png',
       description: 'Electronics protector',
       link: '/blog/mechanical/eebox',
       markdownPath: '/content/blogs/mechanical/eebox.md',
@@ -63,7 +63,7 @@ export const categoryBlogs = {
     },
     {
       title: 'Sensor Mast',
-      image: '/Pictures/Blogs/sensormast2.png',
+      image: '/pictures/Blogs/sensormast2.png',
       description: 'Mounting point for sensors',
       link: '/blog/mechanical/sensormast',
       markdownPath: '/content/blogs/mechanical/sensormast.md',
@@ -71,7 +71,7 @@ export const categoryBlogs = {
     },
     {
       title: 'Mechanisms',
-      image: '/Pictures/Blogs/mechanism.jpg',
+      image: '/pictures/Blogs/mechanism.jpg',
       description: 'Allow for robotic functions',
       link: '/blog/mechanical/mechanisms',
       markdownPath: '/content/blogs/mechanical/mechanisms.md',
@@ -81,7 +81,7 @@ export const categoryBlogs = {
   electrical: [
     {
       title: 'Battery Management System (BMS)',
-      image: '/Pictures/Blogs/bms.png',
+      image: '/pictures/Blogs/bms.png',
       description: 'Power distribution and battery monitoring system',
       link: '/blog/electrical/bms',
       markdownPath: '/content/blogs/electrical/bms.md',
@@ -89,7 +89,7 @@ export const categoryBlogs = {
     },
     {
       title: 'Buck Board',
-      image: '/Pictures/Blogs/buckboard.jpg',
+      image: '/pictures/Blogs/buckboard.jpg',
       description: 'Voltage regulation for electronic components',
       link: '/blog/electrical/buckboard',
       markdownPath: '/content/blogs/electrical/buckboard.md',
@@ -97,7 +97,7 @@ export const categoryBlogs = {
     },
     {
       title: 'E-Stop',
-      image: '/Pictures/Blogs/estop.png',
+      image: '/pictures/Blogs/estop.png',
       description: 'Emergency stop system for safety',
       link: '/blog/electrical/estop',
       markdownPath: '/content/blogs/electrical/estop.md',
@@ -214,91 +214,91 @@ export const categoryBlogs = {
     {
       title: "Cambridge Science Festival 2024",
       url: "/blog/outreach/cambridgesciencefestival2024",
-      image: "/Pictures/Blogs/csf2024.jpg",
+      image: "/pictures/Blogs/csf2024.jpg",
       markdownPath: "/content/blogs/outreach/cambridgesciencefestival2024.md",
       category: 'outreach'
     },
     {
       title: "Discover Ocean Engineering Program for MIT Freshman 2023",
       url: "/blog/outreach/discoveroceanengineering",
-      image: "/Pictures/Blogs/outreach-8-22-23-pic3.png",
+      image: "/pictures/Blogs/outreach-8-22-23-pic3.png",
       markdownPath: "/content/blogs/outreach/discoveroceanengineering.md",
       category: 'outreach'
     },
     {
       title: "MIT-Portugal Marine Robotics Summer School in the Azores",
       url: "/blog/outreach/azores",
-      image: "/Pictures/Blogs/outreach-7-10-23-pic1.png",
+      image: "/pictures/Blogs/outreach-7-10-23-pic1.png",
       markdownPath: "/content/blogs/outreach/azores.md",
       category: 'outreach'
     },
     {
       title: "OCEANS 2023",
       url: "/blog/outreach/oceans2023",
-      image: "/Pictures/Blogs/outreach-6-5-23-pic4.PNG",
+      image: "/pictures/Blogs/outreach-6-5-23-pic4.PNG",
       markdownPath: "/content/blogs/outreach/oceans2023.md",
       category: 'outreach'
     },
     {
       title: "MIT MechE Health of the Planet Showcase",
       url: "/blog/outreach/healthoftheplanet",
-      image: "/Pictures/Blogs/outreach-4-19-23-pic1.png",
+      image: "/pictures/Blogs/outreach-4-19-23-pic1.png",
       markdownPath: "/content/blogs/outreach/healthoftheplanet.md",
       category: 'outreach'
     },
     {
       title: "Campus Preview Weekend (CPW)",
       url: "/blog/outreach/cpw",
-      image: "/Pictures/Blogs/outreach-4-15-23-pic2.jpg",
+      image: "/pictures/Blogs/outreach-4-15-23-pic2.jpg",
       markdownPath: "/content/blogs/outreach/cpw.md",
       category: 'outreach'
     },
     {
       title: "Edgerton Center Showcase",
       url: "/blog/outreach/edgertoncentershowcase",
-      image: "/Pictures/Blogs/outreach-4-11-23-pic04.jpg",
+      image: "/pictures/Blogs/outreach-4-11-23-pic04.jpg",
       markdownPath: "/content/blogs/outreach/edgertoncentershowcase.md",
       category: 'outreach'
     },
     {
       title: "Spark",
       url: "/blog/outreach/spark2023",
-      image: "/Pictures/Blogs/outreach-3-18-23-pic3.jpg",
+      image: "/pictures/Blogs/outreach-3-18-23-pic3.jpg",
       markdownPath: "/content/blogs/outreach/spark2023.md",
       category: 'outreach'
     },
     {
       title: "WeCode Harvard Conference",
       url: "/blog/outreach/wecodeharvardconference",
-      image: "/Pictures/Blogs/wecode.png",
+      image: "/pictures/Blogs/wecode.png",
       markdownPath: "/content/blogs/outreach/wecodeharvardconference.md",
       category: 'outreach'
     },
     {
       title: "Blue Innovations Symposium",
       url: "/blog/outreach/blueinnovationssymposium",
-      image: "/Pictures/Blogs/outreach-1-24-23-pic1.jpg",
+      image: "/pictures/Blogs/outreach-1-24-23-pic1.jpg",
       markdownPath: "/content/blogs/outreach/blueinnovationssymposium.md",
       category: 'outreach'
     },
     {
       title: "HS Robotics Team, the Aluminum Cobblers, came to visit!",
       url: "/blog/outreach/aluminumcobblers",
-      image: "/Pictures/Blogs/outreach-11-6-22-pic2.jpg",
+      image: "/pictures/Blogs/outreach-11-6-22-pic2.jpg",
       markdownPath: "/content/blogs/outreach/aluminumcobblers.md",
       category: 'outreach'
     },
     {
       title: "Cambridge Science Festival 2022",
       url: "/blog/outreach/cambridgesciencefestival2022",
-      image: "/Pictures/Blogs/outreach-10-9-22-pic1.jpg",
+      image: "/pictures/Blogs/outreach-10-9-22-pic1.jpg",
       markdownPath: "/content/blogs/outreach/cambridgesciencefestival2022.md",
       category: 'outreach'
     },
     {
       title: "Boat Demo for the MIT Corporation",
       url: "/blog/outreach/mitcorp",
-      image: "/Pictures/Blogs/ship-happens-10-31-22-EE-pic5.jpg",
+      image: "/pictures/Blogs/ship-happens-10-31-22-EE-pic5.jpg",
       markdownPath: "/content/blogs/outreach/mitcorp.md",
       category: 'outreach'
     }

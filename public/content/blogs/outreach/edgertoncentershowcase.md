@@ -6,9 +6,9 @@ Today we attended the Edgerton Center showcase! The Edgerton Center is a departm
 
 During the MC portion of the showcase, our captain Audrey and Chloe from MIT motorsports interviewed each of the teams. It was awesome to meet two of the newest teams for the first time, First Nations Launch (which makes rockets using Indigenous design) and the Electric Vehicle Team (which is currently making hydrogen powered motorcycles)!
 
-![Vision demo setup](/Pictures/Blogs/outreach-4-11-23-pic03.jpg)
-![Ball launcher demonstration](/Pictures/Blogs/outreach-4-11-23-pic02.jpg)
-![Showcasing the boat](/Pictures/Blogs/outreach-4-11-23-pic0.jpg)
-![Team interaction](/Pictures/Blogs/outreach-4-11-23-pic04.jpg)
-![Captain interview](/Pictures/Blogs/outreach-4-11-23-pic01.jpg)
-![Edgerton Center event](/Pictures/Blogs/outreach-4-11-23-pic05.jpg)
+![Vision demo setup](/pictures/Blogs/outreach-4-11-23-pic03.jpg)
+![Ball launcher demonstration](/pictures/Blogs/outreach-4-11-23-pic02.jpg)
+![Showcasing the boat](/pictures/Blogs/outreach-4-11-23-pic0.jpg)
+![Team interaction](/pictures/Blogs/outreach-4-11-23-pic04.jpg)
+![Captain interview](/pictures/Blogs/outreach-4-11-23-pic01.jpg)
+![Edgerton Center event](/pictures/Blogs/outreach-4-11-23-pic05.jpg)

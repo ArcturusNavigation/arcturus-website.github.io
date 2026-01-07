@@ -5,19 +5,19 @@ const PastSeasons = () => {
   const seasons = [
     {
       title: '2021-2022 Season',
-      image: '/Pictures/comp_grouppic_2022.jpg',
+      image: '/pictures/comp_grouppic_2022.jpg',
       link: '/blog/year-22',
       year: '2021-2022'
     },
     {
       title: '2022-2023 Season',
-      image: '/Pictures/roboboat2023_team.jpg',
+      image: '/pictures/roboboat2023_team.jpg',
       link: '/blog/year-23',
       year: '2022-2023'
     },
     {
       title: '2023-2025 Season',
-      image: '/Pictures/fishnships_pool.jpg',
+      image: '/pictures/fishnships_pool.jpg',
       link: '/blog/year-25',
       year: '2023-2025'
     }

@@ -112,8 +112,8 @@ const Year23Electronics = () => {
                     This IAP, we started ordering the components that we needed, and fitting them into the box. During this process we realized that the base of the box, which has holes for easy part adjustments, did not have large enough holes for our parts. This meant that we had to CAD and laser cut a new base with large enough holes and slots so that all parts could be adjusted slightly to fit into the base. Because of the large amount of components that will be in the box, we also created a second layer in the shape of an L that fits around our computer and is mounted above the first layer with nylon spacers. We plan to replace the entire second level of the box with a large PCB so that we can avoid having messy wires and breadboards that may shift and unplug on the water.
                   </p>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6 place-items-center">
-                    <img src="/Pictures/Blogs/ship-happens-1-8-23-EE-pic1.jpg" alt="Electronics box assembly 1" className="object-contain" />
-                    <img src="/Pictures/Blogs/ship-happens-1-8-23-EE-pic2.jpg" alt="Electronics box assembly 2" className="object-contain" />
+                    <img src="/pictures/Blogs/ship-happens-1-8-23-EE-pic1.jpg" alt="Electronics box assembly 1" className="object-contain" />
+                    <img src="/pictures/Blogs/ship-happens-1-8-23-EE-pic2.jpg" alt="Electronics box assembly 2" className="object-contain" />
                   </div>
                   <p>
                     Another member of our team focused on making sure all the motors and motor drivers worked by creating Arduino code that ran all the motors at the same time using an Arduino Mega and an Adafruit Motor Shield V2. This code also confirmed that the Arduino Mega and motor shield could power all three types of motors at the same time. We discovered that when running the servos on digital I/O pins, they only want to respond to angles between 10 and 174, and do not move when given commands beyond that range.
@@ -180,7 +180,7 @@ const Year23Electronics = () => {
                   With our approach selected, we started working on a system that would fit with the rest of the boat. As of this moment, we have built and tested our first prototype of the fan mounts that we plan on using to supply and exhaust the air in the electronics box. We have also machined the heatsinks that will be attached to the electronics that need them.
                 </p>
                 <div className="flex justify-center my-6">
-                  <img src="/Pictures/Blogs/ship-happens-1-8-23-EE-pic3.jpg" alt="Fan mount prototype" className="max-w-2xl w-full" />
+                  <img src="/pictures/Blogs/ship-happens-1-8-23-EE-pic3.jpg" alt="Fan mount prototype" className="max-w-2xl w-full" />
                 </div>
                 <div className="space-y-6 text-text">
                   <p>
@@ -191,7 +191,7 @@ const Year23Electronics = () => {
                   </p>
                 </div>
                 <div className="flex justify-center my-6">
-                  <img src="/Pictures/Blogs/ship-happens-1-8-23-EE-pic4.jpg" alt="Fan assembly details" className="max-w-xl w-full" />
+                  <img src="/pictures/Blogs/ship-happens-1-8-23-EE-pic4.jpg" alt="Fan assembly details" className="max-w-xl w-full" />
                 </div>
 
                 <h4 className="text-xl font-semibold text-primary mt-6 mb-3">First Test</h4>
@@ -225,17 +225,17 @@ const Year23Electronics = () => {
               </p>
               <div className="grid grid-cols-1 md:grid-cols-[2fr_3fr] gap-4 my-6">
                 <img
-                  src="/Pictures/Blogs/ship-happens-12-15-22-EE-pic1.jpg"
+                  src="/pictures/Blogs/ship-happens-12-15-22-EE-pic1.jpg"
                   className="w-full h-full object-contain"
                 />
 
                 <div className="grid grid-rows-2 gap-4">
                   <img
-                    src="/Pictures/Blogs/ship-happens-12-15-22-EE-pic2.png"
+                    src="/pictures/Blogs/ship-happens-12-15-22-EE-pic2.png"
                     className="w-full h-full object-contain"
                   />
                   <img
-                    src="/Pictures/Blogs/ship-happens-12-15-22-EE-pic3.png"
+                    src="/pictures/Blogs/ship-happens-12-15-22-EE-pic3.png"
                     className="w-full h-full object-contain"
                   />
                 </div>
@@ -253,20 +253,20 @@ const Year23Electronics = () => {
                 through their plastic protectors in our test last Friday. 
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
-                <img src="/Pictures/Blogs/ship-happens-10-31-22-EE-pic1.jpg" alt="Heat sinks" className="w-full" />
-                <img src="/Pictures/Blogs/ship-happens-10-31-22-EE-pic2.jpg" alt="Circuit integration" className="w-full" />
+                <img src="/pictures/Blogs/ship-happens-10-31-22-EE-pic1.jpg" alt="Heat sinks" className="w-full" />
+                <img src="/pictures/Blogs/ship-happens-10-31-22-EE-pic2.jpg" alt="Circuit integration" className="w-full" />
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
-                <img src="/Pictures/Blogs/ship-happens-10-31-22-EE-pic3.jpg" alt="Boat test 1" className="w-full" />
-                <img src="/Pictures/Blogs/ship-happens-10-31-22-EE-pic4.jpg" alt="Boat test 2" className="w-full" />
+                <img src="/pictures/Blogs/ship-happens-10-31-22-EE-pic3.jpg" alt="Boat test 1" className="w-full" />
+                <img src="/pictures/Blogs/ship-happens-10-31-22-EE-pic4.jpg" alt="Boat test 2" className="w-full" />
               </div>
               <p>
                 We had our first in-the-water test last Friday on the Charles
                 River from Magazine Beach. We determined that our measured max speed is about 1 meter per second.
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
-                <img src="/Pictures/Blogs/ship-happens-10-31-22-EE-pic5.jpg" alt="Boat test 3" className="w-full" />
-                <img src="/Pictures/Blogs/ship-happens-10-31-22-EE-pic6.jpg" alt="Boat test 4" className="w-full" />
+                <img src="/pictures/Blogs/ship-happens-10-31-22-EE-pic5.jpg" alt="Boat test 3" className="w-full" />
+                <img src="/pictures/Blogs/ship-happens-10-31-22-EE-pic6.jpg" alt="Boat test 4" className="w-full" />
               </div>
             </div>
           </article>
@@ -282,7 +282,7 @@ const Year23Electronics = () => {
                 diagram to mentors next week to get feedback.
               </p>
               <div className="flex justify-center mt-6">
-                <img src="/Pictures/Blogs/ship-happens-10-2-22-EE-pic1.png" alt="Electronics wiring diagram" className="max-w-4xl w-full" />
+                <img src="/pictures/Blogs/ship-happens-10-2-22-EE-pic1.png" alt="Electronics wiring diagram" className="max-w-4xl w-full" />
               </div>
             </div>
           </article>

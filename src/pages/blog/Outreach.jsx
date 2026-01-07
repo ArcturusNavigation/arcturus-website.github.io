@@ -22,7 +22,7 @@ const Outreach = () => {
           </p>
 
           <img
-            src="/Pictures/Blogs/outreach-11-6-22-pic3.jpg"
+            src="/pictures/Blogs/outreach-11-6-22-pic3.jpg"
             alt="Outreach event"
             className="w-full max-w-4xl mx-auto mb-12 rounded-lg shadow-lg"
             style={{ maxHeight: '400px', objectFit: 'cover' }}
