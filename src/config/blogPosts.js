@@ -12,9 +12,9 @@ export const categoryBlogs = {
       category: 'autonomy'
     },
     {
-      title: 'Localization',
+      title: 'Localization and Mapping',
       image: '/pictures/Blogs/lidar.jpg',
-      description: 'GPS, IMU, and sensor integration for accurate position tracking',
+      description: 'GPS, IMU, and sensor integration for accurate position tracking and mapping of the course',
       link: '/blog/autonomy/localization',
       markdownPath: '/content/blogs/autonomy/localization.md',
       category: 'autonomy'
