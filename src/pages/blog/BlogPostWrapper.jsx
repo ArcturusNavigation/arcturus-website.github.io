@@ -6,9 +6,12 @@ const BlogPostWrapper = () => {
   const { category, slug } = useParams()
   const location = useLocation()
 
-  // For year-prefixed routes like /blog/year-25/:category/:slug,
-  // the lookup key should still be category/slug (ignoring the year prefix)
-  const postKey = `${category}/${slug}`
+  // Determine if this is a year-25 route
+  const isYear25 = location.pathname.startsWith('/blog/year-25/')
+
+  // For year-25 routes, append '25' to the category name for lookup
+  const lookupCategory = isYear25 ? `${category}25` : category
+  const postKey = `${lookupCategory}/${slug}`
   const postConfig = blogPosts[postKey]
 
   if (!postConfig) {

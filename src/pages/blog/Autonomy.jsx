@@ -24,7 +24,7 @@ const Autonomy = () => {
               {subsystems.map((subsystem) => (
                 <Link
                   key={subsystem.slug}
-                  to={subsystem.link.replace('/blog/', '/blog/year-25/')}
+                  to={subsystem.link}
                   state={{ from: '/blog/autonomy' }}
                   className="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow overflow-hidden block group"
                 >

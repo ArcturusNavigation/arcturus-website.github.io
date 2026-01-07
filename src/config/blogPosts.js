@@ -36,6 +36,40 @@ export const categoryBlogs = {
       category: 'autonomy'
     }
   ],
+  autonomy25: [
+    {
+      title: 'Perception Stack',
+      image: '/pictures/Blogs/buoydetection.png',
+      description: 'YOLOv8-based buoy detection and LiDAR-camera fusion for obstacle identification',
+      link: '/blog/year-25/autonomy/perception',
+      markdownPath: '/content/blogs/autonomy25/perception.md',
+      category: 'autonomy25'
+    },
+    {
+      title: 'Localization',
+      image: '/pictures/Blogs/lidar.jpg',
+      description: 'Dual-antenna RTK GPS with EKF fusion and SLAM for indoor navigation',
+      link: '/blog/year-25/autonomy/localization',
+      markdownPath: '/content/blogs/autonomy25/localization.md',
+      category: 'autonomy25'
+    },
+    {
+      title: 'Path Planning',
+      image: '/pictures/Blogs/pathplanning.png',
+      description: 'A* algorithm with occupancy grids for efficient obstacle avoidance',
+      link: '/blog/year-25/autonomy/pathplanning',
+      markdownPath: '/content/blogs/autonomy25/pathplanning.md',
+      category: 'autonomy25'
+    },
+    {
+      title: 'Controller',
+      image: '/pictures/Blogs/controller.jpg',
+      description: 'X-drive thruster configuration for omnidirectional maneuvering',
+      link: '/blog/year-25/autonomy/controller',
+      markdownPath: '/content/blogs/autonomy25/controller.md',
+      category: 'autonomy25'
+    }
+  ],
   mechanical: [
     {
       title: 'Hulls',
