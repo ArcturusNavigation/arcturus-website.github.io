@@ -22,6 +22,6 @@ Thus, we implemented a custom Extended Kalman Filter based algorithm, that takes
     </table>
 </figure>
 
-*Fig 2. The progression of the uncertainties on the robot pose and the course objects' positions, and the way object detections are used in the form of range and bearing measurements to reduce that uncertainty.*
+*Fig 2. The progression of the uncertainties on the robot pose and the course objects' positions (image source: "Probabilistic Robotics", Seb. Thrun), and the way object detections are used in the form of range and bearing measurements to reduce that uncertainty ([image source](https://www.researchgate.net/publication/228709802_Mobile_robot_localization_and_mapping_using_a_Gaussian_sum_filter)).*
 
 Indoor tests pose challenges due to the absence of GPS signals. However, using our SLAM algorithm, we are not completely reliant on them, thus we can utilize the course structure, as well as odometry estimates provided by the fusion of [RF2O](https://cvg.cit.tum.de/_media/spezial/bib/jaimez2016icra.pdf) LiDAR-based velocity estimates and the IMU's acceleration measurements, to achieve robust localization and mapping indoors. This proves our non-reliance on GPS and supports its usefullness for testing both outdoors and indoors.
