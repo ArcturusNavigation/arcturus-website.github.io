@@ -10,13 +10,13 @@ However, using raw GPS & compass data is not sufficient. The GPS can experience 
 Thus, we implemented a custom Extended Kalman Filter based algorithm, that takes in the velocity estimates from the Pixhawk to perform fast predictions on the robot's pose, and uses the GPS measurements and buoy/banner detections in the robot's frame to update its belief on both the robot's position as well as the positions of the course objects. This way, even though the uncertainty on the robot's pose increases as it integrates new velocity estimates, it abruptly decreases with new GPS measurements and object detections, also reducing the uncertainty on the positions of the course objects.  This mitigates the noise from all sensor measurements, and greatly reduces the duplicate obstacles that are observed in the global map that we keep track of, enabling robust task execution.
 
 <figure>
-    <table width="100%">
-    <tr>
-        <td align="center">
-        <img src="/pictures/Blogs/uncertainties_slam.png" width="100%" />
+    <table width="100%" style="border:0; border-collapse:collapse; border-spacing:0;">
+    <tr style="border:0;">
+        <td align="center" style="border:0; padding:0; margin:0;">
+        <img src="/pictures/Blogs/uncertainties_slam.png" width="100%" style="display:block;" />
         </td>
-        <td align="center">
-        <img src="/pictures/Blogs/landmarks_slam.png" width="100%" />
+        <td align="center" style="border:0; padding:0; margin:0;">
+        <img src="/pictures/Blogs/landmarks_slam.png" width="100%" style="display:block;" />
         </td>
     </tr>
     </table>
