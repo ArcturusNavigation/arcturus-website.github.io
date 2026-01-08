@@ -6,15 +6,18 @@ Perception plays a vital role in identifying objects in the boat's surroundings 
 
 Camera data is used to identify what the objects in the boat's surroundings are. For this purpose, we are using a fine-tuned YOLO11n model, a real-time image segmentation and object detection model, chosen for its real-time speed and accuracy. Our dataset consists of both existing datasets and newly custom-labeled data. In addition to a [public buoy dataset](https://universe.roboflow.com/mhseals/buoys-4naae) published by MHSeals on Roboflow, we uploaded and annotated images we took at last year’s competition and our own tests.
 
-<figure style="display:flex; gap:0px; align-items:center;">
-  <div style="flex:0 0 60%;">
-    <img src="/pictures/Blogs/new_yolo_data_1.png" style="width:100%; height:auto;">
-  </div>
-  <div style="flex:0 0 39%;">
-    <img src="/pictures/Blogs/new_yolo_data_2.png" style="width:100%; height:auto;">
-  </div>
+<figure>
+    <table width="100%">
+    <tr>
+        <td align="center" width="60%">
+        <img src="/pictures/Blogs/new_yolo_data_1.png" width="100%" />
+        </td>
+        <td align="center" width="39%">
+        <img src="/pictures/Blogs/new_yolo_data_2.png" width="100%" />
+        </td>
+    </tr>
+    </table>
 </figure>
-
 
 *Fig 1. Training data for the YOLO11n model from Roboboat 2025.*
 
