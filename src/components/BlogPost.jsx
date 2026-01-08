@@ -2,7 +2,10 @@ import React, { useState, useEffect } from 'react'
 import { Link, useNavigate, useLocation } from 'react-router-dom'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
+import remarkMath from 'remark-math'
 import rehypeRaw from 'rehype-raw'
+import rehypeKatex from 'rehype-katex'
+import 'katex/dist/katex.min.css'
 import { categoryBlogs } from '../config/blogPosts'
 
 const BlogPost = ({ markdownPath, category }) => {
@@ -106,8 +109,8 @@ const BlogPost = ({ markdownPath, category }) => {
         <div className="bg-white rounded-lg shadow-md p-8">
           <div className="prose prose-lg max-w-none">
             <ReactMarkdown
-              remarkPlugins={[remarkGfm]}
-              rehypePlugins={[rehypeRaw]}
+              remarkPlugins={[remarkGfm, remarkMath]}
+              rehypePlugins={[rehypeRaw, rehypeKatex]}
               components={{
                 img: ({node, ...props}) => (
                   <img
