@@ -72,43 +72,27 @@ export const categoryBlogs = {
   ],
   mechanical: [
     {
-      title: 'Hulls',
-      image: '/pictures/Blogs/hulls2.png',
-      description: 'Foundation of our boat',
-      link: '/blog/mechanical/hulls',
-      markdownPath: '/content/blogs/mechanical/hulls.md',
+      title: 'Vertical Flywheel Ball Launcher',
+      image: '/content/blogs/mechanical/vertical-flywheel-ball-launcher/cad-assembly.png',
+      description: 'Vertical flywheel design for variable range ball launching with backspin control',
+      link: '/blog/mechanical/vertical-flywheel-ball-launcher',
+      markdownPath: '/content/blogs/mechanical/vertical-flywheel-ball-launcher.md',
       category: 'mechanical'
     },
     {
-      title: 'Propulsion/Thruster Cages',
-      image: '/pictures/Blogs/propulsion.png',
-      description: 'Driving force of our boat',
-      link: '/blog/mechanical/propulsion',
-      markdownPath: '/content/blogs/mechanical/propulsion.md',
+      title: 'Hull Design and CFD Simulation',
+      image: '/content/blogs/mechanical/hull-design-simulation/catamaran-hull-design.png',
+      description: 'Modular catamaran hull design with multiphase CFD simulation and tow tank validation',
+      link: '/blog/mechanical/hull-design-simulation',
+      markdownPath: '/content/blogs/mechanical/hull-design-simulation.md',
       category: 'mechanical'
     },
     {
-      title: 'EE Box',
-      image: '/pictures/Blogs/eebox3.png',
-      description: 'Electronics protector',
-      link: '/blog/mechanical/eebox',
-      markdownPath: '/content/blogs/mechanical/eebox.md',
-      category: 'mechanical'
-    },
-    {
-      title: 'Sensor Mast',
-      image: '/pictures/Blogs/sensormast2.png',
-      description: 'Mounting point for sensors',
-      link: '/blog/mechanical/sensormast',
-      markdownPath: '/content/blogs/mechanical/sensormast.md',
-      category: 'mechanical'
-    },
-    {
-      title: 'Mechanisms',
-      image: '/pictures/Blogs/mechanism.jpg',
-      description: 'Allow for robotic functions',
-      link: '/blog/mechanical/mechanisms',
-      markdownPath: '/content/blogs/mechanical/mechanisms.md',
+      title: 'Hull Manufacturing',
+      image: '/content/blogs/mechanical/hull-manufacturing/fiberglass-samples.png',
+      description: 'Fiberglass layup process and material testing for lightweight, impact-resistant hollow hulls',
+      link: '/blog/mechanical/hull-manufacturing',
+      markdownPath: '/content/blogs/mechanical/hull-manufacturing.md',
       category: 'mechanical'
     }
   ],
