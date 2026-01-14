@@ -1,16 +1,12 @@
 # Battery Management System (BMS)
 
-Our previous vehicle used a commercially-available BMS that was bulky and difficult to interface with. To resolve this we designed a custom board that performs current, cell voltage, and thermal measurements. It is also able to cut off battery power with a transistor in the case of an emergency, functionality which was previously implemented by a separate device.
+![BMS Board](/content/blogs/electrical/bms/bms-board.png)
 
-The BMS uses the builtin 10-bit ADC of an ATmega328PB to measure cell voltages through a series of voltage dividers. We use an external 12-bit ADC and current sense amplifier to measure total battery voltage and the output current, and a thermocouple to monitor the temperature inside the battery box. Combined with the cell voltage information, this gives us enough data to detect safety concerns. This data is then accessible to the rest of the system over an I2C bus.
+The BMS monitors battery health and performs battery shutoff. It protects against undervoltage, overcurrent, and cell imbalance. Last year, we implemented these functions with a microcontroller, leading to noisy measurements and unreliable performance. This year, we switched to the TI BQ76942, a battery monitor and protector for 3s-10s batteries. This chip provides many useful features:
 
-Initial revisions of the board faced a few challenges:
+- A built-in charge pump allows for a high side NFET, meaning communication with the rest of the system doesn't need to be isolated like the previous BMS
+- For our transistor, we use the Vishay SiJA22DP with an R_DS(on) of 700 mΩ and current rating of over 200A
+- The DFETOFF pin can be directly attached to the ESTOP line, reducing the chance buggy firmware would fail to turn off the FET in case of ESTOP
+- Various quantities, including stack voltage, cell voltages, current, and FET state can be accessed over I2C from a microcontroller unit, which then sends these values over CAN to the rest of the system
 
-Between the current sense resistor and the shutoff transistor, the board needs to be able to dissipate a significant amount of heat. The transistor, a Vishay SiJA22DP has an R_DS(on) of 700 mΩ, and the current sense resistor has a resistance of 500 mΩ. At 40 A, this leads to a power dissipation of about 2 W. To manage this, both devices are connected to large copper pours, and heatsinks were added in later revisions.
-
-![BMS board](/pictures/Blogs/bmsreal.jpg)
-*Fig 1. BMS board.*
-
-Also, early versions of the board would sometimes be destroyed when connecting power. We discovered that there was so little damping in the connection between the BMS and battery that flipping the switch would induce a step response, temporarily doubling the voltage seen by the board. To protect against this issue, we added TVS clamping diodes that prevent the power rail from exceeding device limits.
-
-To test the board, we verified that shutoff worked and that the temperature did not rise close to the maximum operating temperature of the shutoff transistor up to 70 A, which is well in excess of our expected operating current of 40A. Even in the case of a control failure, the gate of the transistor is pulled down so that power to the thrusters will be cut off.
+We have dealt with various issues with these boards. The goal is to have a single PCB that can be used with all batteries. On the first boards, the cell connections were not easily switchable between the 4s and 6s batteries. Additionally, sometimes the BMS would cycle when turning on. This was especially an issue with ESTOP, as we cannot have the risk of an indefinite cycle when turning off ESTOP mode. To overcome this, a revision fixed these cell connectors and added predischarge functionality, allowing us to reduce the transient on turn on and hopefully fix the cycling issue. However, a further revision is needed to change the direction of the current sense resistor, and add a missing decoupling capacitor on the BMS IC.
