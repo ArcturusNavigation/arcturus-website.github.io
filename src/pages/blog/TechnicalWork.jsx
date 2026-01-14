@@ -5,19 +5,19 @@ const TechnicalWork = () => {
   const subteams = [
     {
       title: 'Autonomy',
-      image: '/pictures/testing_fall2024.jpg',
+      image: '/pictures/Blogs/buoydetection.png',
       description: 'Perception, localization, and planning systems for our ASV.',
       link: '/blog/autonomy'
     },
     {
       title: 'Electrical',
-      image: '/pictures/Blogs/bms.png',
+      image: '/content/blogs/electrical/mechanisms/mechanisms-board.png',
       description: 'Power distribution, sensing, and onboard electronics.',
       link: '/blog/electrical'
     },
     {
       title: 'Mechanical',
-      image: '/pictures/boat_cad.jpg',
+      image: '/content/blogs/mechanical/hull-design-simulation/hull-design-v2.png',
       description: 'Hull design, propulsion integration, and mechanical systems.',
       link: '/blog/mechanical'
     },

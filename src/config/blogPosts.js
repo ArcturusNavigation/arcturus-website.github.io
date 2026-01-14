@@ -81,7 +81,7 @@ export const categoryBlogs = {
     },
     {
       title: 'Hull Design and CFD Simulation',
-      image: '/content/blogs/mechanical/hull-design-simulation/catamaran-hull-design.png',
+      image: '/content/blogs/mechanical/hull-design-simulation/hull-design-v2.png',
       description: 'Modular catamaran hull design with multiphase CFD simulation and tow tank validation',
       link: '/blog/mechanical/hull-design-simulation',
       markdownPath: '/content/blogs/mechanical/hull-design-simulation.md',
@@ -99,52 +99,68 @@ export const categoryBlogs = {
   electrical: [
     {
       title: 'Battery Management System (BMS)',
-      image: '/pictures/Blogs/bms.png',
-      description: 'Power distribution and battery monitoring system',
+      image: '/content/blogs/electrical/bms/bms-board.png',
+      description: 'TI BQ76942-based battery monitor protecting against undervoltage, overcurrent, and cell imbalance',
       link: '/blog/electrical/bms',
       markdownPath: '/content/blogs/electrical/bms.md',
       category: 'electrical'
     },
     {
-      title: 'Buck Board',
-      image: '/pictures/Blogs/buckboard.jpg',
-      description: 'Voltage regulation for electronic components',
-      link: '/blog/electrical/buckboard',
-      markdownPath: '/content/blogs/electrical/buckboard.md',
+      title: 'Emergency Stop System',
+      image: '/content/blogs/electrical/estop/estop-board-1.png',
+      description: 'Redundant ESTOP mechanisms with XBee and custom radio for fail-safe operation',
+      link: '/blog/electrical/estop',
+      markdownPath: '/content/blogs/electrical/estop.md',
       category: 'electrical'
     },
     {
-      title: 'E-Stop',
-      image: '/pictures/Blogs/estop.png',
-      description: 'Emergency stop system for safety',
-      link: '/blog/electrical/estop',
-      markdownPath: '/content/blogs/electrical/estop.md',
+      title: 'Power Distribution System',
+      image: '/content/blogs/electrical/power/power-board-1.png',
+      description: 'Buck converters and adjustable DC-DC converters for multiple voltage rails',
+      link: '/blog/electrical/power',
+      markdownPath: '/content/blogs/electrical/power.md',
+      category: 'electrical'
+    },
+    {
+      title: 'Mechanisms Control Board',
+      image: '/content/blogs/electrical/mechanisms/mechanisms-board.png',
+      description: 'Testing board for servos, steppers, and DC motors with ground testing capability',
+      link: '/blog/electrical/mechanisms',
+      markdownPath: '/content/blogs/electrical/mechanisms.md',
       category: 'electrical'
     }
   ],
   electrical25: [
     {
       title: 'Battery Management System (BMS)',
-      image: '/pictures/Blogs/bms.png',
-      description: 'Power distribution and battery monitoring system',
+      image: '/content/blogs/electrical/bms/bms-board.png',
+      description: 'TI BQ76942-based battery monitor protecting against undervoltage, overcurrent, and cell imbalance',
       link: '/blog/year-25/electrical/bms',
-      markdownPath: '/content/blogs/electrical25/bms.md',
+      markdownPath: '/content/blogs/electrical/bms.md',
       category: 'electrical25'
     },
     {
-      title: 'Buck Board',
-      image: '/pictures/Blogs/buckboard.jpg',
-      description: 'Voltage regulation for electronic components',
-      link: '/blog/year-25/electrical/buckboard',
-      markdownPath: '/content/blogs/electrical25/buckboard.md',
-      category: 'electrical25'
-    },
-    {
-      title: 'E-Stop',
-      image: '/pictures/Blogs/estop.png',
-      description: 'Emergency stop system for safety',
+      title: 'Emergency Stop System',
+      image: '/content/blogs/electrical/estop/estop-board-1.png',
+      description: 'Redundant ESTOP mechanisms with XBee and custom radio for fail-safe operation',
       link: '/blog/year-25/electrical/estop',
-      markdownPath: '/content/blogs/electrical25/estop.md',
+      markdownPath: '/content/blogs/electrical/estop.md',
+      category: 'electrical25'
+    },
+    {
+      title: 'Power Distribution System',
+      image: '/content/blogs/electrical/power/power-board-1.png',
+      description: 'Buck converters and adjustable DC-DC converters for multiple voltage rails',
+      link: '/blog/year-25/electrical/power',
+      markdownPath: '/content/blogs/electrical/power.md',
+      category: 'electrical25'
+    },
+    {
+      title: 'Mechanisms Control Board',
+      image: '/content/blogs/electrical/mechanisms/mechanisms-board.png',
+      description: 'Testing board for servos, steppers, and DC motors with ground testing capability',
+      link: '/blog/year-25/electrical/mechanisms',
+      markdownPath: '/content/blogs/electrical/mechanisms.md',
       category: 'electrical25'
     }
   ],
