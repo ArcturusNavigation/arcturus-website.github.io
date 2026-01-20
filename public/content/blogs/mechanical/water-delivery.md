@@ -32,7 +32,7 @@ F_D = -\frac{1}{2} \rho v^2 C_D A
 $$
 
 ![Calcs for drag on a water droplet](/content/blogs/mechanical/water-delivery/WaterDropletsDragCalcs.png)
-<figcaption> Fig 1. Screen shot of excel spreadsheet used to perform initial drag caluclations based on estimated water droplet size. </figcaption>
+<figcaption> Fig 1. Screen shot of excel spreadsheet used to perform initial drag calculations based on estimated water droplet size. </figcaption>
 
 The behavior of the stream of water was modeled as a spherical projectile exiting the nozzle at 30 degrees.
 
@@ -42,13 +42,13 @@ Calculations supported that a minimum exit velocity of 15 m/s was necessary. Thi
 To match pump specs to the desired output velocity we performed pipe flow analysis of the system.
 
 ### Sketch of the System
-A high level sketch of the pipe flow system is shown in Fig. 2. In addition to the minor head losses we also included frictional head loss in our calculations, though it was quickly apparent that nearly all head losses in such a short pipe-flow network were negligible compared to velocity/kinetic energy head loss. We did not include any head losses associated with curves in the tubing since these were (a) not geometries we could clearely define before putting the system on the boat and (2) since there were no rigid constraints on the bend radii of the tube, these could be maximized for negligible impact on the flow.
+A high level sketch of the pipe flow system is shown in Fig. 2. In addition to the minor head losses we also included frictional head loss in our calculations, though it was quickly apparent that nearly all head losses in such a short pipe-flow network were negligible compared to velocity/kinetic energy head loss. We did not include any head losses associated with curves in the tubing since these were (a) not geometries we could clearly define before putting the system on the boat and (2) since there were no rigid constraints on the bend radii of the tube, these could be maximized for negligible impact on the flow.
 
 ![Sketch of pipeflow network](/content/blogs/mechanical/water-delivery/PipeFlowSketch.jpg)
 <figcaption> Fig 2. Sketch of our pipeflow system. </figcaption>
 
 ### Calcs
-Since including frictional head loss required an interative solution we performed our pipe flow analsysis calcs in a spreadsheet. You can find the spreadsheet linked below:
+Since including frictional head loss required an iterative solution we performed our pipe flow  analysis calculations in a spreadsheet. You can find the spreadsheet linked below:
 [Pipe Flow + Drag Calcs](https://mitprod-my.sharepoint.com/:x:/g/personal/andrew8_mit_edu/IQBlI4OMBM1SQZxKdNwY3jD0Aa6ztyDfwfQB3yxB9OKd6t0 "Pipe Flow + Drag Calcs, Arcturus 2026")
 
 ## Calibration against Empirical Results
@@ -60,7 +60,7 @@ The preliminary calculations showed that the system requirements were heavily de
 Since the full performance curve of our pump wasn't available, we decided to measure the time it took to pump out 1L and the maximum range achieved. With these two measurements we were able to estimate the exit velocity of the stream, calibrate the drag model, and validate our pipe flow calculations.
 
 ## Testing Results
-During the test the pump achieved an average volume flow rate of 191GPH or $2e-4 m^3/s$. Given the nozzle size this translated to an exit velocity of 6.3 m/s. We used our model to bacalculate the required pump specs to supply this velocity and flow rate and found that a pump with a head of 18ft and 196 GPH flow rate wwas required corresponding closely with the 18 ft head and 200 GPH flow rate advertised for the TruePower pump we were testing. The slightly hire listed vs calculated specs were likely due to inefficiencies in the real system--on our first test we found the pump rotor had locked-up due to calcification and disuse.
+During the test the pump achieved an average volume flow rate of 191GPH or $2e-4 m^3/s$. Given the nozzle size this translated to an exit velocity of 6.3 m/s. We used our model to back calculate the required pump specs to supply this velocity and flow rate and found that a pump with a head of 18ft and 196 GPH flow rate was required corresponding closely with the 18 ft head and 200 GPH flow rate advertised for the TruePower pump we were testing. The slightly higher listed vs calculated specs were likely due to inefficiencies in the real system--on our first test we found the pump rotor had locked-up due to calcification and disuse.
 
 The measured exit velocity of 6.3 m/s did not, however, match up with the required exit velocity calculated by our drag model. Our mdoel estimated 15 m/s exit velocity was required to reach a 5 m range while the test showed that a 6.3 m/s velocity was sufficient to achieve $\sim 7$ m range. After taking a second pass at the drag model we found that drag on the flow was essentially negligible. We ultimately chose to reuse the 2025 system since it more than exceeded our design requirements and cost nothing.
 
@@ -75,7 +75,3 @@ The measured exit velocity of 6.3 m/s did not, however, match up with the requir
 
 ![SLA Printed Nozzle](/content/blogs/mechanical/water-delivery/Nozzle.png)
 <figurecaption> Fig 4. A 1/4" ID SLA printed nozzle was used to step up flow exit velocity for the desired range of 5 m. In reality we achieved a range of ~7m. </figcaption>.
-
-
-
-

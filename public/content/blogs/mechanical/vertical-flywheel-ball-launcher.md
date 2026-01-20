@@ -161,7 +161,7 @@ $$\tau_{motor} = \Delta L_{one \, wheel} = I\omega_{final} - I\omega_{initial}$$
 Based on this formula, the time to spin back up is 0.13 s, which is a reasonable time to be ready to shoot again.
 
 ### Design Analysis: Second Pass
-Once we completed the first pass design analysis to roughly size all sstem components, we decided to do a second pass, higher fidelity analysis to visualize specific engineering trade-offs like compression, flywheel RPM, and ball spin.
+Once we completed the first pass design analysis to roughly size all system components, we decided to do a second pass, higher fidelity analysis to visualize specific engineering trade-offs like compression, flywheel RPM, and ball spin.
 
 The majority of this analysis is based on the following state space model of the system:
 $$
@@ -185,7 +185,7 @@ $$
 
 where $x, v, F_{1}, \Omega, \omega_{1}, F_{2}, \omega_{2}, R_{w}, and r_{b}$ are defined in Fig 7.
 
-![Flywheel variable definition](/content/blogs/mechanical/vertical-flywheel-ball-launcher/FlywheelGeometryModelSketch.jpg)<figcaption> Fig 7. defines key gometric and dynamic variables of the model. </figcaption>
+![Flywheel variable definition](/content/blogs/mechanical/vertical-flywheel-ball-launcher/FlywheelGeometryModelSketch.jpg)<figcaption> Fig 7. defines key geometric and dynamic variables of the model. </figcaption>
 
 Forces $F_{1}$ and $F_{2}$ acting on the ball are defined as functions of compression, $\delta(x)$,
 
@@ -200,14 +200,14 @@ N(\delta) &= K \, \delta(x) \\[1mm]
 \end{aligned}
 $$
 
-and K is the average stffness found during instron tests. Since contact is assumed to occur over a relatively small arc length we calculate acceleration directly from the contact forces without trig.
+and K is the average stiffness found during instron tests. Since contact is assumed to occur over a relatively small arc length we calculate acceleration directly from the contact forces without trig.
 
 #### Validating + Calibrating the Model
-This model leaves one free parameter: $\mu$ or the viscous friction coefficient between the flywheels and the ball. To tune this parameter, and validate the model, we compared predicted results to the perfomance of last year's horizontal flywheel launcher which reached exit velocities of 7.15 m/s without spin.
+This model leaves one free parameter: $\mu$ or the viscous friction coefficient between the flywheels and the ball. To tune this parameter, and validate the model, we compared predicted results to the performance of last year's horizontal flywheel launcher which reached exit velocities of 7.15 m/s without spin.
 
 Based on these empirical results we determined $\mu \approx 0.37$ (see Fig. 8), which seemed quite reasonable and made us more confident in our model.
 
-![Flywheel model calibration](/content/blogs/mechanical/vertical-flywheel-ball-launcher/FlywheelLauncherCalibration.png)<figcaption> Fig 8. By sweeping our model through the relationship between $\mu$ and exit velocity given the dimensions of last year's launcher, we were able to determine an expected friction coefficeint between the ball and flywheels of $\mu \approx 0.37$. </figcaption>
+![Flywheel model calibration](/content/blogs/mechanical/vertical-flywheel-ball-launcher/FlywheelLauncherCalibration.png)<figcaption> Fig 8. By sweeping our model through the relationship between $\mu$ and exit velocity given the dimensions of last year's launcher, we were able to determine an expected friction coefficient between the ball and flywheels of $\mu \approx 0.37$. </figcaption>
 
 The next step was to use our tuned model to determine the optimal compression, $\delta$, and differential flywheel speed (i.e., spin), $\Delta RPM$, to apply to the ball. To do this we conducted a feasibility sweep across $\delta$ and $\Delta RPM$ and recorded pairs that satisfied the 5 m range and 0.5 m max trajectory height at one or more launch angles, $\theta$. The results of the feasibility study are presented in Fig. 9 and motivated operating at a $\Delta RPM \approx 6000$ and $\delta \approx 18$ mm. We chose these values because it is desirable to minimize compression of the ball, $\delta$, to decrease loads on the system.
 
@@ -217,7 +217,7 @@ Before finalizing the design we wanted to visualize the engineering trade-offs m
 
 ![Flywheel design trade-offs visualization](/content/blogs/mechanical/vertical-flywheel-ball-launcher/MarginsVisualizationFlywheels.png)<figcaption> Fig 10. By sweeping our model through various launch angles and backspin we were able to confidently select operating conditions $\delta = 18mm, \Delta RPM = 6000, \theta = 18.5^\circ$. Though these conditions cost us excess range but ensured we never overshot the target. </figcaption>
 
-Visualizing the trade-offs between excess range and height buffer were important because we cared far more about not overshooting the target than we did about maximizing range. While decreased range has an easy solution (move closer), overshooting the target does not. In fact, overshooting, for a fixed angle launcher, can only be countered through  careful station keeping from the target that we were not yet confident our autonomy system could do.
+Visualizing the trade-offs between excess range and height buffer were important because we cared far more about not overshooting the target than we did about maximizing range. While decreased range has an easy solution (move closer), overshooting the target does not. In fact, overshooting, for a fixed-angle launcher, can only be countered through  careful station keeping from the target that we were not yet confident our autonomy system could do.
 
 ### CAD
 
