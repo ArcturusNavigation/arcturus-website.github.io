@@ -1,14 +1,14 @@
-﻿## 10/18/25 System Test
+## 10/18/25 System Test
 
 ### Test Objectives
 - Test follow path approach in more varied environments (eg. straight vs. curved path, high vs. low speed)
-- Begin testing speed challenge. Aim is to have the vehicle successfully navigate around the buoy but without any speed constraints at the moment.  
+- Begin testing speed challenge. Aim is to have the vehicle successfully navigate around the buoy but without any speed constraints at the moment.
 
 ### Results
 
 **Follow the Path**
 
-We tested follow the path in four different scenarios, varying the speed of the boat, as well as the whether the path to follow was curved or straight. 
+We tested follow the path in four different scenarios, varying the speed of the boat, as well as the whether the path to follow was curved or straight.
 
 | Path Type     | Low Speed (0.5 m/s) | High Speed (1.5 m/s) |
 |---------------|---------------------|----------------------|
@@ -19,7 +19,7 @@ We tested follow the path in four different scenarios, varying the speed of the 
 <figcaption>Fig 1. At higher speeds, our approach to Follow the Path is less consistent.</figcaption>
 
 **Speed Challenge**
-- Was generally able to get from starting position to some point close to buoyâ€”would occasionally swerve weirdly as it got to the buoy
+- Was generally able to get from starting position to some point close to buoy—would occasionally swerve weirdly as it got to the buoy
     - Errors attributed to localization problems w/ GPS
 
 ### Takeaways and Next Steps
