@@ -48,6 +48,12 @@ const TechnicalWork = () => {
               <i>Fish 'N Ships</i> is the autonomous surface vehicle (ASV) Arcturus is competing with for the 2026 Roboboat
               competition. In parallel, Arcturus is currently developing a new autonomous surface vehicle for Roboboat 2027!
             </p>
+            <a
+              href="/documents/TDR_MITArcturus_RB2026.pdf"
+              className="inline-flex items-center justify-center rounded-md bg-primary px-6 py-3 text-white font-semibold hover:bg-primary-light transition-colors"
+            >
+              RoboBoat 2026 Technical Design Report
+            </a>
           </div>
         </div>
 

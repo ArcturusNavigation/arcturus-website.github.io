@@ -33,16 +33,7 @@ const Home = () => {
             {/* media column */}
             <div className="w-full lg:w-5/12">
               <div className="video-container rounded-lg overflow-hidden shadow-lg">
-                <iframe
-                  width="560"
-                  height="315"
-                  src="https://www.youtube.com/embed/m9dcG-rZwSk?si=CLfSJ6qwxsFVXq5-"
-                  title="YouTube video player"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  referrerPolicy="strict-origin-when-cross-origin"
-                  allowFullScreen
-                ></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/fnqL2pER6wA?si=NS9NpVWOq1KnHIwF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
               </div>
             </div>
 

@@ -45,7 +45,7 @@ const Year25 = () => {
               precision control and agility.
             </p>
             <a
-              href="/pictures/Blogs/TDR_MITArcturus_RB2025.pdf"
+              href="/documents/TDR_MITArcturus_RB2025.pdf"
               className="inline-flex items-center justify-center rounded-md bg-primary px-6 py-3 text-white font-semibold hover:bg-primary-light transition-colors"
             >
               RoboBoat 2025 Technical Design Report

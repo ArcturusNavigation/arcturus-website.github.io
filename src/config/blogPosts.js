@@ -34,6 +34,14 @@ export const categoryBlogs = {
       link: '/blog/autonomy/controller',
       markdownPath: '/content/blogs/autonomy/controller.md',
       category: 'autonomy'
+    },
+    {
+      title: 'Onboarding Labs',
+      image: '/content/blogs/autonomy/onboardinglab1.png',
+      description: 'A 2-part ROS 2 lab to get new autonomy members familiar with the tech stack',
+      link: '/blog/autonomy/onboardinglabs',
+      markdownPath: '/content/blogs/autonomy/onboardinglabs.md',
+      category: 'autonomy'
     }
   ],
   autonomy25: [
@@ -67,14 +75,6 @@ export const categoryBlogs = {
       description: 'X-drive thruster configuration for omnidirectional maneuvering',
       link: '/blog/year-25/autonomy/controller',
       markdownPath: '/content/blogs/autonomy25/controller.md',
-      category: 'autonomy25'
-    },
-    {
-      title: 'Onboarding Labs',
-      image: '/content/blogs/autonomy/onboardinglab1.png',
-      description: 'A 2-part ROS 2 lab to get new autonomy members familiar with the tech stack',
-      link: '/blog/year-25/autonomy/onboardinglabs',
-      markdownPath: '/content/blogs/autonomy/onboardinglabs.md',
       category: 'autonomy25'
     }
   ],

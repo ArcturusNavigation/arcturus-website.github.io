@@ -60,7 +60,7 @@ const Year23 = () => {
                 RoboBoat 2023 Technical Design Report
               </a>
               <a
-                href="/pictures/Blogs/Njord_Challenge_2023_TDR.pdf"
+                href="/documents/Njord_Challenge_2023_TDR.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center rounded-md bg-primary px-6 py-3 text-white font-semibold hover:bg-primary-light transition-colors"
