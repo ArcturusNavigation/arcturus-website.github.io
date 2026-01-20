@@ -134,6 +134,14 @@ export const categoryBlogs = {
       link: '/blog/mechanical/pneumatic-ball-launcher',
       markdownPath: '/content/blogs/mechanical/pneumatic-ball-launcher.md',
       category: 'mechanical'
+    },
+    {
+      title: 'Three Camera Sensor Mast',
+      image: '/content/blogs/mechanical/threecam-sensormast/AnnotatedUpdatedSensorMast.png',
+      description: "Analysis and Design of a Three Camera Sensor Mast and test Cart for the Boat's Perception Stack",
+      link: '/blog/mechanical/three-cam-sensormast',
+      markdownPath: '/content/blogs/mechanical/three-cam-sensor-mast.md',
+      category: 'mechanical'
     }
   ],
   electrical: [
