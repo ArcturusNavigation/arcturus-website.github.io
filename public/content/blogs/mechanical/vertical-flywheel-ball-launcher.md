@@ -7,7 +7,7 @@ Driving considerations for the ball launcher design were range, volume, and weig
 
 ### Range: <= 5m
 
-Maximum range was determined by the maximum distance at which our perception stack could reliably detect a target. Water tests showed that improvements to the YOLO model enabled detection at 5 m â€“ a 2 m increase over last year's 3 m target. Unfortunately, analysis showed that a fixed-elevation-angle ball launcher could not reach a 5 m target without overshooting. To sidestep this problem we chose to switch to vertical flywheel this year. This architecture allows us to launch with backspin â€“ producing different trajectories based on estimated target distance without compromising the simplicity of a fixed-elevation-angle design.
+Maximum range was determined by the maximum distance at which our perception stack could reliably detect a target. Water tests showed that improvements to the YOLO model enabled detection at 5 m, a 2 m increase over last year's 3 m target. Unfortunately, analysis showed that a fixed-elevation-angle ball launcher could not reach a 5 m target without overshooting. To sidestep this problem we chose to switch to vertical flywheel this year. This architecture allows us to launch with backspin, producing different trajectories based on estimated target distance without compromising the simplicity of a fixed-elevation-angle design.
 
 ### Volume
 

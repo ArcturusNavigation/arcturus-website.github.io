@@ -102,6 +102,38 @@ export const categoryBlogs = {
       link: '/blog/mechanical/hull-manufacturing',
       markdownPath: '/content/blogs/mechanical/hull-manufacturing.md',
       category: 'mechanical'
+    },
+    {
+      title: 'Electronics Enclosure',
+      image: '/content/blogs/mechanical/eebox/EEBoxThumbnail.png',
+      description: '2026 Electronics Enclosure for waterproofing, cooling, and mounting of electronic components',
+      link: '/blog/mechanical/electronics-enclosure',
+      markdownPath: '/content/blogs/mechanical/eebox.md',
+      category: 'mechanical'
+    },
+    {
+      title: 'Water Delivery',
+      image: '/content/blogs/mechanical/water-delivery/Nozzle.png',
+      description: 'Analysis and Testing of a Water Delivery for Task 4',
+      link: '/blog/mechanical/water-delivery',
+      markdownPath: '/content/blogs/mechanical/water-delivery.md',
+      category: 'mechanical'
+    },
+    {
+      title: 'Sensor Mast Tilt Table',
+      image: '/content/blogs/mechanical/tilt-table/TiltTableSketch.png',
+      description: 'Analysis and Preliminary Design of a Sensor Mast Tilt Table',
+      link: '/blog/mechanical/tilt-table',
+      markdownPath: '/content/blogs/mechanical/tilt-table.md',
+      category: 'mechanical'
+    },
+    {
+      title: 'Pneumatic Ball Launcher',
+      image: '/content/blogs/mechanical/pneumatic-launcher/PneumaticLauncherCAD.png',
+      description: 'Analysis and Design of a Pneumatic Ball Launcher for Task 5',
+      link: '/blog/mechanical/pneumatic-ball-launcher',
+      markdownPath: '/content/blogs/mechanical/pneumatic-ball-launcher.md',
+      category: 'mechanical'
     }
   ],
   electrical: [
