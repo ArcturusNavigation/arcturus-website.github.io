@@ -1,4 +1,4 @@
-# Mechanisms Control Board
+﻿## Mechanisms Control Board
 
 ![Mechanisms Board](/content/blogs/electrical/mechanisms/mechanisms-board.png)
 

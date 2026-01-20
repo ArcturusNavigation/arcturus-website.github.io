@@ -1,4 +1,4 @@
-# MIT MechE Health of the Planet Showcase
+﻿## MIT MechE Health of the Planet Showcase
 
 **Date:** April 19, 2023
 

@@ -1,4 +1,4 @@
-# Edgerton Center Showcase
+﻿## Edgerton Center Showcase
 
 **Date:** April 11, 2023
 

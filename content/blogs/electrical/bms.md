@@ -1,11 +1,11 @@
-# Battery Management System (BMS)
+﻿## Battery Management System (BMS)
 
 ![BMS Board](/content/blogs/electrical/bms/bms-board.png)
 
 The BMS monitors battery health and performs battery shutoff. It protects against undervoltage, overcurrent, and cell imbalance. Last year, we implemented these functions with a microcontroller, leading to noisy measurements and unreliable performance. This year, we switched to the TI BQ76942, a battery monitor and protector for 3s-10s batteries. This chip provides many useful features:
 
 - A built-in charge pump allows for a high side NFET, meaning communication with the rest of the system doesn't need to be isolated like the previous BMS
-- For our transistor, we use the Vishay SiJA22DP with an R_DS(on) of 700 mΩ and current rating of over 200A
+- For our transistor, we use the Vishay SiJA22DP with an R_DS(on) of 700 mÎ© and current rating of over 200A
 - The DFETOFF pin can be directly attached to the ESTOP line, reducing the chance buggy firmware would fail to turn off the FET in case of ESTOP
 - Various quantities, including stack voltage, cell voltages, current, and FET state can be accessed over I2C from a microcontroller unit, which then sends these values over CAN to the rest of the system
 

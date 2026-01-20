@@ -1,4 +1,4 @@
-# Power Distribution System
+﻿## Power Distribution System
 
 <figure>
     <table width="100%" style="border:0; border-collapse:collapse; border-spacing:0;">
@@ -13,7 +13,7 @@
     </table>
 </figure>
 
-*Fig 1. Main Power Board (left) and Mechanisms Power Board (right).*
+<figcaption>Fig 1. Main Power Board (left) and Mechanisms Power Board (right).</figcaption>
 
 The boat is powered by three batteries: a 6-series (6s) battery for electronics, and two 4-series (4s) batteries for thrusters and high power mechanisms. The main power board contains buck converters that take the voltage from the electronics battery and convert it into 3.3V, 5V, 12V, 19V. The current of each of these rails is sent over CAN. The two mechanisms power boards feature a single DC-DC converter (using the TI LM251772 controller) that takes the voltage from a thruster battery and converts it to any voltage from 3.3V to 36V, with a max current of 25A. These converters feature adjustable voltage and current limits, as well as output current monitoring, all over the CAN bus.
 

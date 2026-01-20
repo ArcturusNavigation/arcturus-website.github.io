@@ -1,4 +1,4 @@
-# MIT-Portugal Marine Robotics Summer School in the Azores
+﻿## MIT-Portugal Marine Robotics Summer School in the Azores
 
 **Date:** August 22-26, 2023
 

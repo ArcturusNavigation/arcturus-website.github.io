@@ -1,12 +1,12 @@
-# Controller
+﻿## Controller
 
 After computing a collision-free path for the robot to follow, we need to compute the desired velocities to make sure that the robot follows it as closely as possible.
 
-One of the surprising difficulties was deciding when to transition from point-following to one point on the trajectory to the next point – our old algorithm, which relied on distance to points, would accelerate and decelerate too much to land exactly on the points when the distance threshold was set low. But when the distance threshold was increased, the boat wouldn’t even follow the trajectory anymore. Our solution was a more adaptive algorithm, that tracks the closest point on the optimal trajectory. 
+One of the surprising difficulties was deciding when to transition from point-following to one point on the trajectory to the next point â€“ our old algorithm, which relied on distance to points, would accelerate and decelerate too much to land exactly on the points when the distance threshold was set low. But when the distance threshold was increased, the boat wouldnâ€™t even follow the trajectory anymore. Our solution was a more adaptive algorithm, that tracks the closest point on the optimal trajectory. 
 
 Instead of going straight towards that point, it computes a velocity vector using three subvelocities: a PID controller in the direction of the optimal trajectory, another PID controller perpendicular to the optimal trajectory, and an obstacle-avoidance potential field. While the first controller follows the general direction of the path, the second controller keeps us on the path.
 
-The third controller, the potential field, is our last line of defense against crashes. Based on the distance to obstacles, the boat receives a “repulsive force” away from those same obstacles computed with the inverse square law, preventing crashes.
+The third controller, the potential field, is our last line of defense against crashes. Based on the distance to obstacles, the boat receives a â€œrepulsive forceâ€ away from those same obstacles computed with the inverse square law, preventing crashes.
 
 $$
 \begin{gathered}
@@ -28,7 +28,7 @@ $$
     </table>
 </figure>
 
-*Fig 2. Our low-level control strategy: the path-following PID controller on the left, and a visualization of the potential field method used for avoiding obstacles on the right.*
+<figcaption>Fig 1. Our low-level control strategy: the path-following PID controller on the left, and a visualization of the potential field method used for avoiding obstacles on the right.</figcaption>
 
 The x-drive configuration of our thrusters allow Fish 'N Ships to strafe and maneuver with ease.
 
@@ -56,10 +56,10 @@ C_x & 0 & 0 \\
 \end{gathered}
 $$
 
-where $b_T, T\in\set{\text{fl}, \text{fr}, \text{bl}, \text{br}}$ are the maximum forces that the thrusters can exert (approximately 40N for the Blue Robotics T200 thrusters that we are using), $r_T$ are the distances of the thrusters from the boat’s center of mass, and $C_x, C_y, C_z$ are the drag coefficients, which are empirically determined.
+where $b_T, T\in\set{\text{fl}, \text{fr}, \text{bl}, \text{br}}$ are the maximum forces that the thrusters can exert (approximately 40N for the Blue Robotics T200 thrusters that we are using), $r_T$ are the distances of the thrusters from the boatâ€™s center of mass, and $C_x, C_y, C_z$ are the drag coefficients, which are empirically determined.
 
 To read more about how we calculate the robot's dynamics with this configuration, please visit our [GitHub wiki](https://github.com/ArcturusNavigation/all_seaing_vehicle/wiki/X%E2%80%90Drive-Controller) for our detailed documentation of the controller.
 
 <img src="/pictures/Blogs/controller.jpg" width="50%" style="display:block;" />
 
-*Fig 3. Robot Dynamics Model.*
+<figcaption>Fig 2. Robot Dynamics Model.</figcaption>

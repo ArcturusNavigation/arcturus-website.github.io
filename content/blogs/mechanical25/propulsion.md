@@ -1,9 +1,9 @@
-# Propulsion/Thruster Cages
+﻿## Propulsion/Thruster Cages
 
 Our previous vehicle only had two thrusters in the rear, which meant we didn't have strafing or station keeping abilities. Thus, for Fish 'N Ships, it was very important to us to use an x-drive configuration (two thrusters in the front and two thrusters in the back of the hulls). This allowed our new vehicle to strafe and station-keep with ease. However, we didn't know the best angle to mount the thrusters, and we wanted to keep it adjustable so that we can test out the best configuration. Therefore, we designed an attachment on the bottom of the hulls that had holes in 22.5 degree increments, to allow us to easily attach the thrusters in different positions.
 
 ![Thruster mounting and x-drive configuration](/pictures/Blogs/propulsion.png)
-*Fig 1. The left image shows the marine plywood we attached to our hulls to allow 22.5 degree rotations of our thrusters. The right image shows the x-drive configuration.*
+<figcaption>Fig 1. The left image shows the marine plywood we attached to our hulls to allow 22.5 degree rotations of our thrusters. The right image shows the x-drive configuration.</figcaption>
 
 Another design consideration we had in mind was to add some sort of protection to the thrusters. In the past, we could not set the vehicle down without propping it on a platform since the thrusters protruded from the hulls. This made it difficult to transport and test the boat. Therefore, our team decided to add some thruster cages to allow us to set the boat on the ground.
 
