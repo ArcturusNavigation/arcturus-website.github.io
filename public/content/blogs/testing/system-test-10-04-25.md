@@ -1,11 +1,11 @@
-﻿## 10/04/25 System Test
+## 10/04/25 System Test
 
 This system test focused on validating the integration and functionality of our autonomous surface vehicle's key subsystems.
 
 ### Test Objectives
 
 - **Follow path perception**: manually drive and check buoy detection
-    - start w/ polarizing film + fine tuned YOLO model â€”> old YOLO model no polarizing film â€”> fine tuned YOLO no polarizing film 
+    - start w/ polarizing film + fine tuned YOLO model —> old YOLO model no polarizing film —> fine tuned YOLO no polarizing film
 - **Follow path controls**: set waypoint/increasingly complicated paths, can boat get to it
 - Collect ROSbags for docking task with the dock we made
 - Obtain thruster data for MechE
@@ -15,15 +15,15 @@ This system test focused on validating the integration and functionality of our 
 - Re-finetuned YOLO model
 - Modify follow path logic to take convex hull of red+yellow, right from that and left from the path of green
 - Filtering EE box out of camera FOV (to prevent EE box detected as blue buoy)
-- Set up buoys so not in shadow of wall â€”> hopefully limits exposure effects
+- Set up buoys so not in shadow of wall —> hopefully limits exposure effects
 
 ### Results
 - **Follow path perception**:
     - Fine tuned yolo model worked better
-    - pixhawk compass shifts 90 degrees â€” were able to get runs where this didnâ€™t happen
-    - waypoint picking was good â€” picked two waypoints, went to first, but didnâ€™t go to second waypoint
-    - parameters were retuned and things work in sim again â€” some sort of scaling diff bebtween sim and real life
-        - distances are larger in sim (we skip every 5 in sim and it works, but canâ€™t do this in real life)
+    - pixhawk compass shifts 90 degrees — were able to get runs where this didn't happen
+    - waypoint picking was good — picked two waypoints, went to first, but didn't go to second waypoint
+    - parameters were retuned and things work in sim again — some sort of scaling diff bebtween sim and real life
+        - distances are larger in sim (we skip every 5 in sim and it works, but can't do this in real life)
         - Solution: make sure parameters work on small scale
 - **Follow path controls**:
     - Worked barring pixhawk compass problems

@@ -1,8 +1,8 @@
-﻿## 08/20/25 DiscOE Shock + Vibe Test
+## 08/20/25 DiscOE Shock + Vibe Test
 
 ### Test Objectives
 
-- Teach MechE to set Fish â€˜n Ships up for manual control so that more people can drive the boat
+- Teach MechE to set Fish 'n Ships up for manual control so that more people can drive the boat
 - Pull up an RVIZ window showing LiDAR + ZED overlay.
 
 ### Summary
@@ -24,18 +24,18 @@ up? Brendon fixed.
 
 Manual Control:
 - Boat ran with minimal issues.
-- Quite a bit of water got into starboard battery box â€” maybe
-.5â€.
+- Quite a bit of water got into starboard battery box — maybe
+.5".
 - Sensor mast broke off at the base. It has since been repaired with
 epoxy, but we should respec and come up with a more robust
 design.
 RVIZ:
-- LiDAR view worked but I think the camera overlay didnâ€™t?
+- LiDAR view worked but I think the camera overlay didn't?
 
 ### Key Takeaways
 
 - Should set whichever laptop is SSHed into the Jetson to not
 fall asleep.
 - Need to redesign LiDAR mast
-- Battery Boxes are definitely flooding under positive pressure, itâ€™s
+- Battery Boxes are definitely flooding under positive pressure, it's
 not condensation.
