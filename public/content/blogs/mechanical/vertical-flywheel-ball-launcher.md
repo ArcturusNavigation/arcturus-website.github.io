@@ -1,24 +1,24 @@
-# Vertical Flywheel Ball Launcher
+﻿## Vertical Flywheel Ball Launcher
 
 Driving considerations for the ball launcher design were range, volume, and weight. We chose to implement a vertical flywheel design this year to resolve issues last year's launcher had with meeting updated range and volume requirements.
 
 ![Ball Trajectories for Optimal Angles to Hit Targets](/content/blogs/mechanical/vertical-flywheel-ball-launcher/ball-trajectories.png)
-*Fig 1. Ball Trajectories for Optimal Angles to Hit Targets*
+<figcaption>Fig 1. Ball Trajectories for Optimal Angles to Hit Targets</figcaption>
 
-## Range: <= 5m
+### Range: <= 5m
 
-Maximum range was determined by the maximum distance at which our perception stack could reliably detect a target. Water tests showed that improvements to the YOLO model enabled detection at 5 m – a 2 m increase over last year's 3 m target. Unfortunately, analysis showed that a fixed-elevation-angle ball launcher could not reach a 5 m target without overshooting. To sidestep this problem we chose to switch to vertical flywheel this year. This architecture allows us to launch with backspin – producing different trajectories based on estimated target distance without compromising the simplicity of a fixed-elevation-angle design.
+Maximum range was determined by the maximum distance at which our perception stack could reliably detect a target. Water tests showed that improvements to the YOLO model enabled detection at 5 m â€“ a 2 m increase over last year's 3 m target. Unfortunately, analysis showed that a fixed-elevation-angle ball launcher could not reach a 5 m target without overshooting. To sidestep this problem we chose to switch to vertical flywheel this year. This architecture allows us to launch with backspin â€“ producing different trajectories based on estimated target distance without compromising the simplicity of a fixed-elevation-angle design.
 
-## Volume
+### Volume
 
 Last year's design was slightly too tall and blocked the LiDAR's FOV from certain angles. To avoid that problem this year we moved the leadscrew to be in plane with, instead of above, the ball. Decreasing vertical footprint by 46 mm.
 
-## Initial Concept
+### Initial Concept
 
 ![Initial Concept Sketch](/content/blogs/mechanical/vertical-flywheel-ball-launcher/initial-concept.png)
-*Fig 2. Initial concept sketch showing motors, lead screw, and flywheel arrangement*
+<figcaption>Fig 2. Initial concept sketch showing motors, lead screw, and flywheel arrangement</figcaption>
 
-### Do we have enough stored momentum?
+#### Do we have enough stored momentum?
 
 We wanted to use PLA to 3D print the flywheels. So, first, we checked what wheel thickness allows for storing enough energy to launch the ball at an exit speed of 8 m/s. To do this, we used the following energy conservation formula:
 
@@ -38,12 +38,12 @@ $$v^2 = \frac{MR\omega^2}{m} = \frac{\rho\pi R^4 d\omega^2}{m} \approx 165385d$$
 
 Therefore, to get an 8 m/s exit speed, the thickness needs to be 0.0386 cm, and for a 16 m/s exit speed, the thickness is 0.15479 cm. We can store enough momentum in the flywheels to launch the ball from about 6 meter distance from the target.
 
-### Can we create this momentum in a reasonable amount of time? Can we transfer this momentum to the ball, given reasonable contact time?
+#### Can we create this momentum in a reasonable amount of time? Can we transfer this momentum to the ball, given reasonable contact time?
 
-To check this, we geometrically found an expression for θ the angle between the vertical and the point of first contact between the ball and the flywheels.
+To check this, we geometrically found an expression for Î¸ the angle between the vertical and the point of first contact between the ball and the flywheels.
 
 ![Geometric Analysis](/content/blogs/mechanical/vertical-flywheel-ball-launcher/geometric-analysis.png)
-*Fig 3. Geometric analysis showing angle θ between vertical and point of first contact*
+<figcaption>Fig 3. Geometric analysis showing angle Î¸ between vertical and point of first contact</figcaption>
 
 <div align="center">
 
@@ -69,10 +69,10 @@ $$x = \frac{\frac{0.05*8}{2t} - \mu mg}{\mu k}$$
 
 </div>
 
-By plotting these equations, we were able to find the intersection — the optimal compression distance as well as the contact time:
+By plotting these equations, we were able to find the intersection â€” the optimal compression distance as well as the contact time:
 
 ![Contact Time and Compression Analysis](/content/blogs/mechanical/vertical-flywheel-ball-launcher/contact-time-compression.png)
-*Fig 4. Graph showing contact time vs compression of the ball, with intersection point at (0.00413392, 0.01)*
+<figcaption>Fig 4. Graph showing contact time vs compression of the ball, with intersection point at (0.00413392, 0.01)</figcaption>
 
 However, the equation used here ($t = \frac{\theta}{\omega}$) assumes no slip. Due to the inaccuracy of this assumption, we instead chose a reasonable time and found the minimum required compression distance from there:
 
@@ -91,14 +91,14 @@ The value for k, the spring constant of the ball, was obtained first experimenta
 <div style="flex: 1; min-width: 200px; max-width: 45%;">
 
 ![Experimental Setup](/content/blogs/mechanical/vertical-flywheel-ball-launcher/experimental-setup-1.png)
-*Fig 5. Experimental setup for measuring ball compression*
+<figcaption>Fig 5. Experimental setup for measuring ball compression</figcaption>
 
 </div>
 
 <div style="flex: 1; min-width: 200px; max-width: 45%;">
 
 ![Instron Test](/content/blogs/mechanical/vertical-flywheel-ball-launcher/instron-test.png)
-*Fig 6. Instron machine testing ball compression*
+<figcaption>Fig 6. Instron machine testing ball compression</figcaption>
 
 </div>
 
@@ -148,7 +148,7 @@ We acquired the following plots by varying compression distance and speed:
 
 In the calculation above, we used a k value of 6784.19 N/m. We concluded that we can generate the necessary momentum in a reasonable time and transfer it to the ball with sufficient contact time.
 
-## Spin-Up Time
+### Spin-Up Time
 
 After finding the wheel speed after launching one ball, we used the change of angular momentum equation to calculate the time needed to reach $\omega_{final}$, sufficient speed to be able to launch the next ball:
 
@@ -160,7 +160,7 @@ $$\tau_{motor} = \Delta L_{one \, wheel} = I\omega_{final} - I\omega_{initial}$$
 
 Based on this formula, the time to spin back up is 0.13 s, which is a reasonable time to be ready to shoot again.
 
-## CAD
+### CAD
 
 ![CAD Assembly](/content/blogs/mechanical/vertical-flywheel-ball-launcher/cad-assembly.png)
-*Fig 7. CAD model showing complete ball launcher assembly with labeled components: Motors, Ball chamber, Lead screw mechanism, Turret, and Boat mount*
+<figcaption>Fig 7. CAD model showing complete ball launcher assembly with labeled components: Motors, Ball chamber, Lead screw mechanism, Turret, and Boat mount</figcaption>

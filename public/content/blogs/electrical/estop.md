@@ -1,4 +1,4 @@
-# Emergency Stop System (ESTOP)
+﻿## Emergency Stop System (ESTOP)
 
 Last year, our ESTOP was implemented solely in the BMS, leaving the system susceptible to a failed short transistor. This year, we have redundant ESTOP mechanisms: a transistor on the BMS or a contactor can shut off the battery power. All PCBs receive the ESTOP signal, which is an active low signal (when the signal is a logic low, the ESTOP is activated). This means that the ESTOP will be triggered in the case of a broken ESTOP wire. Both the remote ESTOP and button on the boat trigger ESTOP by pulling the line low through a transistor, whose gate is pulled up as a failsafe measure. On the shore side, a custom controller sends ESTOP data, as well as manual drive data. If ESTOP is activated on the shore side, or connection is lost, ESTOP is triggered on the boat.
 
@@ -23,7 +23,7 @@ Last year, our ESTOP was implemented solely in the BMS, leaving the system susce
     </table>
 </figure>
 
-*Fig 1. ESTOP board designs and implementations.*
+<figcaption>Fig 1. ESTOP board designs and implementations.</figcaption>
 
 We have two methods of sending the ESTOP signal:
 

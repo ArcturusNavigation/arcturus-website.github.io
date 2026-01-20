@@ -1,10 +1,10 @@
-# 10/18/25 System Test
+﻿## 10/18/25 System Test
 
-## Test Objectives
+### Test Objectives
 - Test follow path approach in more varied environments (eg. straight vs. curved path, high vs. low speed)
 - Begin testing speed challenge. Aim is to have the vehicle successfully navigate around the buoy but without any speed constraints at the moment.  
 
-## Results
+### Results
 
 **Follow the Path**
 
@@ -16,13 +16,13 @@ We tested follow the path in four different scenarios, varying the speed of the 
 | Curved        | Somewhat Consistent | Errors believed to be caused by: <br> 1. Misdetection of a dark spot on the wall as a green buoy <br> 2. Generating waypoints between diagonal pairs |
 
 <video src="/pictures/Blogs/testing-10-18-25.mov" autoplay muted loop playsinline style="width: 70%; max-width: 70%; max-height: 70%; display: block; margin: 0 auto 30px;"></video>
-*Fig 1. At higher speeds, our approach to Follow the Path is less consistent.*
+<figcaption>Fig 1. At higher speeds, our approach to Follow the Path is less consistent.</figcaption>
 
 **Speed Challenge**
-- Was generally able to get from starting position to some point close to buoy—would occasionally swerve weirdly as it got to the buoy
+- Was generally able to get from starting position to some point close to buoyâ€”would occasionally swerve weirdly as it got to the buoy
     - Errors attributed to localization problems w/ GPS
 
-## Takeaways and Next Steps
+### Takeaways and Next Steps
 - Resolve compass issues. They usually occur when the boat is being driven. Sometimes at other points too but at a lesser extent because SLAM can adapt to slow and small deviations. Also can't use GPS as a result (not earth-aligned, which affects speed testing because only one buoy & sometimes not seen because it's too far). To resolve, we can try to use the external compass (the one we have if compatible with + can find a connector to work with the new Pixhawk, or get a new one)
 - Local map is sometimes slow because of a bottleneck in the perception pipeline, usually one of the YOLO topics. With synchronization, the rate ends up being 2-3 Hz (mostly an issue at the beginning of the test). It's possible that the Jetson is slower when it's hot because the other topics are also slower, so maybe we should try to cool it better/evaluate how much of an issue that is. Maybe Jetson resource management is also an issue because restarting the nodes/Jetson usually helps make things faster. Possible solutions to explore more: can we overclock the Jetson without burning it? Should we make the YOLO nodes get and publish three feeds instead of running 3 YOLO nodes? Will that help or is it the same performance?
 - YOLO doesn't detect yellow buoys usually (at normal lighting conditions), and sometimes picks up part of the background/water at places where it's dark/has shade -> this causes buoys being placed there in global map

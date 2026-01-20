@@ -21,8 +21,11 @@ const BlogPost = ({ markdownPath, category }) => {
 
     const categoryMap = {
       'autonomy': { name: 'Autonomy', link: '/blog/autonomy' },
+      'autonomy25': { name: 'Autonomy', link: '/blog/year-25/autonomy' },
       'electrical': { name: 'Electrical', link: '/blog/electrical' },
+      'electrical25': { name: 'Electrical', link: '/blog/year-25/electrical' },
       'mechanical': { name: 'Mechanical', link: '/blog/mechanical' },
+      'mechanical25': { name: 'Mechanical', link: '/blog/year-25/mechanical' },
       'outreach': { name: 'Outreach', link: '/blog/outreach' },
       'testing': { name: 'Testing', link: '/blog/testing' }
     }
@@ -35,8 +38,10 @@ const BlogPost = ({ markdownPath, category }) => {
     }
 
     // Otherwise, if current URL contains /year-25/, adjust the back link to include it
-    if (info && location.pathname.includes('/year-25/')) {
-      return { ...info, link: `/blog/year-25/${category}` }
+    // (for non-25 suffixed categories that are accessed via year-25 routes)
+    if (info && !category.includes('25') && location.pathname.includes('/year-25/')) {
+      const baseCategory = category.toLowerCase()
+      return { ...info, link: `/blog/year-25/${baseCategory}` }
     }
 
     return info
@@ -103,10 +108,42 @@ const BlogPost = ({ markdownPath, category }) => {
     )
   }
 
+  // Get display name for category title
+  const getCategoryTitle = () => {
+    if (!category) return null
+
+    const titleMap = {
+      'autonomy': 'Autonomy Blog',
+      'autonomy25': 'Autonomy Blog',
+      'electrical': 'Electrical Blog',
+      'electrical25': 'Electrical Blog',
+      'mechanical': 'Mechanical Blog',
+      'mechanical25': 'Mechanical Blog',
+      'outreach': 'Outreach Blog',
+      'testing': 'Testing Blog'
+    }
+
+    return titleMap[category.toLowerCase()] || null
+  }
+
+  const categoryTitle = getCategoryTitle()
+
   return (
-    <div className="py-12">
+    <div className="py-12 bg-gray-50">
       <div className="container mx-auto px-4 max-w-4xl">
-        <div className="bg-white rounded-lg shadow-md p-8">
+        {/* Category title header */}
+        {categoryTitle && categoryInfo && (
+          <h1 className="text-4xl font-heading font-bold text-primary text-center mb-8">
+            <Link
+              to={categoryInfo.link}
+              className="hover:text-secondary transition-colors"
+            >
+              {categoryTitle}
+            </Link>
+          </h1>
+        )}
+
+        <div className="bg-white rounded-lg shadow-md pt-1 px-8 pb-4">
           <div className="prose prose-lg max-w-none">
             <ReactMarkdown
               remarkPlugins={[remarkGfm, remarkMath]}
@@ -120,12 +157,11 @@ const BlogPost = ({ markdownPath, category }) => {
                   />
                 ),
                 p: ({node, children, ...props}) => {
-                  const child = children?.[0]
-                  if (typeof child === 'string' && child.startsWith('Fig ') || (typeof child === 'string' && child.startsWith('*Fig '))) {
-                    return <p className="text-center text-sm text-gray-600 mt-2 mb-8 italic" {...props}>{children}</p>
-                  }
                   return <p className="mb-4 text-gray-700 leading-relaxed" {...props}>{children}</p>
                 },
+                figcaption: ({node, ...props}) => (
+                  <figcaption className="text-center text-sm text-gray-600 mt-2 mb-8 italic" {...props} />
+                ),
                 h1: ({node, ...props}) => (
                   <h1 className="text-4xl font-heading font-bold text-primary mb-6" {...props} />
                 ),

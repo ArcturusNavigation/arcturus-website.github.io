@@ -68,6 +68,14 @@ export const categoryBlogs = {
       link: '/blog/year-25/autonomy/controller',
       markdownPath: '/content/blogs/autonomy25/controller.md',
       category: 'autonomy25'
+    },
+    {
+      title: 'Onboarding Labs',
+      image: '/content/blogs/autonomy/onboardinglab1.png',
+      description: 'A 2-part ROS 2 lab to get new autonomy members familiar with the tech stack',
+      link: '/blog/year-25/autonomy/onboardinglabs',
+      markdownPath: '/content/blogs/autonomy/onboardinglabs.md',
+      category: 'autonomy25'
     }
   ],
   mechanical: [
@@ -313,6 +321,27 @@ export const categoryBlogs = {
     },
   ],
   outreach: [
+    {
+      title: "Cambridge Science Festival 2025",
+      url: "/blog/outreach/cambridgesciencefestival2025",
+      image: "/pictures/Blogs/csf24%20(1).jpg",
+      markdownPath: "/content/blogs/outreach/cambridgesciencefestival2025.md",
+      category: 'outreach'
+    },
+    {
+      title: "Splash 2025",
+      url: "/blog/outreach/splash2025",
+      image: "/content/blogs/outreach/pictures/splash2025.jpg",
+      markdownPath: "/content/blogs/outreach/splash2025.md",
+      category: 'outreach'
+    },
+    {
+      title: "MIT Museum Cart",
+      url: "/blog/outreach/mitmuseumcart2025",
+      image: "/content/blogs/outreach/pictures/museum1.jpg",
+      markdownPath: "/content/blogs/outreach/mitmuseumcart2025.md",
+      category: 'outreach'
+    },
     {
       title: "Cambridge Science Festival 2024",
       url: "/blog/outreach/cambridgesciencefestival2024",

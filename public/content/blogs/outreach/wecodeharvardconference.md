@@ -1,4 +1,4 @@
-# WeCode Harvard Conference
+﻿## WeCode Harvard Conference
 
 **Date:** February 18-19, 2023
 
