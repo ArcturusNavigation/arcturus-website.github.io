@@ -148,7 +148,7 @@ We acquired the following plots by varying compression distance and speed:
 
 In the calculation above, we used a k value of 6784.19 N/m. We concluded that we can generate the necessary momentum in a reasonable time and transfer it to the ball with sufficient contact time.
 
-### Spin-Up Time
+#### Can we generate this momentum in a reasonable spin-up time?
 
 After finding the wheel speed after launching one ball, we used the change of angular momentum equation to calculate the time needed to reach $\omega_{final}$, sufficient speed to be able to launch the next ball:
 
@@ -160,7 +160,66 @@ $$\tau_{motor} = \Delta L_{one \, wheel} = I\omega_{final} - I\omega_{initial}$$
 
 Based on this formula, the time to spin back up is 0.13 s, which is a reasonable time to be ready to shoot again.
 
+### Design Analysis: Second Pass
+Once we completed the first pass design analysis to roughly size all system components, we decided to do a second pass, higher fidelity analysis to visualize specific engineering trade-offs like compression, flywheel RPM, and ball spin.
+
+The majority of this analysis is based on the following state space model of the system:
+$$
+\mathbf{x} =
+\begin{bmatrix}
+x \\ v \\ \Omega \\ \omega_1 \\ \omega_2
+\end{bmatrix}, \quad
+\dot{\mathbf{x}} =
+\begin{bmatrix}
+\dot{x} \\ \dot{v} \\ \dot{\Omega} \\ \dot{\omega}_1 \\ \dot{\omega}_2
+\end{bmatrix}
+=
+\begin{bmatrix}
+v \\
+\frac{F_1(x,v,\Omega,\omega_1) + F_2(x,v,\Omega,\omega_2)}{m} \\
+\frac{r_b \left[ F_1(x,v,\Omega,\omega_1) - F_2(x,v,\Omega,\omega_2) \right]}{I_b} \\
+-\frac{R_w F_1(x,v,\Omega,\omega_1)}{I_w} \\
+-\frac{R_w F_2(x,v,\Omega,\omega_2)}{I_w}
+\end{bmatrix}
+$$
+
+where $x, v, F_{1}, \Omega, \omega_{1}, F_{2}, \omega_{2}, R_{w}, and r_{b}$ are defined in Fig 7.
+
+![Flywheel variable definition](/content/blogs/mechanical/vertical-flywheel-ball-launcher/FlywheelGeometryModelSketch.jpg)<figcaption> Fig 7. defines key geometric and dynamic variables of the model. </figcaption>
+
+Forces $F_{1}$ and $F_{2}$ acting on the ball are defined as functions of compression, $\delta(x)$,
+
+$$
+\begin{aligned}
+F_1(\delta,v,\Omega,\omega_1) &= \mu \, N(\delta) \,
+    \tanh\left(\frac{R_w \, \omega_1 - (v + r_b \, \Omega)}{v_0}\right) \\[1mm]
+F_2(\delta,v,\Omega,\omega_2) &= \mu \, N(\delta) \,
+    \tanh\left(\frac{R_w \, \omega_2 - (v - r_b \, \Omega)}{v_0}\right) \\[1mm]
+N(\delta) &= K \, \delta(x) \\[1mm]
+\delta(x) &= 2 \cdot \left(R_{w} + r_{b} - \sqrt{\left(R_{w} + r_{b} - \frac{\delta_{\text{max}}}{2}\right)^2 + x^2}\right)
+\end{aligned}
+$$
+
+and K is the average stiffness found during instron tests. Since contact is assumed to occur over a relatively small arc length we calculate acceleration directly from the contact forces without trig.
+
+#### Validating + Calibrating the Model
+This model leaves one free parameter: $\mu$ or the viscous friction coefficient between the flywheels and the ball. To tune this parameter, and validate the model, we compared predicted results to the performance of last year's horizontal flywheel launcher which reached exit velocities of 7.15 m/s without spin.
+
+Based on these empirical results we determined $\mu \approx 0.37$ (see Fig. 8), which seemed quite reasonable and made us more confident in our model.
+
+![Flywheel model calibration](/content/blogs/mechanical/vertical-flywheel-ball-launcher/FlywheelLauncherCalibration.png)<figcaption> Fig 8. By sweeping our model through the relationship between $\mu$ and exit velocity given the dimensions of last year's launcher, we were able to determine an expected friction coefficient between the ball and flywheels of $\mu \approx 0.37$. </figcaption>
+
+The next step was to use our tuned model to determine the optimal compression, $\delta$, and differential flywheel speed (i.e., spin), $\Delta RPM$, to apply to the ball. To do this we conducted a feasibility sweep across $\delta$ and $\Delta RPM$ and recorded pairs that satisfied the 5 m range and 0.5 m max trajectory height at one or more launch angles, $\theta$. The results of the feasibility study are presented in Fig. 9 and motivated operating at a $\Delta RPM \approx 6000$ and $\delta \approx 18$ mm. We chose these values because it is desirable to minimize compression of the ball, $\delta$, to decrease loads on the system.
+
+![Flywheel feasibility sweep](/content/blogs/mechanical/vertical-flywheel-ball-launcher/FlywheelFeasibilityMap.png)<figcaption> Fig 9. By sweeping through various compressions, $\delta_{\text{max}}$, and spin rates, $\Delta \text{RPM}$, between the two flywheels, we were able to visualize the region of possible designs that met our trajectory height and max range requirements at some launch angle.</figcaption>
+
+Before finalizing the design we wanted to visualize the engineering trade-offs made by selecting these operating conditions. To do this we visualized the total fractional buffer, fractional excess range, and fractional height buffer of our design operating with the prescribed compression of 18 mm but variable $\Delta \text{RPM}$ and launch angle $\theta$. The results of these sweeps are presented in Fig. 9. In this case, fractional "buffer" was used as a performance metric because we wanted to maximize range but minimize trajectory height; buffer is used to label the amount of excess we had in the desired direction (excess range; difference between target height and max trajectory height). Fractional buffer values are used for normalizations and more accurate comparison of trade-offs.
+
+![Flywheel design trade-offs visualization](/content/blogs/mechanical/vertical-flywheel-ball-launcher/MarginsVisualizationFlywheels.png)<figcaption> Fig 10. By sweeping our model through various launch angles and backspin we were able to confidently select operating conditions $\delta = 18mm, \Delta RPM = 6000, \theta = 18.5^\circ$. Though these conditions cost us excess range but ensured we never overshot the target. </figcaption>
+
+Visualizing the trade-offs between excess range and height buffer were important because we cared far more about not overshooting the target than we did about maximizing range. While decreased range has an easy solution (move closer), overshooting the target does not. In fact, overshooting, for a fixed-angle launcher, can only be countered through  careful station keeping from the target that we were not yet confident our autonomy system could do.
+
 ### CAD
 
 ![CAD Assembly](/content/blogs/mechanical/vertical-flywheel-ball-launcher/cad-assembly.png)
-<figcaption>Fig 7. CAD model showing complete ball launcher assembly with labeled components: Motors, Ball chamber, Lead screw mechanism, Turret, and Boat mount</figcaption>
+<figcaption>Fig 11. CAD model showing complete ball launcher assembly with labeled components: Motors, Ball chamber, Lead screw mechanism, Turret, and Boat mount</figcaption>
