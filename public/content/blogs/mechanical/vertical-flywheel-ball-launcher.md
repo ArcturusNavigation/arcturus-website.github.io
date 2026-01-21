@@ -1,4 +1,4 @@
-﻿## Vertical Flywheel Ball Launcher
+## Vertical Flywheel Ball Launcher
 
 Driving considerations for the ball launcher design were range, volume, and weight. We chose to implement a vertical flywheel design this year to resolve issues last year's launcher had with meeting updated range and volume requirements.
 
@@ -7,7 +7,7 @@ Driving considerations for the ball launcher design were range, volume, and weig
 
 ### Range: <= 5m
 
-Maximum range was determined by the maximum distance at which our perception stack could reliably detect a target. Water tests showed that improvements to the YOLO model enabled detection at 5 m, a 2 m increase over last year's 3 m target. Unfortunately, analysis showed that a fixed-elevation-angle ball launcher could not reach a 5 m target without overshooting. To sidestep this problem we chose to switch to vertical flywheel this year. This architecture allows us to launch with backspin, producing different trajectories based on estimated target distance without compromising the simplicity of a fixed-elevation-angle design.
+Maximum range was determined by the maximum distance at which our perception stack could reliably detect a target. Water tests showed that improvements to the YOLO model enabled detection at 5 m — a 2 m increase over last year's 3 m target. Unfortunately, analysis showed that a fixed-elevation-angle ball launcher could not reach a 5 m target without overshooting. To sidestep this problem we chose to switch to vertical flywheel this year. This architecture allows us to launch with backspin — producing different trajectories based on estimated target distance without compromising the simplicity of a fixed-elevation-angle design.
 
 ### Volume
 
@@ -40,10 +40,10 @@ Therefore, to get an 8 m/s exit speed, the thickness needs to be 0.0386 cm, and 
 
 #### Can we create this momentum in a reasonable amount of time? Can we transfer this momentum to the ball, given reasonable contact time?
 
-To check this, we geometrically found an expression for Î¸ the angle between the vertical and the point of first contact between the ball and the flywheels.
+To check this, we geometrically found an expression for θ the angle between the vertical and the point of first contact between the ball and the flywheels.
 
 ![Geometric Analysis](/content/blogs/mechanical/vertical-flywheel-ball-launcher/geometric-analysis.png)
-<figcaption>Fig 3. Geometric analysis showing angle Î¸ between vertical and point of first contact</figcaption>
+<figcaption>Fig 3. Geometric analysis showing angle θ between vertical and point of first contact</figcaption>
 
 <div align="center">
 
@@ -69,7 +69,7 @@ $$x = \frac{\frac{0.05*8}{2t} - \mu mg}{\mu k}$$
 
 </div>
 
-By plotting these equations, we were able to find the intersection â€” the optimal compression distance as well as the contact time:
+By plotting these equations, we were able to find the intersection — the optimal compression distance as well as the contact time:
 
 ![Contact Time and Compression Analysis](/content/blogs/mechanical/vertical-flywheel-ball-launcher/contact-time-compression.png)
 <figcaption>Fig 4. Graph showing contact time vs compression of the ball, with intersection point at (0.00413392, 0.01)</figcaption>

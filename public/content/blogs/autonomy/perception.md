@@ -1,10 +1,10 @@
-﻿## Perception Stack
+## Perception Stack
 
 Detecting obstacles in the vehicle's surroundings is crucial for many tasks. One of the first tasks our team worked on was buoy detection. Most of the navigation courses in Roboboat require us to identify buoys and then figure out how to navigate them.
 
 Perception plays a vital role in identifying objects in the boat's surroundings and determining their locations. To achieve this, we rely on our sensor suite that includes the HDL-32E Velodyne LiDAR, which provides 3D point clouds, and the ZED 2i Stereo Camera, which captures images.
 
-Camera data is used to identify what the objects in the boat's surroundings are. For this purpose, we are using a fine-tuned YOLO11n model, a real-time image segmentation and object detection model, chosen for its real-time speed and accuracy. Our dataset consists of both existing datasets and newly custom-labeled data. In addition to a [public buoy dataset](https://universe.roboflow.com/mhseals/buoys-4naae) published by MHSeals on Roboflow, we uploaded and annotated images we took at last yearâ€™s competition and our own tests.
+Camera data is used to identify what the objects in the boat's surroundings are. For this purpose, we are using a fine-tuned YOLO11n model, a real-time image segmentation and object detection model, chosen for its real-time speed and accuracy. Our dataset consists of both existing datasets and newly custom-labeled data. In addition to a [public buoy dataset](https://universe.roboflow.com/mhseals/buoys-4naae) published by MHSeals on Roboflow, we uploaded and annotated images we took at last year's competition and our own tests.
 
 <figure>
     <table width="100%" style="border:0; border-collapse:collapse; border-spacing:0;">
