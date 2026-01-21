@@ -1,26 +1,55 @@
-﻿## EE Box
+﻿## Electronics Enclosure
 
-The purpose of a custom electronics box is to provide a lightweight, accessible, easily modifiable, cool (temperature-wise), splash-proof housing for Fish 'N Ships' electrical components.
+The team debuted a custom electronics enclosure (EE Box) to accompany its brand new vessel, Fish 'N Ships, during RoboBoat 2025. Positive user feedback from the EE team has, since then, justified the decision to design a custom box over purchasing an off-the-shelf option.
 
-At first, we debated if we even needed a custom EE box. Off the shelf options are cheaper, require less labor from us, are rated to depths well beyond the design requirements of the box, and are already commonly used by RoboBoat teams. Modifying such boxes, while inelegant, is neither costly nor difficult, though it does make the box's original pressure rating irrelevant. The question thus became: can we manufacture a box that offers a better weight to volume ratio than the leading alternative? And would it be worth the cost? We decided there was a high probability we could--and that the cost was more than justified by the learning experience.
+Driving considerations for the 2025 EE Box were weight, accessibility, modularity, temperature control, and splash-proofness. The driving question for the 2026 EE Box was how to match user feedback to specific feature improvements without compromising any aspects of the 2025 design that allowed it to meet those constraints.
 
-### Version 1:
+## 2025 EE Box Feedback
 
-The initial design of the EE box focused on accessibility, modularity, and thermals. It consisted of an â…›" aluminum base, â…›" acrylic walls, removable faceplates, a large "land" lid, and smaller "water" lids. This version of the box condensed the boat's sensors and electronics into a single sub-assembly--i.e., its "brains"--that could be removed and tested independent of the hulls. The electronics were designed to mount to slightly elevated acrylic pegboards (elevated for subterranean wire management). Thermals were managed passively by aluminum "sleeves" that wrapped completely around the hulls and made direct contact with the box's aluminum base. Overall footprint was roughly 32"x16"x6.5" (not counting the height of the sensor mast). This first design weighed ~13 lbs, roughly 12% of the team's weight budget at the time, which we decided was far too much, which led us to make major changes in version 2.
+The 2025 EE Box was designed almost entirely out of 1/8" plywood with a polyurethane laminate fabric lid cover. The box featured a base height to lid height ratio of 1:3 and elevated pegboards for easy access to electronics from both above and below, removable faceplates to accommodate evolving passthrough layouts, and an H gasket between the base and the lid for water proofness. After a season's worth of testing, we were able to compile the following list of shortcomings the 2026 EE Box then attempted to rectify.
 
-![EE Box version 1](/pictures/Blogs/eebox1.png)
-<figcaption>Fig 1. EE Box version 1.</figcaption>
+1. Difficulty accessing the lower layer.
+    Though not originally intended for use, as EE added additional capabilities to the boat the space requirements exceeded the real estate available on the elevated pegboards and spilled over into the bottom layer. Though elevated, the pegboards did not offer sufficient clearance for a human to work and debug easily.
+2. Difficulty aligning a warped lid.
+    Constructed out of waterproof fabric stretched over an 1/8" plywood frame, compliance in the lid of the 2025 EE Box made aligning it with the 1/4" H gasket quite difficult, especially on the water. This difficulty was compounded by the overcenter latches which, positioned facing down, were naturally inclined to droop and get in between the lid and the H gasket when the lid was lowered.
+3. Laborious post-processing, joining, and caulking steps.
+    Since the base of the box was constructed out of standard, untreated 1/8" plywood it was treated with epoxy after being laser cut to prevent delamination and warping on the water. In addition, the walls of the box had to be wood glued and later caulked to seal small gaps in the finger joints. We hoped to correct the inelegance of this process in the 2026 design.
+4. Inconvenient faceplate removal
+    Originally intended as a design feature to aid in changing the connectors going into and out of the box as the EE system changed, the removable faceplates were often a bottleneck in this process. Fastened with 66 screws total, many of them in almost inaccessible locations, replacing the faceplates was a manufacturing step the team loved to avoid, often at the cost of time lost debugging connections on the water.
+5. Lack of internal hard points
+    Intended to be water-proof to several centimeters of submergence, no holes or hard points for mounting were added to the bottom of the 2025 EE Box. This made fastening the legs of the pegboards difficult.
 
-### Version 2:
+![2025EEBoxIssues](/content/blogs/mechanical/eebox/2025EEBox.png)
+<figcaption>Fig 1. Issues with the 2025 EE Box</figcaption>
 
-Design two features the elevated peg boards and removable faceplates of the first design, only this time they're compressed into a footprint roughly a third the size (12"x16"x8"). To account for this compressed footprint the pegboards were elevated ~4" off the base (enough room to rotate the average human hand comfortably)--opening up a second layer for mounting components. The focus on weight reduction meant the old aluminum base with its heat finned cooling system was a non starter. Fabric--engineered by a fashion industry focused on breathability, water resistance, and weight--was the obvious replacement. The new box was constructed almost entirely out of an â…›" plywood frame, and the lid draped in PolyUrethane Laminate--a lightweight, durable, water resistant cloth commonly used for DIY diapers. Finally, fans, protected by 3D printed shrouds, were added for increased airflow.
+## 2026 EE Box
 
-![EE Box version 2](/pictures/Blogs/eebox2.png)
-<figcaption>Fig 2. EE Box version 2.</figcaption>
+The 2026 Box was redesigned with features intended to explicitly answer issues with the 2025 Box. The overall architecture of the box is described in Fig. 2, and the specific design features and the problems they were intended to address are discussed in detail.
 
-### Version 3 (Current Design):
+![2026EEBox](/content/blogs/mechanical/eebox/2026Box.png)
+<figcaption>Fig 2. The 2026 Box featured several new design features intended to adress problems with the 2025 version. </figcaption>
 
-The current design retains many of the core innovations of the previous two--including the elevated peg boards, fabric lid, and removable faceplates. The primary driver of this iteration was usability feedback from the EE team: a self locating pin was added to make aligning the lid easier when latching the box shut and to prevent water from pooling during rainy tests; the number of mounting screws per faceplate was doubled to prevent water from entering the box when rogue waves swept over the deck; 1/32" aluminum L brackets were fastened to the edges of the acrylic pegboards to prevent the previous bowing/flexing/swaying behavior that made mounting components to the pegboards difficult; compliant hooks were added to keep the latches in the "upright" position while lowering the lid; and the Jetson was mounted on L-bracket stand-offs to allow for rapid insertion and removal from the box. Once the wooden seams of the base were caulked with a polyether adhesive the box proved watertight to 16cm (at which point water entered via the fan out take), well above design spec.
+1. Difficulty Accessing the lower layer --> Hinged Pegboards
+    In addition to occupying a slightly larger x-y footprint, the 2026 box also features hinged pegboards. This allows the user to flip pegboards out of the way to access the bottom layer. Crucially, the pivoting motion chosen is a rigid body rotation around the longest available side length of the pegboard--this allows cables to be pinned to the pegboards along the hinged axis--ensuring easy rotation.
+    ![HingedPegboards](/content/blogs/mechanical/eebox/HingedPegboards.png)
+    <figcaption>Fig 3. Hinged pegboards were added to improve bottom layer access. </figcaption>
 
-![EE Box version 3](/pictures/Blogs/eebox3.png)
-<figcaption>Fig 3. EE Box version 3.</figcaption>
+2. Difficulty aligning a warped lid --> 3D printed Lid-Box interface and added Zipper for on-water access
+    To sidestep the warped lid problem, the new box replaced the original H gasket with 3D printed Lid-Base interface with rubber along the inside. This feature allows for dimensionally accurate manufacturing of the lid-box interface and adds stiffness to lid edge without increasing weight, an advantage of infilled parts. In addition, a zipper was added to the lid for easier on-water access--removing the need to unlatch and relatch the lid every time.
+    ![Zippered Lid](/content/blogs/mechanical/eebox/LidUpdates.png)
+    <figcaption>Fig 4. A zipper (not pictured) was added to the lid to improve on water access. The rim of the lid was 3D printed for rigidity and dimensional accuracy. </figcaption>
+
+3. Laborious post-processing, joining, and caulking of the base --> Brazed Aluminum base
+    To sidestep this process, the new box base is laser cut out of 1/32" aluminum. Not only does this remove half of the seams in the box and eliminate post-processing required by the previous box, it also condenses the joining and caulking steps into a single brazing step. Finally, the large aluminum base offers EE a built-in grounding plane should the boat's evolving antenna payload ever require it. This design choice also decreased the weight of the base by nearly 50%.
+    ![SingleSheetBase](/content/blogs/mechanical/eebox/SingleSheetBase.png)
+    <figcaption>Fig 5. The plywood base was replaced with a thinner aluminum base that was cut out of a single sheet and brazed together--a more elegant manufacturing process. </figcaption>
+
+4. Inconvenient faceplate removal --> Press-fit inserts and faceplate clamps
+    The 2026 tackled this problem in two design features. First, the new design press-fit inserts into the faceplates. This enabled screwing faceplates in blind--sidestepping the problem of faster accessibility in cramped spaces. Second, the design used prebent PLA beams to apply a clamping force along the upper and lower edges of the faceplate. The beam curvature was determined by applying a uniform distributed load proportional to the hydrostatic stresses acting on the box at 6 cm submergence (up to the top of the base). Since the beams are manufactured in their deformed state, restoring them to their undeformed state requires an approximately similar load--the clamping load on the faceplates. Together these innovations reduced the total number of screws per faceplate by 75%.
+    ![FaceplateImprovements](/content/blogs/mechanical/eebox/FaceplateClamps.png)
+    <figcaption>Fig 6. To improve ease of replacing faceplates, press fit inserts were added and 75% of the screws per faceplate were replaced with prebent beams that, when screwed down, applied a clamping force across the rim of the faceplates. </figcaption>
+
+5. Lack of internal hardpoints --> PLA rafts with captive nuts
+    The design solution to this problem also answered one of the problems with a new design feature: the aluminum base. In an electronics box exposed metal invites shorts. To cover the exposed metal, PLA tiles were designed. These tiles cover the bottom of the box and together with the faceplates, cover almost all open metal surfaces. Each tile is printed with hexagonal cavities for low profile captive nuts--creating internal threads that the pegboard legs and other EE components can be screwed down to.
+    ![InternalMountingPoints](/content/blogs/mechanical/eebox/InternalCaptiveNuts.png)
+    <figcaption>Fig 7. To remove the risk of shorts and add internal mounting points to the box, the 2026 box featured PLA rafts with cavities for captive nuts. The rafts covered much of the exposed, conductive surface of the box and provided internal mounting points without piercing the enclosure. </figcaption>
