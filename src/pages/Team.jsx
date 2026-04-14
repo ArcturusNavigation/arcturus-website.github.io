@@ -3,40 +3,40 @@ import React from 'react'
 const Team = () => {
   const officers = [
     {
-      name: 'Janelle Cai',
-      role: 'Captain',
-      email: 'jcai18@mit.edu',
-      image: '/pictures/Headshots/janelle-headshot.jpg'
-    },
-    {
-      name: 'Brendon Jiang',
-      role: 'Autonomy Co-Lead',
-      email: 'brendonj@mit.edu',
-      image: '/pictures/Headshots/brendon-headshot.jpg'
-    },
-    {
       name: 'Panagiotis Liampas',
-      role: 'Autonomy Co-Lead',
+      role: 'Captain & Autonomy Co-Lead',
       email: 'pliam005@mit.edu',
       image: '/pictures/Headshots/panos-headshot.jpg'
     },
     {
-      name: 'Noah Haefner',
-      role: 'EE Co-Lead',
-      email: 'nhaefner@mit.edu',
-      image: '/pictures/Headshots/noah-headshot.jpg'
+      name: 'Brian Xue',
+      role: 'Autonomy Co-Lead',
+      email: 'brianxue@mit.edu',
+      image: '/pictures/Headshots/brian-headshot.png'
     },
     {
-      name: 'Jack Bolte',
-      role: 'EE Co-Lead',
-      email: 'jbolte@mit.edu',
-      image: '/pictures/Headshots/jack-headshot.jpg'
+      name: 'Daniel Kim',
+      role: 'Autonomy Co-Lead',
+      email: 'danielsk@mit.edu',
+      image: '/pictures/Headshots/daniel-headshot.jpg'
     },
     {
-      name: 'Ved Ganesh',
+      name: 'Patrick Chu',
+      role: 'EE Lead',
+      email: 'p96chu@mit.edu',
+      image: '/pictures/Headshots/patrick-headshot.jpg'
+    },
+    {
+      name: 'Andrew Chen',
       role: 'MechE Co-Lead',
-      email: 'vxg@mit.edu',
-      image: '/pictures/Headshots/ved-headshot.jpg'
+      email: 'andrew8@mit.edu',
+      image: '/pictures/Headshots/andrew-headshot.jpg'
+    },
+    {
+      name: 'Hager Gomaa',
+      role: 'MechE Co-Lead',
+      email: 'hagerg57@mit.edu',
+      image: '/pictures/Headshots/hager-headshot.jpg'
     },
     {
       name: 'McKinley Pestano-Young',
@@ -45,16 +45,16 @@ const Team = () => {
       image: '/pictures/Headshots/mckinley-headshot.jpg'
     },
     {
-      name: 'Teagan Sullivan',
-      role: 'MechE Co-Lead',
-      email: 'cteagans@mit.edu',
-      image: '/pictures/Headshots/teagan-headshot.jpg'
+      name: 'Mariia Maliar',
+      role: 'Outreach Co-Lead',
+      email: 'maliar@mit.edu',
+      image: '/pictures/Headshots/mariia-headshot.jpg'
     },
     {
-      name: 'Angelica Fortuno',
-      role: 'Outreach Lead',
-      email: 'afortuno@mit.edu',
-      image: '/pictures/Headshots/angelica-headshot.png'
+      name: 'Teagan Sullivan',
+      role: 'Outreach Co-Lead',
+      email: 'cteagans@mit.edu',
+      image: '/pictures/Headshots/teagan-headshot.jpg'
     }
   ]
 

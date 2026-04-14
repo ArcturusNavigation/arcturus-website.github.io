@@ -166,40 +166,56 @@ const About = () => {
           <div className="grid md:grid-cols-2 gap-12">
             <div className="text-center">
               <h3 className="text-2xl font-heading font-semibold text-primary mb-4">
-                RoboBoat 2023
+                RoboBoat 2026
               </h3>
               <div className="aspect-video">
-                <iframe
-                  width="100%"
-                  height="100%"
-                  src="https://www.youtube.com/embed/zwJfxIwSBhE?si=8woHClpOl1DDdOOy"
-                  title="YouTube video player"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  referrerPolicy="strict-origin-when-cross-origin"
-                  allowFullScreen
-                  className="rounded-lg shadow-lg"
+                <iframe width="100%"
+                        height="100%"
+                        src="https://www.youtube.com/embed/fnqL2pER6wA?si=9zxUN21Kz-XZWfy4"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen
+                        className="rounded-lg shadow-lg"
                 ></iframe>
               </div>
             </div>
-
             <div className="text-center">
               <h3 className="text-2xl font-heading font-semibold text-primary mb-4">
                 RoboBoat 2025
               </h3>
               <div className="aspect-video">
-                <iframe
-                  width="100%"
-                  height="100%"
-                  src="https://www.youtube.com/embed/m9dcG-rZwSk?si=CLfSJ6qwxsFVXq5-"
-                  title="YouTube video player"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  referrerPolicy="strict-origin-when-cross-origin"
-                  allowFullScreen
-                  className="rounded-lg shadow-lg"
+                <iframe width="100%"
+                        height="100%"
+                        src="https://www.youtube.com/embed/m9dcG-rZwSk?si=CLfSJ6qwxsFVXq5-"
+                        title="YouTube video player"
+                        frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerPolicy="strict-origin-when-cross-origin"
+                        allowFullScreen
+                        className="rounded-lg shadow-lg"
                 ></iframe>
               </div>
+            </div>
+          </div>
+
+          <div className="text-center mt-16">
+            <h3 className="text-2xl font-heading font-semibold text-primary mb-4">
+              RoboBoat 2023
+            </h3>
+            <div className="aspect-video flex justify-center">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/zwJfxIwSBhE?si=8woHClpOl1DDdOOy"
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+                className="rounded-lg shadow-lg"
+              ></iframe>
             </div>
           </div>
         </section>
