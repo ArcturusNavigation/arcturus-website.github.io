@@ -96,6 +96,18 @@ const Footer = () => {
             </ul>
           </div>
         </div>
+
+        <div className="mt-10 pt-6 border-t border-white/20 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 text-sm">
+          <p>&copy; {new Date().getFullYear()} MIT Arcturus</p>
+          <a
+            href="https://accessibility.mit.edu"
+            className="hover:text-primary-light transition-colors underline"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Accessibility
+          </a>
+        </div>
       </div>
     </footer>
   )
